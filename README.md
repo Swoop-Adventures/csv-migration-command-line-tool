@@ -4,6 +4,7 @@ This is a command line application that uses json schema to validate the importe
 ## Before running application
 - Ensure python is installed.
 - run `pip install jsonschema pandas` to install required packages.
+- json schema file ends with .json and csv file ends with .csv should be ready to input.
 
 ## To run application
 - Enter command line `python app.py`.
