@@ -1,82 +1,118 @@
 import json
 import pandas as pd
 from jsonschema import validate, ValidationError
+from customizable_mapping import map_row
 import copy
+
+_SCALAR_TYPES = {"integer", "number", "boolean", "string"}
 
 def load_schema(schema_path):
     with open(schema_path, 'r') as f:
         return json.load(f)
 
+def _coerce_scalar(value, expected_type):
+    """
+    Try to coerce `value` into `expected_type`.
+    Raise ValueError on failure.
+    """
+    if expected_type == "integer":
+        i = int(float(value))
+        if float(value) != i:
+            raise ValueError
+        return i
+    if expected_type == "number":
+        return float(value)
+    if expected_type == "boolean":
+        val = str(value).lower()
+        if val in ("true", "1"):
+            return True
+        if val in ("false", "0"):
+            return False
+        raise ValueError
+    # string – just cast
+    return str(value)
 
-def preprocess_dataframe(df, schema):
-    props = schema.get("properties", {})
-    for field, rules in props.items():
-        field_type = rules.get("type")
-        if field_type == "array":
-            # Convert pipe-separated values into arrays
-            df[field] = df[field].fillna('').apply(lambda x: x.split('|') if isinstance(x, str) and x else [])
+def _parse_node(node, schema, path=""):
+    """
+    Recursively parse a piece of data (`node`) according to `schema`.
 
-    return df
-
-def validate_row(row, schema):
+    Returns:
+        parsed_node   – only fields that parsed OK
+        pruned_schema – schema minus the paths that failed
+        errors        – list of (path, message) tuples
+    """
     errors = []
-    parsed = {}
-    props = schema.get("properties", {})
-    required = schema.get("required", [])
-    clean_schema = copy.deepcopy(schema)
+    pruned_schema = copy.deepcopy(schema)
 
-    for field in required:
-        if field not in row or row[field] is None or str(row[field]).strip() == "":
-            errors.append(f"{field} is required")
+    if schema.get("type") == "object":
+        parsed = {}
+        pruned_props = {}
+        props = schema.get("properties", {})
+        required = schema.get("required", [])
 
-    for field, rules in props.items():
-        value = row.get(field)
-        expected_type = rules.get("type")
+        # ensure we have a dict
+        if not isinstance(node, dict):
+            errors.append((path, f"expected object, got {type(node).__name__}"))
+            return None, {}, errors
 
-        if value is None or (isinstance(value, float) and pd.isna(value)):
-            continue
+        # required checks (missing keys)
+        for key in required:
+            if key not in node or node[key] in (None, "", float("nan")):
+                errors.append((f"{path}.{key}" if path else key, "is required"))
 
-        try:
-            if expected_type == "integer":
-                int_val = int(float(value))
-                if float(value) != int_val:
-                    raise ValueError
-                parsed[field] = int_val
-            elif expected_type == "number":
-                parsed[field] = float(value)
-            elif expected_type == "boolean":
-                val = str(value).lower()
-                if val in ["true", "1"]:
-                    parsed[field] = True
-                elif val in ["false", "0"]:
-                    parsed[field] = False
-                else:
-                    raise ValueError
-            elif expected_type == "array":
-                parsed[field] = value
+        # iterate all declared properties
+        for key, subschema in props.items():
+            subpath = f"{path}.{key}" if path else key
+            value = node.get(key, None)
+
+            # ignore truly missing & optional
+            if value is None or (isinstance(value, float) and pd.isna(value)):
+                continue
+            parsed_sub, pruned_subschema, sub_errors = _parse_node(value, subschema, subpath)
+
+            if sub_errors:
+                errors.extend(sub_errors)
             else:
-                parsed[field] = value
-        except Exception:
-            clean_schema['properties'].pop(field, None)
-            if(field in clean_schema['required']):
-                clean_schema['required'].remove(field)
-            errors.append(f"{field} has invalid {expected_type} value: {value}")
+                parsed[key] = parsed_sub 
+                pruned_props[key] = pruned_subschema
 
-    try :
-        validate(instance=parsed, schema=clean_schema)
+        # rebuild pruned_schema for this object level so that it can be used in next recursive
+        pruned_schema["properties"] = pruned_props
+        pruned_schema["required"] = [r for r in required if r in pruned_props]
+
+        return parsed, pruned_schema, errors
+
+    expected_type = schema.get("type")
+    try:
+        if expected_type in _SCALAR_TYPES:
+            parsed_scalar = _coerce_scalar(node, expected_type)
+            return parsed_scalar, pruned_schema, errors
+        else:
+            return node, pruned_schema, errors
+    except Exception as exc:
+        errors.append((path, f"invalid {expected_type}: {node} ({exc})"))
+        return None, {}, errors
+
+def validate_row(row: dict, schema: dict, row_number: int = None):
+    """
+    Parse & validate one row (dict) against a nested JSON Schema.
+    Returns (is_valid: bool, parsed_or_errors)
+    """
+    parsed, pruned_schema, parse_errors = _parse_node(row, schema)
+
+    if parse_errors:
+        # convert tuple list to simple strings for caller
+        return False, [f"Row {row_number}: {p}: {m}" for p, m in parse_errors]
+
+    try:
+        validate(instance=parsed, schema=pruned_schema)
+        return True, parsed
     except ValidationError as e:
-        errors.append(e.message)
+        # build similar path.message style
+        path = ".".join([str(p) for p in e.path]) or "root"
+        return False, [f"Row {row_number}: {path}: {e.message}"]
 
-    if errors:
-            return False, errors
-
-    return True, parsed
-
-
-def validate_csv(csv_path, schema_path):
-    print("Reading Template ...")
-    schema = load_schema(schema_path)
-    print("Template Loaded Successfully ✅")
+def validate_csv(csv_path, schemas):
 
     try:
         print("Reading CSV ...")
@@ -86,19 +122,24 @@ def validate_csv(csv_path, schema_path):
         print("❌ Failed to read CSV:", e)
         return
 
-    df = preprocess_dataframe(df, schema)
+    mapped_data = df.apply(map_row, axis=1).tolist()
 
     results = []
     parsed_rows = []
 
-    for idx, row in df.iterrows():
-        is_valid, outcome = validate_row(row, schema)
-        if is_valid:
-            parsed_rows.append(outcome)
-        results.append({
-            "row": idx + 2,
-            "valid": is_valid,
-            "errors": outcome if not is_valid else []
-        })
-
+    for idx, row in enumerate(mapped_data, start=2):
+        final_res = []
+        for level, data in enumerate(row):
+            schema = schemas[level]
+            is_valid, outcome = validate_row(data, schema, row_number=idx)
+            results.append({
+                "row": idx + 2,
+                "valid": is_valid,
+                "errors": outcome if not is_valid else []
+            })
+            if is_valid:
+                final_res.append(outcome)
+            else:
+                final_res.append({})
+        parsed_rows.append(final_res)
     return results, parsed_rows
