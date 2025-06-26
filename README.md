@@ -24,9 +24,11 @@ You will need:
 
 Let's say we have a template hierarchy:
 
+```
 Base
 ├── Middle East Adventure
 │ ├── Hotel
+```
 
 `map_row` should be like:
 
