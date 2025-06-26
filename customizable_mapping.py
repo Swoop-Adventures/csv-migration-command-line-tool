@@ -6,6 +6,7 @@ def map_row(row):
             "countryName" : row['Country Name']
         },
         {
-            "hotelName" : row['Hotel Name']
+            "hotelName" : row['Hotel Name'],
+            "componentName" : row['Hotel Name'] # can be whatever value from the row. It will be displayed as component name
         }
     ]

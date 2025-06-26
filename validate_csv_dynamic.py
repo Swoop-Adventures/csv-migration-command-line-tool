@@ -113,7 +113,6 @@ def validate_row(row: dict, schema: dict, row_number: int = None):
         return False, [f"Row {row_number}: {path}: {e.message}"]
 
 def validate_csv(csv_path, schemas):
-
     try:
         print("Reading CSV ...")
         df = pd.read_csv(csv_path)
@@ -138,6 +137,8 @@ def validate_csv(csv_path, schemas):
                 "errors": outcome if not is_valid else []
             })
             if is_valid:
+                if 'componentName' in data and data['componentName'] != None:
+                    outcome['componentName'] = data['componentName']
                 final_res.append(outcome)
             else:
                 final_res.append({})
