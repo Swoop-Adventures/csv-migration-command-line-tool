@@ -42,7 +42,6 @@ def run_loop():
             if invalid:
                 print("\n❌ Validation failed on the following rows:")
                 for r in invalid:
-                    print(f"Row {r['row']}:")
                     for err in r["errors"]:
                         print("  -", err)
                 print("Please correct the above before retry")
