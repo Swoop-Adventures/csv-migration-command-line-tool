@@ -7,6 +7,7 @@ This is a command-line application that uses JSON schema to validate the importe
 - Ensure Python is installed.
 - Run `pip install jsonschema pandas requests python-dotenv` to install required packages.
 - CSV file ends with .csv should be ready to input.
+- Configure .env file
 
 ## To run the application
 
@@ -18,7 +19,7 @@ You will need:
 
 - To customize `map_row` based on how you want the data to be extracted from each CSV row.
 - The `map_row` function must map the data from the top to the lowest level template structure.
-- For by step user guide, [Visit This Google Doc](https://docs.google.com/document/d/1RmSBVvFJEpZxZq6Lquh9uBI92rMPAu33P52AtbdGPGk/edit?usp=sharing) 
+- For by step user guide, [Visit This Google Doc](https://docs.google.com/document/d/1RmSBVvFJEpZxZq6Lquh9uBI92rMPAu33P52AtbdGPGk/edit?usp=sharing)
 
 ## Example
 
