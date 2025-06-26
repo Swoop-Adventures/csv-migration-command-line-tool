@@ -1,24 +1,24 @@
 # CSV Migration Command Line Tool
 
-This is a command line application that uses json schema to validate the imported csv file row by row using json validator.
+This is a command-line application that uses JSON schema to validate the imported CSV file row by row using JSON validator.
 
-## Before running application
+## Before running the application
 
-- Ensure python is installed.
-- run `pip install jsonschema pandas requests python-dotenv` to install required packages.
-- csv file ends with .csv should be ready to input.
+- Ensure Python is installed.
+- Run `pip install jsonschema pandas requests python-dotenv` to install required packages.
+- CSV file ends with .csv should be ready to input.
 
-## To run application
+## To run the application
 
-- Enter command line `python app.py`.
+- Enter the command line `python app.py`.
 
 ## Guide to use
 
 You will need:
 
-- To customize `map_row` based on how you want the data to be extracted from each csv row.
-- The `map_row` function must map the data from top to lowest level template structure.
-- To have an array of template ids from top to low level and replace the value of variable `template_ids` in file line 8 `app.py`.
+- To customize `map_row` based on how you want the data to be extracted from each CSV row.
+- The `map_row` function must map the data from the top to the lowest level template structure.
+- For by step user guide, [Visit This Google Doc](https://docs.google.com/document/d/1RmSBVvFJEpZxZq6Lquh9uBI92rMPAu33P52AtbdGPGk/edit?usp=sharing) 
 
 ## Example
 
@@ -44,10 +44,4 @@ def map_row(row):
             "hotelName" : row['Hotel Name']
         }
     ]
-```
-
-`template_ids` variable should be like this.
-
-```python
-template_ids=["template_base_v1_id", "template_middle_east_adventure_v2_id", "template_hotel_v4_id"]
 ```
