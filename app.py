@@ -10,7 +10,7 @@ def run_loop():
     print("🔁 CSV Validator and Migration App (Ctrl+C or type 'exit' to quit)")
 
     try:
-        template_ids = []
+        template_ids =  [] 
 
         if len(template_ids) == 0:
             template_ids = getTemplateIds()
@@ -24,16 +24,21 @@ def run_loop():
         print(f"Friendly Reminder: copy and paste this array {template_ids} into template_ids variable if it is required in future.")
         
         while True:
-            csv_path = input("\nEnter CSV file path: ").strip()
+            room_csv_path = input("\nEnter Room CSV file path: ").strip()
+            csv_path = input("\nEnter Accommodation CSV file path: ").strip()
             if csv_path.lower() == "exit":
                 break
+            
+            if not os.path.exists(room_csv_path):
+                print("❌ Room CSV file not found.")
+                continue
 
             if not os.path.exists(csv_path):
-                print("❌ CSV file not found.")
+                print("❌ Accommodation CSV file not found.")
                 continue
 
             try:
-                results, parsed_json = validate_csv(csv_path, json_schemas)
+                results, parsed_json = validate_csv(room_csv_path, csv_path, json_schemas)
             except Exception as e:
                 print(f"❌ Validation error: {e}")
                 continue

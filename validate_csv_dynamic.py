@@ -1,7 +1,7 @@
 import json
 import pandas as pd
 from jsonschema import validate, ValidationError
-from customizable_mapping import map_row
+from customizable_mapping import map_row, map_room_row
 import copy
 
 _SCALAR_TYPES = {"integer", "number", "boolean", "string"}
@@ -112,11 +112,35 @@ def validate_row(row: dict, schema: dict, row_number: int = None):
         path = ".".join([str(p) for p in e.path]) or "root"
         return False, [f"Row {row_number}: {path}: {e.message}"]
 
-def validate_csv(csv_path, schemas):
+def validate_csv(room_csv_path, csv_path, schemas):
     try:
-        print("Reading CSV ...")
+
+        # Load room csv and accommodation csv separately
+        print("Reading Room CSV ...")
+        df_room = pd.read_csv(room_csv_path)
+        print("Room CSV file loaded successfully ✅")
+
+        print("Reading Accommodation CSV ...")
         df = pd.read_csv(csv_path)
-        print("CSV file loaded successfully ✅")
+        print("Accommodation CSV file loaded successfully ✅")
+
+        # Ensure the column exists first
+        df['roomCabinFacilities'] = None
+
+        mapped_room_data = df_room.apply(map_room_row, axis=1).tolist()
+
+        # Map room facilites array into accommodation data frame
+        for idx, row in df.iterrows():
+            name = row['Name']
+            matching_facilities = [
+                {k: v for k, v in item.items() if k != 'accomoName'}
+                for item in mapped_room_data
+                if item['accomoName'] == name
+            ]
+        
+        # Convert to list of dicts (or just a list of values if you prefer)
+        df.at[idx, 'roomCabinFacilities'] = matching_facilities
+
     except Exception as e:
         print("❌ Failed to read CSV:", e)
         return
