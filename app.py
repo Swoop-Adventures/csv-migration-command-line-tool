@@ -10,7 +10,7 @@ def run_loop():
     print("🔁 CSV Validator and Migration App (Ctrl+C or type 'exit' to quit)")
 
     try:
-        template_ids =  [] 
+        template_ids =  ['template_aca16a46ec3842ca85d182ee9348f627', 'template_915c867ecc884bb6ac084403f9d4ba23']
 
         if len(template_ids) == 0:
             template_ids = getTemplateIds()

@@ -125,7 +125,7 @@ def validate_csv(room_csv_path, csv_path, schemas):
         print("Accommodation CSV file loaded successfully ✅")
 
         # Ensure the column exists first
-        df['roomCabinFacilities'] = None
+        df['roomsCabinCategories'] = None
 
         mapped_room_data = df_room.apply(map_room_row, axis=1).tolist()
 
@@ -137,9 +137,8 @@ def validate_csv(room_csv_path, csv_path, schemas):
                 for item in mapped_room_data
                 if item['accomoName'] == name
             ]
-        
-        # Convert to list of dicts (or just a list of values if you prefer)
-        df.at[idx, 'roomCabinFacilities'] = matching_facilities
+            # Convert to list of dicts (or just a list of values if you prefer)
+            df.at[idx, 'roomsCabinCategories'] = matching_facilities
 
     except Exception as e:
         print("❌ Failed to read CSV:", e)

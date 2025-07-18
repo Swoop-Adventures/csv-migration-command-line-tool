@@ -51,7 +51,7 @@ def map_row(row):
                 "date": date,
                 "inspectionNotes": "" if pd.isna(notes) else notes
             })
-
+        
     return [
         {},
         {
@@ -109,7 +109,7 @@ def map_row(row):
                 "breakfastStartTime": row.get("Breakfast Start Time") or "",
                 "breakfastEndTime": row.get("Breakfast End Time") or ""
             },
-            "roomCabinFacilities": row.get('roomCabinFacilities'),
+            "roomsCabinCategories": row.get('roomsCabinCategories'),
             "componentName" : row.get("Name")
         }
     ]
@@ -117,13 +117,13 @@ def map_row(row):
 def map_room_row(room):
     image = room.get("Image", "")
     return {
-        "roomName": room.get("Room/Cabin name", ""),
+        "roomCabinName": room.get("Room/Cabin name", ""),
         "roomDescription": (
             room.get("Room/Cabin Description", "") or room.get("Room/Cabin description", "")
         ),
         "images": [image] if isinstance(image, str) and image else [],
         "size": room.get("Size", ""),
-        "bedConfiguration": room.get("Bed Configurations", ""),
+        "bedConfigurations": room.get("Bed Configurations", ""),
         "bathroomType": "Private" if "private" in str(room.get("Bathroom Type", "")).lower() else "Shared",
         "bath": normalize_boolean(room.get("Bath")),
         "balcony": normalize_boolean(room.get("Balcony")),
