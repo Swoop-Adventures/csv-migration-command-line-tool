@@ -170,9 +170,7 @@ def map_room_row(room):
     image = room.get("Image", "")
     return {
         "roomCabinName": room.get("Room/Cabin name") or None,
-        "roomDescription": (
-            room.get("Room/Cabin Description", "") or room.get("Room/Cabin description", "")
-        ),
+        "roomDescription": (lambda desc: "" if pd.isna(desc) else desc)(room.get("Room/Cabin Description", "") or room.get("Room/Cabin description", "")),
         "images": [image] if isinstance(image, str) and image else [],
         "size": str(room.get("Size") or ""),
         "bedConfigurations": parse_bed_configurations(room.get("Bed Configurations")) or None,
