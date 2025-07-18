@@ -158,6 +158,9 @@ def map_row(row):
             },
             "roomsCabinCategories": row.get('roomsCabinCategories'),
             "componentName" : row.get("Name")
+        },
+        {"location": row.get("Location") or None,
+         "componentName" : row.get("Name")
         }
     ]
 
