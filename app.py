@@ -28,10 +28,10 @@ from mappings.ship_accom import map_ship_accommodation_component
 ACCESS_TOKEN = ""
 
 SHEET_PROCESS_ORDER = [
-    # "Location",
-    # "Ground Accom",
-    # "Ship Accom",
-    # "ANT Ship Accom",
+    "Location",
+    "Ground Accom",
+    "Ship Accom",
+    "ANT Ship Accom",
     # "Journeys",
     # "All Activities - For Upload",
     # "ANT Activities",
@@ -80,12 +80,12 @@ SHEET_TEMPLATE_MAP = {
     "Ship Accom": [
         "template_aca16a46ec3842ca85d182ee9348f627",  # Base
         "template_7546d5da287241629b5190f95346840e",  # Accom
-        "template_bb8caab1d3104257a75b7cb7dd958136",  # Gy
+        "template_bb8caab1d3104257a75b7cb7dd958136",  # Ground Accom
     ],
     "ANT Ship Accom": [
         "template_aca16a46ec3842ca85d182ee9348f627",  # Base
         "template_7546d5da287241629b5190f95346840e",  # Accom
-        "template_bb8caab1d3104257a75b7cb7dd958136",  # Gy
+        "template_bb8caab1d3104257a75b7cb7dd958136",  # Ship Accom
     ],
     "All Activities - For Upload": [
         "template_aca16a46ec3842ca85d182ee9348f627", # Base

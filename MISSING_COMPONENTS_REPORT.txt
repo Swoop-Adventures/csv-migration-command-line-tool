@@ -1,0 +1,14 @@
+MISSING COMPONENT REFERENCES REPORT (BY SHEET)
+Generated: 2026-01-30 11:43:41
+
+WHAT TO FIX:
+The following component names in your Excel sheets don't match any uploaded components.
+Please check the spelling or make sure these components exist in the system.
+
+====================================================================================================
+
+SHEET: Ground Accom
+---------------------------------------------------------------------------------
+Row      | Row Name                 | Missing Component        | Type            
+---------------------------------------------------------------------------------
+385      | Poincenot Comfort Camp   | "Poincenot Comfort Camp" | location        

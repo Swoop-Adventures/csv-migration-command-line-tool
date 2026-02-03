@@ -163,7 +163,8 @@ def map_ship_accommodation_component(row, template_ids, COMPONENT_ID_MAP, contex
             "igloos": get_stripped(row, "Igloos").lower() == "true",
             "scienceCentreLaboratory": get_stripped(row, "Science Centre/Laboratory").lower() == "true"
         },
-        "type": get_stripped(row, "Type") or 'Other'
+        "type": get_stripped(row, "Type") or 'Other',
+        "vesselId": get_stripped(row, "vesselID") or ""
     }
 
     component_fields = [

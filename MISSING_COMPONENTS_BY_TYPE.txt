@@ -1,0 +1,13 @@
+MISSING COMPONENT REFERENCES REPORT (BY TYPE)
+Generated: 2026-01-30 11:43:41
+
+This report groups all unique missing component references by type.
+Each entry shows the component name and how many times it was missing.
+
+====================================================================================================
+
+TYPE: location
+--------------------------------------------------------------------------------
+Missing Component          | Occurrences
+-----------------------------------------
+"Poincenot Comfort Camp"   | 1
