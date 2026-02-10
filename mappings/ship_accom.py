@@ -130,7 +130,9 @@ def map_ship_accommodation_component(row, template_ids, COMPONENT_ID_MAP, contex
         }
 
         for _, r in matching_rooms.iterrows():
+
             room_obj = {
+                "roomID": str(r.get("RoomID") or ""), 
                 "sizem2": parse_room_size(str(r.get("Size"))) or -1.0,
                 "bedConfigurations": [
                     b.strip()
@@ -147,7 +149,7 @@ def map_ship_accommodation_component(row, template_ids, COMPONENT_ID_MAP, contex
                     else ["Non-renewable"]
                 ),
                 "name": str(r.get("Room/Cabin name") or "Unnamed Cabin"),
-                "type": "Cabin" if "Cabin" in str(r.get("Room/Cabin name")) else "Hotel",
+                "type": "Cabin",
                 "description": str(r.get("Room/Cabin description") or "")
             }
             level_1["rooms"].append(room_obj)

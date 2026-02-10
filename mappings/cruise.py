@@ -178,6 +178,7 @@ def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_
 
     inclusions_raw = re.split(r'[\n\r]*[•\-*•]\s*', get_stripped(row, "Inclusions"))
     exclusions_raw = re.split(r'[\n\r]*[•\-*•]\s*', get_stripped(row, "Exclusions"))
+    trip_summary = get_stripped(row, "Trip Summary") or ""
 
     # Strip whitespace and drop empty lines
     inclusions = [i.strip() for i in inclusions_raw if i.strip()]
@@ -206,7 +207,8 @@ def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_
             "hasNationalParkFee": False
         },
         "inclusions": inclusions,
-        "exclusions": exclusions
+        "exclusions": exclusions,
+        "tripSummary": trip_summary
     }
 
     activities = [a.strip() for a in get_stripped(row, "Activity").split("\n") if a.strip()]
