@@ -150,7 +150,8 @@ def map_ship_accommodation_component(row, template_ids, COMPONENT_ID_MAP, contex
                 ),
                 "name": str(r.get("Room/Cabin name") or "Unnamed Cabin"),
                 "type": "Cabin",
-                "description": str(r.get("Room/Cabin description") or "")
+                "description": str(r.get("Room/Cabin description") or ""),
+                "image" : str(r.get("Image") or "")
             }
             level_1["rooms"].append(room_obj)
 
