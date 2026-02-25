@@ -122,7 +122,7 @@ def map_multi_day_activity_component(row, template_ids, COMPONENT_ID_MAP, contex
             "upperHeightLimitM": -1,
             "other":""
         },
-        "additionalNotes":"",
+        "additionalNotes":[""],
         "facilities": {
             "isWheelChairAccessible": False,
             "isOkWhenPregnant": False,
