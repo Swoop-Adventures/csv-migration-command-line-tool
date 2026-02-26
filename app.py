@@ -28,10 +28,10 @@ from mappings.ship_accom import map_ship_accommodation_component
 ACCESS_TOKEN = ""
 
 SHEET_PROCESS_ORDER = [
-    "Location",
-    "Ground Accom",
-    "Ship Accom",
-    "ANT Ship Accom",
+    #"Location",
+    #"Ground Accom",
+    #"Ship Accom",
+    #"ANT Ship Accom",
     # "Journeys",
     # "All Activities - For Upload",
     # "ANT Activities",
@@ -40,7 +40,7 @@ SHEET_PROCESS_ORDER = [
     # "Excursions Package",
     # "Private Tours Package",
     # "All Inclusive Hotel Package",
-    # "Multi-day Activity Package",
+    "Multi-day Activity Package",
     # "PAT Cruise Packages ",
     # "ANT Cruise Packages",
 ]
