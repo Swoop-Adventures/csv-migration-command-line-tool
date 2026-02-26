@@ -140,7 +140,7 @@ def map_private_tours_component(row, template_ids, COMPONENT_ID_MAP, context=Non
             "upperHeightLimitM": -1,
             "other":""
         },
-        "additionalNotes":"",
+        "additionalNotes":[""],
         "facilities": {
             "isWheelChairAccessible": False,
             "isOkWhenPregnant": False,
