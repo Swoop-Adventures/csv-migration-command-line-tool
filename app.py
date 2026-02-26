@@ -25,22 +25,22 @@ from mappings.multi_day_activity import map_multi_day_activity_component
 from mappings.cruise import map_cruise_component
 from mappings.ship_accom import map_ship_accommodation_component
 
-ACCESS_TOKEN = "ya29.a0ATkoCc5VdeI3A6RBBFBU23NJOVngCcgrQTp-uq1clfbr0Itl4_V-LnEDeCnzI6HKHTCJrou5IrMHhxuTRQPaVuJCbIcJjN1GI4e5urjV_RBL-hUOkYNky1T-eUDRcGnDTUFvJ6NFu3HiqeCUd8aZVJMRwBttmGcxRmNviNu5M3rLykxSs_b5uihFNAbV-SS7JGADyHr4hSfpaCgYKASYSARUSFQHGX2MimHgszLPGLxSt7P8l6AFo3Q0211"
+ACCESS_TOKEN = ""
 
 SHEET_PROCESS_ORDER = [
-    # "Location",
-    # "Ground Accom",
-    # "Ship Accom",
-    # "ANT Ship Accom",
-    # "Journeys",
-    # "All Activities - For Upload",
-    # "ANT Activities",
-    # "All Transfers - For Upload",
-    # "ANT Transfers",
+    "Location",
+    "Ground Accom",
+    "Ship Accom",
+    "ANT Ship Accom",
+    "Journeys",
+    "All Activities - For Upload",
+    "ANT Activities",
+    "All Transfers - For Upload",
+    "ANT Transfers",
     "Excursions Package",
-    "Private Tours Package",
+    # "Private Tours Package",
     # "All Inclusive Hotel Package",
-    "Multi-day Activity Package",
+    # "Multi-day Activity Package",
     # "PAT Cruise Packages ",
     # "ANT Cruise Packages",
 ]

@@ -1,11 +1,243 @@
 MISSING COMPONENT REFERENCES REPORT (BY SHEET)
-Generated: 2026-02-26 13:22:55
+Generated: 2026-02-26 16:00:47
 
 WHAT TO FIX:
 The following component names in your Excel sheets don't match any uploaded components.
 Please check the spelling or make sure these components exist in the system.
 
 ====================================================================================================
+
+SHEET: Ground Accom
+---------------------------------------------------------------------------------------------------------
+Row      | Row Name                             | Missing Component                    | Type            
+---------------------------------------------------------------------------------------------------------
+28       | Ayres De Recoleta                    | "Ayres De Recoleta"                  | location        
+142      | Hilton Garden Inn Santiago Airport   | "Hilton Garden Inn Santiago Airport" | location        
+385      | Poincenot Comfort Camp               | "Poincenot Comfort Camp"             | location        
+433      | Santiago Airport Holiday Inn         | "Santiago Airport Holiday Inn"       | location        
+
+SHEET: Journeys
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Row      | Row Name                                                                                                                | Missing Component                                                | Type            
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+5        | Puerto Natales to Pehoé/Serrano Village/Administra                                                                      | "Pehoé/Serrano Village/Administration"                           | location        
+11       | Puerto Natales Airport (PNT) to Refugio Central/Ec                                                                      | "Puerto Natales Airport (PNT)"                                   | location        
+12       | Punta Arenas Airport (PUQ) to Refugio Central/EcoC                                                                      | "Punta Arenas Airport (PUQ)"                                     | location        
+17       | Puerto Natales Airport (PNT) to Explora Torres del                                                                      | "Puerto Natales Airport (PNT)"                                   | location        
+18       | Punta Arenas Airport (PUQ) to Explora Torres del P                                                                      | "Punta Arenas Airport (PUQ)"                                     | location        
+25       | Patagonia Camp to Puerto Natales Airport (PNT) or                                                                       | "Puerto Natales Airport (PNT)"                                   | location        
+26       | Patagonia Camp to Punta Arenas Airport (PUQ) or re                                                                      | "Punta Arenas Airport (PUQ)"                                     | location        
+30       | Puerto Natales Airport (PNT) to Hotel Rio Serrano                                                                       | "Puerto Natales Airport (PNT)"                                   | location        
+32       | Punta Arenas Airport (PUQ) to Hotel Rio Serrano or                                                                      | "Punta Arenas Airport (PUQ)"                                     | location        
+35       | Puerto Natales Airport (PNT) to Hotel Las Torres o                                                                      | "Puerto Natales Airport (PNT)"                                   | location        
+37       | Punta Arenas Airport (PUQ) to Hotel Las Torres or                                                                       | "Punta Arenas Airport (PUQ)"                                     | location        
+42       | Puerto Natales Airport (PNT) to Tierra Patagonia o                                                                      | "Puerto Natales Airport (PNT)"                                   | location        
+44       | Puerto Natales Airport (PNT) to Cerro Guido or rev                                                                      | "Puerto Natales Airport (PNT)"                                   | location        
+46       | Punta Arenas Airport (PUQ) to Cerro Guido or rever                                                                      | "Punta Arenas Airport (PUQ)"                                     | location        
+49       | Puerto Natales Airport (PNT) to Puerto Natales or                                                                       | "Puerto Natales Airport (PNT)"                                   | location        
+52       | Punta Arenas Airport (PUQ) to Punta Arenas or reve                                                                      | "Punta Arenas Airport (PUQ)"                                     | location        
+62       | El Chaltén to Los Huemules Reserve/Explora Chaltén                                                                      | "Los Huemules Reserve/Explora Chaltén"                           | location        
+71       | El Calafate (Hotels) to El Calafate Airport (FTE)                                                                       | "El Calafate Airport (FTE)"                                      | location        
+72       | El Calafate Airport (FTE) to El Chaltén or reverse                                                                      | "El Calafate Airport (FTE)"                                      | location        
+74       | El Calafate Airport (FTE) to Explora El Chaltén or                                                                      | "El Calafate Airport (FTE)"                                      | location        
+75       | El Calafate Airport (FTE) to Eolo or reverse                                                                            | "El Calafate Airport (FTE)"                                      | location        
+77       | Puerto Montt Airport (PMC) to Puerto Varas or reve                                                                      | "Puerto Montt, El Tepual Airport (PMC)"                          | location        
+78       | Puerto Montt Airport (PMC) to Chiloe or reverse                                                                         | "Puerto Montt, El Tepual Airport (PMC)"                          | location        
+81       | Temuco Airport (ZCO) to Parque Futangue or reverse                                                                      | "Temuco Airport (ZCO)"                                           | location        
+83       | Puerto Montt Airport (PMC) to Parque Futangue or r                                                                      | "Puerto Montt, El Tepual Airport (PMC)"                          | location        
+84       | Puerto Montt Airport (PMC) to Skorpios Pier or rev                                                                      | "Puerto Montt, El Tepual Airport (PMC)"                          | location        
+85       | Puerto Montt Airport (PMC) to Petrohue or reverse                                                                       | "Puerto Montt, El Tepual Airport (PMC)"                          | location        
+87       | Puerto Montt Airport (PMC) to Castro (Chiloe) or r                                                                      | "Puerto Montt, El Tepual Airport (PMC)"                          | location        
+91       | Puerto Montt Airport (PMC) to AWA or reverse                                                                            | "Puerto Montt, El Tepual Airport (PMC)"                          | location        
+92       | Castro Mocopulli Airport (MHC) to Refugia Chiloe o                                                                      | "Castro Mocopuli Airport (MHC)"                                  | location        
+93       | Puerto Montt Airport (PMC) to Refugia Chiloe or re                                                                      | "Puerto Montt, El Tepual Airport (PMC)"                          | location        
+97       | Puerto Montt Airport (PMC) to Barraco Lodge (Tagua                                                                      | "Puerto Montt, El Tepual Airport (PMC)"                          | location        
+107      | Temuco Airport (ZCO) to Pucon or reverse                                                                                | "Temuco Airport (ZCO)"                                           | location        
+113      | Balmaceda Airport (BBA) to Cerro Castillo or rever                                                                      | "Balmaceda Airport (BBA)"                                        | location        
+116      | Mallin Colorado to Balmaceda Airport (BBA)                                                                              | "Balmaceda Airport (BBA)"                                        | location        
+123      | Puerto Varas to Puerto Montt Aerodrome (for Chaite                                                                      | "Puerto Montt Aerodrome (SCPF)"                                  | location        
+131      | Balmaceda Airport (BBA) to Explora Patagonia Natio                                                                      | "Balmaceda Airport (BBA)"                                        | location        
+138      | Bariloche Airport (BRC) to Bariloche or reverse                                                                         | "Bariloche Airport (BRC)"                                        | location        
+140      | Bariloche Airport (BRC) to Peuma Hue or reverse                                                                         | "Bariloche Airport (BRC)"                                        | location        
+146      | Aeroparque Internacional Jorge Newbery (AEP) - Min                                                                      | "Aeroparque Internacional Jorge Newbery (AEP)"                   | location        
+146      | Aeroparque Internacional Jorge Newbery (AEP) - Min                                                                      | "Ministro Pistarini International Airport, Ezeiza (EZE)"         | location        
+147      | Aeroparque Internacional Jorge Newbery (AEP) - Pal                                                                      | "Aeroparque Internacional Jorge Newbery (AEP)"                   | location        
+148      | Ministro Pistarini International Airport, Ezeiza (                                                                      | "Ministro Pistarini International Airport, Ezeiza (EZE)"         | location        
+149      | Aeroparque Internacional Jorge Newbery (AEP) - Rec                                                                      | "Aeroparque Internacional Jorge Newbery (AEP)"                   | location        
+150      | Ministro Pistarini International Airport, Ezeiza (                                                                      | "Ministro Pistarini International Airport, Ezeiza (EZE)"         | location        
+151      | Aeroparque Internacional Jorge Newbery (AEP) - San                                                                      | "Aeroparque Internacional Jorge Newbery (AEP)"                   | location        
+152      | Ministro Pistarini International Airport, Ezeiza (                                                                      | "Ministro Pistarini International Airport, Ezeiza (EZE)"         | location        
+155      | Aeroparque Internacional Jorge Newbery (AEP) - San                                                                      | "Aeroparque Internacional Jorge Newbery (AEP)"                   | location        
+156      | Ministro Pistarini International Airport, Ezeiza (                                                                      | "Ministro Pistarini International Airport, Ezeiza (EZE)"         | location        
+161      | Aeroparque Internacional Jorge Newbery (AEP) - Por                                                                      | "Aeroparque Internacional Jorge Newbery (AEP)"                   | location        
+162      | Ministro Pistarini International Airport, Ezeiza (                                                                      | "Ministro Pistarini International Airport, Ezeiza (EZE)"         | location        
+169      | Aeroparque Internacional Jorge Newbery (AEP) - Cit                                                                      | "Aeroparque Internacional Jorge Newbery (AEP)"                   | location        
+170      | Ministro Pistarini International Airport, Ezeiza (                                                                      | "Ministro Pistarini International Airport, Ezeiza (EZE)"         | location        
+171      | Ushuaia Malvinas Argentinas (USH) - Hotel (City Ce                                                                      | "Ushuaia - Malvinas Argentinas International Airport (USH)"      | location        
+172      | Ushuaia Malvinas Argentinas (USH) - Port or revers                                                                      | "Ushuaia - Malvinas Argentinas International Airport (USH)"      | location        
+175      | Arturo Merino Benitez International Airport SCL -                                                                       | "Arturo Merino Benítez International Airport (SCL)"              | location        
+177      | Arturo Merino Benitez International Airport SCL -                                                                       | "Arturo Merino Benítez International Airport (SCL)"              | location        
+179      | Arturo Merino Benitez International Airport SCL -                                                                       | "Arturo Merino Benítez International Airport (SCL)"              | location        
+181      | Arturo Merino Benitez International Airport SCL -                                                                       | "Arturo Merino Benítez International Airport (SCL)"              | location        
+183      | Arturo Merino Benitez International Airport SCL -                                                                       | "Arturo Merino Benítez International Airport (SCL)"              | location        
+185      | Arturo Merino Benitez International Airport SCL -                                                                       | "Arturo Merino Benítez International Airport (SCL)"              | location        
+187      | Arturo Merino Benitez International Airport SCL -                                                                       | "Arturo Merino Benítez International Airport (SCL)"              | location        
+189      | Arturo Merino Benitez International Airport SCL -                                                                       | "Arturo Merino Benítez International Airport (SCL)"              | location        
+191      | Arturo Merino Benitez International Airport SCL -                                                                       | "Arturo Merino Benítez International Airport (SCL)"              | location        
+193      | Arturo Merino Benitez International Airport SCL to                                                                      | "Arturo Merino Benítez International Airport (SCL)"              | location        
+195      | Arturo Merino Benitez International Airport SCL -                                                                       | "Arturo Merino Benítez International Airport (SCL)"              | location        
+198      | Arturo Merino Benitez International Airport SCL -                                                                       | "Arturo Merino Benítez International Airport (SCL)"              | location        
+200      | Arturo Merino Benitez International Airport SCL -                                                                       | "Arturo Merino Benítez International Airport (SCL)"              | location        
+202      | El Plumerillo International Airport, Mendoza MDZ -                                                                      | "El Plumerillo International Airport, Mendoza MDZ"               | location        
+204      | El Plumerillo International Airport, Mendoza MDZ -                                                                      | "El Plumerillo International Airport, Mendoza MDZ"               | location        
+206      | El Plumerillo International Airport, Mendoza MDZ -                                                                      | "El Plumerillo International Airport, Mendoza MDZ"               | location        
+208      | El Plumerillo International Airport, Mendoza MDZ -                                                                      | "El Plumerillo International Airport, Mendoza MDZ"               | location        
+210      | El Plumerillo International Airport, Mendoza MDZ -                                                                      | "El Plumerillo International Airport, Mendoza MDZ"               | location        
+215      | El Loa Airport CJC - San Pedro de Atacama or rever                                                                      | "El Loa Airport (CJC)"                                           | location        
+218      | Cataratas of Iguazu International Airport IGR - Pu                                                                      | "Cataratas del Iguazú International Airport (IGR)"               | location        
+219      | Foz do Iguaçu International Airport IGU - Puerto I                                                                      | "Foz do Iguaçu International Airport (IGU)"                      | location        
+220      | Cataratas of Iguazu International Airport IGR - Be                                                                      | "Cataratas del Iguazú International Airport (IGR)"               | location        
+221      | Foz do Iguaçu International Airport IGU - Belmond                                                                       | "Foz do Iguaçu International Airport (IGU)"                      | location        
+222      | Cataratas of Iguazu International Airport IGR - Gr                                                                      | "Cataratas del Iguazú International Airport (IGR)"               | location        
+223      | Foz do Iguaçu International Airport IGU - Grand Me                                                                      | "Foz do Iguaçu International Airport (IGU)"                      | location        
+227      | Presidente Carlos Ibáñez del Campo International A                                                                      | "Presidente Carlos Ibáñez del Campo International Airport (PUQ)" | location        
+228      | Presidente Carlos Ibáñez del Campo International A                                                                      | "Presidente Carlos Ibáñez del Campo International Airport (PUQ)" | location        
+229      | Presidente Carlos Ibáñez del Campo International A                                                                      | "Presidente Carlos Ibáñez del Campo International Airport (PUQ)" | location        
+233      | Punta Arenas Hotel - Torres del Paine via Cerro Ne                                                                      | "Torres Del Paine"                                               | location        
+237      | Calama Airport (CJC) to San Pedro de Atacama (All                                                                       | "Calama Airport (CJC)"                                           | location        
+258      | Explora Uyuni Lodge to Uyuni Airport (UYU)                                                                              | "Uyuni Airport (UYU)"                                            | location        
+259      | Explora Uyuni Lodge to Calama Airport (CJC)                                                                             | "Calama Airport (CJC)"                                           | location        
+262      | Calama Airport (CJC) to Explora Atacama or reverse                                                                      | "Calama Airport (CJC)"                                           | location        
+263      | Calama Airport (CJC) to Tierra Atacama or reverse                                                                       | "Calama Airport (CJC)"                                           | location        
+264      | Calama Airport (CJC) to Awasi Atacama or reverse                                                                        | "Calama Airport (CJC)"                                           | location        
+265      | Mataveri International Airport (IPC) - Explora Rap                                                                      | "Mataveri International Airport (IPC)"                           | location        
+266      | Mataveri International Airport (IPC) - Hotel Taha                                                                       | "Mataveri International Airport (IPC)"                           | location        
+313      | Aeroparque Internacional Jorge Newbery (AEP) - Min                                                                      | "Aeroparque Internacional Jorge Newbery (AEP)"                   | location        
+313      | Aeroparque Internacional Jorge Newbery (AEP) - Min                                                                      | "Ministro Pistarini International Airport, Ezeiza (EZE)"         | location        
+314      | Aeroparque Internacional Jorge Newbery (AEP) - Pal                                                                      | "Aeroparque Internacional Jorge Newbery (AEP)"                   | location        
+315      | Ministro Pistarini International Airport, Ezeiza (                                                                      | "Ministro Pistarini International Airport, Ezeiza (EZE)"         | location        
+316      | Aeroparque Internacional Jorge Newbery (AEP) - Rec                                                                      | "Aeroparque Internacional Jorge Newbery (AEP)"                   | location        
+317      | Ministro Pistarini International Airport, Ezeiza (                                                                      | "Ministro Pistarini International Airport, Ezeiza (EZE)"         | location        
+318      | Aeroparque Internacional Jorge Newbery (AEP) - San                                                                      | "Aeroparque Internacional Jorge Newbery (AEP)"                   | location        
+319      | Ministro Pistarini International Airport, Ezeiza (                                                                      | "Ministro Pistarini International Airport, Ezeiza (EZE)"         | location        
+322      | Aeroparque Internacional Jorge Newbery (AEP) - San                                                                      | "Aeroparque Internacional Jorge Newbery (AEP)"                   | location        
+323      | Ministro Pistarini International Airport, Ezeiza (                                                                      | "Ministro Pistarini International Airport, Ezeiza (EZE)"         | location        
+328      | Aeroparque Internacional Jorge Newbery (AEP) - Por                                                                      | "Aeroparque Internacional Jorge Newbery (AEP)"                   | location        
+329      | Ministro Pistarini International Airport, Ezeiza (                                                                      | "Ministro Pistarini International Airport, Ezeiza (EZE)"         | location        
+336      | Aeroparque Internacional Jorge Newbery (AEP) - Cit                                                                      | "Aeroparque Internacional Jorge Newbery (AEP)"                   | location        
+337      | Ministro Pistarini International Airport, Ezeiza (                                                                      | "Ministro Pistarini International Airport, Ezeiza (EZE)"         | location        
+338      | Ushuaia Malvinas Argentinas (USH) - Hotel (City Ce                                                                      | "Ushuaia - Malvinas Argentinas International Airport (USH)"      | location        
+339      | Ushuaia Malvinas Argentinas (USH) - Port or revers                                                                      | "Ushuaia - Malvinas Argentinas International Airport (USH)"      | location        
+342      | Arturo Merino Benitez International Airport SCL -                                                                       | "Arturo Merino Benítez International Airport (SCL)"              | location        
+344      | Arturo Merino Benitez International Airport SCL -                                                                       | "Arturo Merino Benítez International Airport (SCL)"              | location        
+346      | Arturo Merino Benitez International Airport SCL -                                                                       | "Arturo Merino Benítez International Airport (SCL)"              | location        
+348      | Arturo Merino Benitez International Airport SCL -                                                                       | "Arturo Merino Benítez International Airport (SCL)"              | location        
+350      | Arturo Merino Benitez International Airport SCL -                                                                       | "Arturo Merino Benítez International Airport (SCL)"              | location        
+352      | Arturo Merino Benitez International Airport SCL -                                                                       | "Arturo Merino Benítez International Airport (SCL)"              | location        
+354      | Arturo Merino Benitez International Airport SCL -                                                                       | "Arturo Merino Benítez International Airport (SCL)"              | location        
+356      | Arturo Merino Benitez International Airport SCL -                                                                       | "Arturo Merino Benítez International Airport (SCL)"              | location        
+358      | Arturo Merino Benitez International Airport SCL -                                                                       | "Arturo Merino Benítez International Airport (SCL)"              | location        
+360      | Arturo Merino Benitez International Airport SCL to                                                                      | "Arturo Merino Benítez International Airport (SCL)"              | location        
+362      | Arturo Merino Benitez International Airport SCL -                                                                       | "Arturo Merino Benítez International Airport (SCL)"              | location        
+365      | Arturo Merino Benitez International Airport SCL -                                                                       | "Arturo Merino Benítez International Airport (SCL)"              | location        
+367      | Arturo Merino Benitez International Airport SCL -                                                                       | "Arturo Merino Benítez International Airport (SCL)"              | location        
+376      | Puerto Natales Airport (PNT) to Pudeto or reverse                                                                       | "Puerto Natales Airport (PNT)"                                   | location        
+435      | Oco's Place to Barraco Lodge or reverse                                                                                 | "Oco's Place"                                                    | location        
+438      | Hotel Remota to the Rupestre area or reverse                                                                            | "Rupestre"                                                       | location        
+483      | Puerto Iguazu (IGR) to Activity or reverse                                                                              | "Cataratas del Iguazú International Airport (IGR)"               | location        
+485      | Cataratas/Puerto Iguazú Hotel to Puerto Iguazú Air                                                                      | "Cataratas del Iguazú International Airport (IGR)"               | location        
+486      | Foz do Iguaçu International Airport (IGU) to Awasi                                                                      | "Foz do Iguaçu International Airport (IGU)"                      | location        
+487      | Cataratas del Iguazú International Airport (IGR) t                                                                      | "Cataratas del Iguazú International Airport (IGR)"               | location        
+489      | Puerto Montt Airport (PMC) to Chiloé Island or rev                                                                      | "Puerto Montt, El Tepual Airport (PMC)"                          | location        
+492      | Chaitén Airport (WCH) to Puerto Montt Aerodrome or                                                                      | "Puerto Montt, El Tepual Airport (PMC)"                          | location        
+492      | Chaitén Airport (WCH) to Puerto Montt Aerodrome or                                                                      | "Chaitén Airport (WCH)"                                          | location        
+498      | Puerto Madryn Airport (PMY) to Puerto Madryn or re                                                                      | "Puerto Madryn Airport (PMY)"                                    | location        
+499      | Puerto Madryn Airport (PMY) to Puerto Piramides or                                                                      | "Puerto Madryn Airport (PMY)"                                    | location        
+502      | Balmaceda Airport (BBA) to Mallin Colorado Lodge o                                                                      | "Balmaceda Airport (BBA)"                                        | location        
+504      | Puerto Pirámides to Trelew Airport (REL) or revers                                                                      | "Trelew Airport (REL)"                                           | location        
+506      | Bariloche Airport (BRC) to Bariloche or reverse                                                                         | "Bariloche Airport (BRC)"                                        | location        
+508      | Ushuaia Hotel to Ushuaia Airport (USH) or reverse                                                                       | "Ushuaia Airport (USH)"                                          | location        
+509      | Mataveri International Airport (IPC) to Explora Ea                                                                      | "Mataveri International Airport (IPC)"                           | location        
+518      | Aguas Arriba Lodge to El Calafate Airport (FTE) or                                                                      | "El Calafate Airport (FTE)"                                      | location        
+559      | Ushuaia Hotel to Ushuaia Airport (USH) or reverse                                                                       | "Ushuaia Airport (USH)"                                          | location        
+568      | Punta Arenas Airport (PUQ) to Puerto Williams Airp                                                                      | "Punta Arenas Airport (PUQ)"                                     | location        
+568      | Punta Arenas Airport (PUQ) to Puerto Williams Airp                                                                      | "Puerto Williams Airport (WPU)"                                  | location        
+573      | El Calafate to El Calafate Airport (FTE) or revers                                                                      | "El Calafate Airport (FTE)"                                      | location        
+574      | Punta Arenas Airport (PUQ) to Puerto Natales or re                                                                      | "Punta Arenas Airport (PUQ)"                                     | location        
+575      | El Calafate Hotel to El Calafate Airport (FTE) or                                                                       | "El Calafate Airport (FTE)"                                      | location        
+580      | Punta Arenas to Torres del Paine or reverse                                                                             | "Torres Del Paine"                                               | location        
+581      | Punta Arenas to Punta Arenas Airport (PUQ) or reve                                                                      | "Punta Arenas Airport (PUQ)"                                     | location        
+583      | El Calafate Airport (FTE) to Jorge Newbery Airport                                                                      | "El Calafate Airport (FTE)"                                      | location        
+583      | El Calafate Airport (FTE) to Jorge Newbery Airport                                                                      | "Jorge Newbery Airport, Buenos Aires (AEP)"                      | location        
+585      | Ushuaia Airport (USH) to Jorge Newbery Airport, Bu                                                                      | "Ushuaia Airport (USH)"                                          | location        
+585      | Ushuaia Airport (USH) to Jorge Newbery Airport, Bu                                                                      | "Jorge Newbery Airport, Buenos Aires (AEP)"                      | location        
+587      | Temuco Airport (ZCO) to Conguillio National Park o                                                                      | "Temuco Airport (ZCO)"                                           | location        
+595      | Estancia Rincón Chico to Trelew Airport (REL) or r                                                                      | "Trelew Airport (REL)"                                           | location        
+597      | Puerto Varas to Puerto Montt Aerodrome (SCPF) (for                                                                      | "Puerto Montt Aerodrome (SCPF)"                                  | location        
+600      | Ushuaia Airport (USH) or Port to hotel in Ushuaia                                                                       | "Ushuaia Airport (USH)"                                          | location        
+602      | El Plumerillo International Airport (MDZ) to Awasi                                                                      | "El Plumerillo International Airport, Mendoza MDZ"               | location        
+
+SHEET: All Activities - For Upload
+-------------------------------------------------------------------------------------------------------------
+Row      | Row Name                                            | Missing Component         | Type            
+-------------------------------------------------------------------------------------------------------------
+124      | Temuco Airport to Conguillío National Park Biking   | "Temuco Airport (ZCO)"    | location        
+795      | Bariloche to Villa La Angostura Self-Drive          | "Bariloche Airport (BRC)" | location        
+802      | San Martín de Los Andes to Bariloche Self-Drive     | "Bariloche Airport (BRC)" | location        
+
+SHEET: All Transfers - For Upload
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Row       | Row Name                                               | Missing Component                                                                      | Type           
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+194       | EcoCamp to El Calafate                                 | "Puerto Natales to El Calafate (or reverse)"                                           | journey        
+197       | EcoCamp to Puerto Natales (All)                        | "Puerto Natales to Refugio Central/EcoCamp/Las Torres via Cerro Castillo (or reverse)" | journey        
+198       | Puerto Natales to EcoCamp Patagonia                    | "Puerto Natales to Refugio Central/EcoCamp/Las Torres via Cerro Castillo (or reverse)" | journey        
+268       | El Chaltén to Rio Electrico (Laguna de Los Tres)       | "El Chaltén to Rio Electrico (Laguna de Los Tres)"                                     | journey        
+270       | El Chaltén to Rio Electrico (Laguna de Los Tres)       | "El Chaltén to Rio Electrico (Laguna de Los Tres)"                                     | journey        
+271       | El Chaltén to Rio Electrico (Laguna de Los Tres)       | "El Chaltén to Rio Electrico (Laguna de Los Tres)"                                     | journey        
+529       | Public Bus El Calafate to Puerto Natales               | "Puerto Natales to El Calafate (or reverse)"                                           | journey        
+530       | Public Bus El Calafate to Puerto Natales               | "Puerto Natales to El Calafate (or reverse)"                                           | journey        
+534       | Public Bus Puerto Natales to El Calafate               | "Puerto Natales to El Calafate (or reverse)"                                           | journey        
+589       | Puerto Natales to EcoCamp                              | "Puerto Natales to Refugio Central/EcoCamp/Las Torres via Cerro Castillo (or reverse)" | journey        
+607       | Puerto Natales to Torres del Paine (Refugio Centra     | "Puerto Natales to Refugio Central/EcoCamp/Las Torres via Cerro Castillo (or reverse)" | journey        
+616       | Puerto Varas to Bariloche                              | "Puerto Varas to Bariloche or reverse"                                                 | journey        
+788       | Town Hotel - Lake Esmeralda                            | "Hotel (City Center) - Lake Esmeralda or reverse"                                      | journey        
+789       | Town Hotel - TDF National Park                         | "Hotel (City Center) - Tierra Del Fuego National Park or reverse"                      | journey        
+791       | USH - Port                                             | "Ushuaia Malvinas Argentinas (USH) - Port or reverse"                                  | journey        
+794       | USH to Port                                            | "Ushuaia Malvinas Argentinas (USH) - Port or reverse"                                  | journey        
+1042      | Puerto Natales to Refugio Central                      | "Puerto Natales to Refugio Central/EcoCamp/Las Torres via Cerro Castillo (or reverse)" | journey        
+1044      | Puerto Natales to El Calafate                          | "Puerto Natales to El Calafate (or reverse)"                                           | journey        
+1063      | El Calafate to Puerto Natales                          | "Puerto Natales to El Calafate (or reverse)"                                           | journey        
+
+SHEET: ANT Transfers
+--------------------------------------------------------------------------------------------------------------------------------------
+Row      | Row Name                      | Missing Component                                                         | Type           
+--------------------------------------------------------------------------------------------------------------------------------------
+3        | AEP - City Hotel              | "Aeroparque Internacional Jorge Newbery (AEP) - City Hotel"               | journey        
+4        | AEP - City Hotel              | "Aeroparque Internacional Jorge Newbery (AEP) - City Hotel"               | journey        
+5        | City Hotel - EZE              | "Recoleta Hotel - Ministro Pistarini International Airport, Ezeiza (EZE)" | journey        
+6        | City Hotel - EZE              | "Recoleta Hotel - Ministro Pistarini International Airport, Ezeiza (EZE)" | journey        
+7        | City Hotel - EZE              | "Recoleta Hotel - Ministro Pistarini International Airport, Ezeiza (EZE)" | journey        
+8        | City Hotel - AEP              | "City Hotel - Aeroparque Internacional Jorge Newbery (AEP)"               | journey        
+9        | City Hotel - AEP              | "City Hotel - Aeroparque Internacional Jorge Newbery (AEP)"               | journey        
+10       | City Hotel - AEP              | "City Hotel - Aeroparque Internacional Jorge Newbery (AEP)"               | journey        
+14       | USH to Hotel (City Centre)    | "Ushuaia Malvinas Argentinas (USH) - Hotel (downtown)"                    | journey        
+15       | USH to Hotel (City Centre)    | "Ushuaia Malvinas Argentinas (USH) - Hotel (downtown)"                    | journey        
+16       | USH to Hotel (City Centre)    | "Ushuaia Malvinas Argentinas (USH) - Hotel (downtown)"                    | journey        
+17       | USH to Port                   | "Ushuaia Malvinas Argentinas (USH) - Port"                                | journey        
+18       | USH to Port                   | "Ushuaia Malvinas Argentinas (USH) - Port"                                | journey        
+19       | USH to Port                   | "Ushuaia Malvinas Argentinas (USH) - Port"                                | journey        
+20       | USH to Los Acebos/Las Hayas   | "Ushuaia Malvinas Argentinas (USH) - Las Hayas"                           | journey        
+21       | USH to Arakur Hotel           | "Ushuaia Malvinas Argentinas (USH) - Arakur"                              | journey        
+22       | USH to Arakur Hotel           | "Ushuaia Malvinas Argentinas (USH) - Arakur"                              | journey        
+23       | USH to Arakur Hotel           | "Ushuaia Malvinas Argentinas (USH) - Arakur"                              | journey        
+24       | USH to Los Cauquenes          | "Ushuaia Malvinas Argentinas (USH) - Los Cauquenes"                       | journey        
+25       | Los Acebos/Las Hayas - Port   | "Las Hayas hotel - Port"                                                  | journey        
+26       | Arakur Hotel - Port           | "Arakur Hotel - Port"                                                     | journey        
+27       | Arakur Hotel - Port           | "Arakur Hotel - Port"                                                     | journey        
+28       | Arakur Hotel - Port           | "Arakur Hotel - Port"                                                     | journey        
+29       | Los Cauquenes - Port          | "Los Cauquenes - Port"                                                    | journey        
+30       | City Hotel - SCL              | "City Hotel - Arturo Merino Benitez International Airport SCL"            | journey        
 
 SHEET: Excursions Package
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -234,343 +466,3 @@ Row       | Row Name                                                    | Missin
 ?         | unknown field                                               | "Activity to Cataratas/Puerto Iguazú Hotel H&T"                              | transfer        
 ?         | unknown field                                               | "Altas Hike to Hotel Ultimo Paraiso Senderos Patagonia Aysén"                | transfer        
 ?         | unknown field                                               | "Aviles Hike to Hotel Ultimo Paraiso Senderos Patagonia Aysén"               | transfer        
-
-SHEET: Private Tours Package
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Row      | Row Name                                                             | Missing Component                                                              | Type                        
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-3        | Highlights of Bariloche - Day 1, Component 1                         | "Bariloche Airport (BRC) to Bariloche Andestrack Guided"                       | transfer                    
-3        | Highlights of Bariloche - Day 1, Component 2                         | "Panoramic Tour of Bariloche Andestrack"                                       | excursion                   
-3        | Highlights of Bariloche - Day 1, Component 3                         | "Alma del Lago"                                                                | ground_accommodation        
-3        | Highlights of Bariloche - Day 2, Component 3                         | "Alma del Lago"                                                                | ground_accommodation        
-3        | Highlights of Bariloche - Day 3, Component 2                         | "Alma del Lago"                                                                | ground_accommodation        
-3        | Highlights of Bariloche - Day 4, Component 3                         | "Alma del Lago"                                                                | ground_accommodation        
-3        | Highlights of Bariloche - Day 2, Component 1                         | "Cerro Bellavista Hike Andestrack"                                             | excursion                   
-3        | Highlights of Bariloche - Day 2, Component 2                         | "Cerro Goye Hike Andestrack"                                                   | excursion                   
-3        | Highlights of Bariloche - Day 3, Component 1                         | "Kayak on Lake Mascardi Andestrack"                                            | excursion                   
-3        | Highlights of Bariloche - Day 4, Component 1                         | "Nahuel Huapi Estancia Horse Riding Andestrack"                                | excursion                   
-3        | Highlights of Bariloche - Day 4, Component 2                         | "Colonia Suiza Mountain Biking Andestrack"                                     | excursion                   
-3        | Highlights of Bariloche - Day 5, Component 1                         | "Bariloche to Bariloche Airport (BRC) Andestrack Guided"                       | transfer                    
-5        | Gentle Adventure in Aysen - Day 1, Component 2                       | "Marble Caves kayaking from Puerto Tranquillo Aysen Journeys"                  | excursion                   
-5        | Gentle Adventure in Aysen - Day 1, Component 3                       | "Mallín Colorado Lodge"                                                        | ground_accommodation        
-5        | Gentle Adventure in Aysen - Day 2, Component 2                       | "Mallín Colorado Lodge"                                                        | ground_accommodation        
-5        | Gentle Adventure in Aysen - Day 3, Component 2                       | "Mallín Colorado Lodge"                                                        | ground_accommodation        
-5        | Gentle Adventure in Aysen - Day 4, Component 3                       | "Mallín Colorado Lodge"                                                        | ground_accommodation        
-5        | Gentle Adventure in Aysen - Day 2, Component 1                       | "San Rafael Lagoon & Glacier Boat Trip Aysen Journeys"                         | excursion                   
-5        | Gentle Adventure in Aysen - Day 3, Component 1                       | "Patagonia National Park Museum & Hike Aysen Journeys"                         | excursion                   
-5        | Gentle Adventure in Aysen - Day 4, Component 1                       | "Mallin Colorado Trails Hike Aysen Journeys"                                   | excursion                   
-5        | Gentle Adventure in Aysen - Day 4, Component 2                       | "Mallin Colorado Lagoon Horse Ride Aysen Journeys"                             | excursion                   
-6        | Best of the Chilean Lake District - Day 1, Compone                   | "Puñihuil Penguin Colony Birds Chile"                                          | excursion                   
-6        | Best of the Chilean Lake District - Day 2, Compone                   | "Dalcahue, Nercón and Chonchi Tour Birds Chile"                                | excursion                   
-6        | Best of the Chilean Lake District - Day 2, Compone                   | "El Cazador Foodie Experience Birds Chile"                                     | excursion                   
-6        | Best of the Chilean Lake District - Day 3, Compone                   | "Duhatao Bay and Chepu River Hike Birds Chile"                                 | excursion                   
-6        | Best of the Chilean Lake District - Day 4, Compone                   | "Desolación Hike Birds Chile"                                                  | excursion                   
-6        | Best of the Chilean Lake District - Day 5, Compone                   | "Petrohué River Rafting Birds Chile"                                           | excursion                   
-6        | Best of the Chilean Lake District - Day 5, Compone                   | "Bike & Beer Excursion Birds Chile"                                            | excursion                   
-6        | Best of the Chilean Lake District - Day 6, Compone                   | "Darwin's Frog Trail Hike Birds Chile"                                         | excursion                   
-6        | Best of the Chilean Lake District - Day 7, Compone                   | "El Amarillo Glacier viewpoint Hike Birds Chile"                               | excursion                   
-7        | Highlights of Chiloé Island - Day 1, Component 2                     | "Puñihuil Penguin Colony Birds Chile"                                          | excursion                   
-7        | Highlights of Chiloé Island - Day 4, Component 1                     | "Duhatao Bay and Chepu River Hike Birds Chile"                                 | excursion                   
-7        | Highlights of Chiloé Island - Day 2, Component 1                     | "Dock of the Souls and Tepuhueico Park Birds Chile"                            | excursion                   
-7        | Highlights of Chiloé Island - Day 3, Component 1                     | "Castro Walking Tour Birds Chile"                                              | excursion                   
-7        | Highlights of Chiloé Island - Day 3, Component 2                     | "Chonchi Walking Tour Birds Chile"                                             | excursion                   
-7        | Highlights of Chiloé Island - Day 4, Component 2                     | "Visit Chepu River Valley Birds Chile"                                         | excursion                   
-8        | Best of Pucón - Day 2, Component 1                                   | "Villarrica Volcano Summit Hike Birds Chile"                                   | excursion                   
-8        | Best of Pucón - Day 3, Component 1                                   | "Petrified lava flow in Pucón Biking Birds Chile"                              | excursion                   
-8        | Best of Pucón - Day 4, Component 1                                   | "Trancura River White-Water Rafting Birds Chile"                               | excursion                   
-8        | Best of Pucón - Day 4, Component 2                                   | "Mapuche Community Visit with Dinner Birds Chile"                              | excursion                   
-9        | Highlights of the Chilean Lake District - Day 2, C                   | "Desolación Hike Birds Chile"                                                  | excursion                   
-9        | Highlights of the Chilean Lake District - Day 3, C                   | "Bike & Beer Excursion Birds Chile"                                            | excursion                   
-9        | Highlights of the Chilean Lake District - Day 1, C                   | "100km Cooking Experience Birds Chile"                                         | excursion                   
-9        | Highlights of the Chilean Lake District - Day 4, C                   | "Reloncaví Fjord full-day Kayak Birds Chile"                                   | excursion                   
-10       | Day Hikes in Pucón - Day 2, Component 1                              | "Villarrica Volcano Summit Hike Birds Chile"                                   | excursion                   
-10       | Day Hikes in Pucón - Day 3, Component 2                              | "Mapuche Community Visit with Dinner Birds Chile"                              | excursion                   
-10       | Day Hikes in Pucón - Day 3, Component 1                              | "Huerquehue National Park Trek Birds Chile"                                    | excursion                   
-11       | Highlights of Pumalín National Park - Day 1, Compo                   | "Darwin's Frog Trail Hike Birds Chile"                                         | excursion                   
-11       | Highlights of Pumalín National Park - Day 1, Compo                   | "El Amarillo Glacier viewpoint Hike Birds Chile"                               | excursion                   
-11       | Highlights of Pumalín National Park - Day 2, Compo                   | "Cascadas Escondidas Hike Birds Chile"                                         | excursion                   
-11       | Highlights of Pumalín National Park - Day 2, Compo                   | "Alerces Hike Birds Chile"                                                     | excursion                   
-11       | Highlights of Pumalín National Park - Day 3, Compo                   | "Pumalín Park - Chaitén Volcano Hike Birds Chile"                              | excursion                   
-12       | Northern Carretera Austral Road Trip - Day 2, Comp                   | "Darwin's Frog Trail Hike Birds Chile"                                         | excursion                   
-12       | Northern Carretera Austral Road Trip - Day 3, Comp                   | "Pumalín Park - Chaitén Volcano Hike Birds Chile"                              | excursion                   
-12       | Northern Carretera Austral Road Trip - Day 2, Comp                   | "El Mirador Trail Hike Birds Chile"                                            | excursion                   
-12       | Northern Carretera Austral Road Trip - Day 3, Comp                   | "Hotel El Barranco"                                                            | ground_accommodation        
-12       | Northern Carretera Austral Road Trip - Day 4, Comp                   | "Hotel El Barranco"                                                            | ground_accommodation        
-12       | Northern Carretera Austral Road Trip - Day 4, Comp                   | "Glaciar Yelcho Hike Birds Chile"                                              | excursion                   
-12       | Northern Carretera Austral Road Trip - Day 5, Comp                   | "Futaleufú River rafting Birds Chile"                                          | excursion                   
-12       | Northern Carretera Austral Road Trip - Day 5, Comp                   | "Pangue Lodge"                                                                 | ground_accommodation        
-12       | Northern Carretera Austral Road Trip - Day 6, Comp                   | "Pangue Lodge"                                                                 | ground_accommodation        
-12       | Northern Carretera Austral Road Trip - Day 6, Comp                   | "Queulat National Park Hike Birds Chile"                                       | excursion                   
-12       | Northern Carretera Austral Road Trip - Day 7, Comp                   | "Los Raices B&B"                                                               | ground_accommodation        
-13       | Foodie Adventure in the Chilean Lake District - Da                   | "Puñihuil Penguin Colony Birds Chile"                                          | excursion                   
-13       | Foodie Adventure in the Chilean Lake District - Da                   | "El Cazador Foodie Experience Birds Chile"                                     | excursion                   
-13       | Foodie Adventure in the Chilean Lake District - Da                   | "Castro Walking Tour Birds Chile"                                              | excursion                   
-13       | Foodie Adventure in the Chilean Lake District - Da                   | "100km Cooking Experience Birds Chile"                                         | excursion                   
-13       | Foodie Adventure in the Chilean Lake District - Da                   | "Walk through Puerto Varas Birds Chile"                                        | excursion                   
-13       | Foodie Adventure in the Chilean Lake District - Da                   | "Evening @ Espacio Patagón Birds Chile"                                        | excursion                   
-13       | Foodie Adventure in the Chilean Lake District - Da                   | "Petrohué Falls Hike Birds Chile"                                              | excursion                   
-13       | Foodie Adventure in the Chilean Lake District - Da                   | "Curanto Lunch with María Luisa Birds Chile"                                   | excursion                   
-13       | Foodie Adventure in the Chilean Lake District - Da                   | "Muelle de las Almas (Dock of Souls) Hike Birds Chile"                         | excursion                   
-14       | Best of Peninsula Valdés - Day 1, Component 2                        | "Dazzler Puerto Madryn"                                                        | ground_accommodation        
-14       | Best of Peninsula Valdés - Day 2, Component 2                        | "Dazzler Puerto Madryn"                                                        | ground_accommodation        
-14       | Best of Peninsula Valdés - Day 2, Component 1                        | "Punta Loma and Cerro Avanzado coastal reserve Causana Viajes"                 | excursion                   
-14       | Best of Peninsula Valdés - Day 3, Component 1                        | "Peninsula Valdés Full Day Tour Causana Viajes"                                | excursion                   
-14       | Best of Peninsula Valdés - Day 3, Component 2                        | "Del Nómade Hosteria"                                                          | ground_accommodation        
-14       | Best of Peninsula Valdés - Day 4, Component 3                        | "Del Nómade Hosteria"                                                          | ground_accommodation        
-14       | Best of Peninsula Valdés - Day 4, Component 1                        | "Puerto Pirámides Kayaking Causana Viajes"                                     | excursion                   
-14       | Best of Peninsula Valdés - Day 4, Component 2                        | "Peninsula Valdés Whale watching Boat Trip Causana Viajes"                     | excursion                   
-15       | Highlights of Peninsula Valdés - Day 3, Component                    | "Peninsula Valdés Full Day Tour Causana Viajes"                                | excursion                   
-15       | Highlights of Peninsula Valdés - Day 1, Component                    | "Del Nómade Hosteria"                                                          | ground_accommodation        
-15       | Highlights of Peninsula Valdés - Day 2, Component                    | "Del Nómade Hosteria"                                                          | ground_accommodation        
-15       | Highlights of Peninsula Valdés - Day 3, Component                    | "Del Nómade Hosteria"                                                          | ground_accommodation        
-15       | Highlights of Peninsula Valdés - Day 2, Component                    | "Puerto Pirámides Kayaking Causana Viajes"                                     | excursion                   
-15       | Highlights of Peninsula Valdés - Day 2, Component                    | "Whale watching on the Yellow Submarine Causana Viajes"                        | excursion                   
-16       | Peninsula Valdés Wildlife In Depth - Day 1, Compon                   | "Peninsula Valdés Whale watching Boat Trip Causana Viajes"                     | excursion                   
-16       | Peninsula Valdés Wildlife In Depth - Day 1, Compon                   | "Estancia Rincón Chico"                                                        | ground_accommodation        
-16       | Peninsula Valdés Wildlife In Depth - Day 2, Compon                   | "Estancia Rincón Chico"                                                        | ground_accommodation        
-16       | Peninsula Valdés Wildlife In Depth - Day 3, Compon                   | "Estancia Rincón Chico"                                                        | ground_accommodation        
-16       | Peninsula Valdés Wildlife In Depth - Day 2, Compon                   | "Peninsula Valdés Wildlife encounters Causana Viajes"                          | excursion                   
-16       | Peninsula Valdés Wildlife In Depth - Day 3, Compon                   | "Peninsula Valdés Wildlife encounters Causana Viajes"                          | excursion                   
-17       | Gentle Adventure in Torres del Paine - Day 1, Comp                   | "Torres del Paine Wildlife Safari Chile Nativo"                                | excursion                   
-17       | Gentle Adventure in Torres del Paine - Day 1, Comp                   | "Serrano Camp"                                                                 | ground_accommodation        
-17       | Gentle Adventure in Torres del Paine - Day 2, Comp                   | "Serrano Camp"                                                                 | ground_accommodation        
-17       | Gentle Adventure in Torres del Paine - Day 3, Comp                   | "Serrano Camp"                                                                 | ground_accommodation        
-17       | Gentle Adventure in Torres del Paine - Day 2, Comp                   | "Glacier Grey Boat Trip Chile Nativo"                                          | excursion                   
-17       | Gentle Adventure in Torres del Paine - Day 2, Comp                   | "Glacier Grey Viewpoint Hike Chile Nativo"                                     | excursion                   
-17       | Gentle Adventure in Torres del Paine - Day 3, Comp                   | "Lake Sarmiento, Lake Nordenskjöld & Salto Grande Waterfall Tour Chile Nativo" | excursion                   
-17       | Gentle Adventure in Torres del Paine - Day 4, Comp                   | "Estancia Day at Estancia San Luis Chile Nativo"                               | excursion                   
-18       | Luxury Atacama - Day 2, Component 1                                  | "Puritama Hike Explora"                                                        | excursion                   
-18       | Luxury Atacama - Day 2, Component 2                                  | "Cordillera de la Sal Tour - Atacama Explora"                                  | excursion                   
-18       | Luxury Atacama - Day 3, Component 1                                  | "Beter Horse Ride Explora"                                                     | excursion                   
-18       | Luxury Atacama - Day 3, Component 2                                  | "Piedra de la Coca Bike Ride Explora"                                          | excursion                   
-18       | Luxury Atacama - Day 4, Component 1                                  | "Lagunas Altiplánicas Tour Explora"                                            | excursion                   
-19       | Buenos Aires In Depth - Day 1, Component 1                           | "Airport EZE - Recoleta Hotels H&T Guided"                                     | transfer                    
-19       | Buenos Aires In Depth - Day 2, Component 1                           | "Buenos Aires City Tour Extended Highlights H&T Argentina"                     | excursion                   
-19       | Buenos Aires In Depth - Day 3, Component 1                           | "Colonia de Sacramento Day Trip H&T Argentina"                                 | excursion                   
-19       | Buenos Aires In Depth - Day 4, Component 1                           | "Buenos Aires Hotel to AEP Airport H&T Driver Only"                            | transfer                    
-20       | Classic Buenos Aires - Day 1, Component 1                            | "Airport EZE - Recoleta Hotels H&T Guided"                                     | transfer                    
-20       | Classic Buenos Aires - Day 2, Component 1                            | "Buenos Aires City Tour Extended Highlights H&T Argentina"                     | excursion                   
-20       | Classic Buenos Aires - Day 3, Component 1                            | "Buenos Aires Hotel to AEP Airport H&T Driver Only"                            | transfer                    
-20       | Classic Buenos Aires - Day 2, Component 2                            | "Buenos Aires Tango Show H&T Argentina"                                        | excursion                   
-20       | Classic Buenos Aires - Day 2, Component 3                            | "Fogón Asado Experience H&T Argentina"                                         | excursion                   
-21       | Relax & Re-energise in Buenos Aires - Day 1, Compo                   | "AEP - San Miguel de Monte (Estancia La Bandada) H&T Driver Only"              | transfer                    
-21       | Relax & Re-energise in Buenos Aires - Day 1, Compo                   | "Estancia La Bandada"                                                          | ground_accommodation        
-21       | Relax & Re-energise in Buenos Aires - Day 2, Compo                   | "Estancia La Bandada"                                                          | ground_accommodation        
-21       | Relax & Re-energise in Buenos Aires - Day 2, Compo                   | "La Bandada Estancia Day H&T Argentina"                                        | excursion                   
-21       | Relax & Re-energise in Buenos Aires - Day 3, Compo                   | "San Miguel de Monte (Estancia La Bandada) - AEP H&T Driver Only"              | transfer                    
-22       | Buenos Aires Express - Day 1, Component 1                            | "Airport EZE - Recoleta Hotels H&T Guided"                                     | transfer                    
-22       | Buenos Aires Express - Day 1, Component 2                            | "Buenos Aires City Tour Extended Highlights H&T Argentina"                     | excursion                   
-22       | Buenos Aires Express - Day 2, Component 1                            | "Buenos Aires Hotel to AEP Airport H&T Driver Only"                            | transfer                    
-22       | Buenos Aires Express - Day 1, Component 3                            | "Buenos Aires Tango Show H&T Argentina"                                        | excursion                   
-22       | Buenos Aires Express - Day 1, Component 4                            | "Fogón Asado Experience H&T Argentina"                                         | excursion                   
-22       | Buenos Aires Express - Day 1, Component 5                            | "The Argentine Experience H&T Argentina"                                       | excursion                   
-23       | Buenos Aires Express - Day 1, Component 1                            | "Airport EZE - Recoleta Hotels H&T Guided"                                     | transfer                    
-23       | Buenos Aires Express - Day 2, Component 1                            | "Buenos Aires Hotel to AEP Airport H&T Driver Only"                            | transfer                    
-23       | Buenos Aires Express - Day 1, Component 3                            | "Buenos Aires Tango Show H&T Argentina"                                        | excursion                   
-23       | Buenos Aires Express - Day 1, Component 2                            | "Buenos Aires City Tour Extended Highlights (ANT) H&T Argentina"               | excursion                   
-24       | Self-Drive Argentinian Lake District - Day 1, Comp                   | "Bariloche to Villa La Angostura Self-Drive H&T Argentina"                     | excursion                   
-24       | Self-Drive Argentinian Lake District - Day 1, Comp                   | "Las Balsas Relais & Châteaux"                                                 | ground_accommodation        
-24       | Self-Drive Argentinian Lake District - Day 2, Comp                   | "Las Balsas Relais & Châteaux"                                                 | ground_accommodation        
-24       | Self-Drive Argentinian Lake District - Day 2, Comp                   | "Villa La Angostura Day at Leisure H&T Argentina"                              | excursion                   
-24       | Self-Drive Argentinian Lake District - Day 3, Comp                   | "Villa La Angostura to San Martín de Los Andes Self-Drive H&T Argentina"       | excursion                   
-24       | Self-Drive Argentinian Lake District - Day 3, Comp                   | "La Casa de Eugenia"                                                           | ground_accommodation        
-24       | Self-Drive Argentinian Lake District - Day 4, Comp                   | "La Casa de Eugenia"                                                           | ground_accommodation        
-24       | Self-Drive Argentinian Lake District - Day 4, Comp                   | "San Martín de Los Andes Day at Leisure H&T Argentina"                         | excursion                   
-24       | Self-Drive Argentinian Lake District - Day 5, Comp                   | "San Martín de Los Andes to Bariloche Self-Drive H&T Argentina"                | excursion                   
-24       | Self-Drive Argentinian Lake District - Day 5, Comp                   | "Peninsula Petit"                                                              | ground_accommodation        
-25       | Classic Iguazú Falls - Day 1, Component 1                            | "Iguazú Falls Tour (Brazilian side) H&T Argentina"                             | excursion                   
-25       | Classic Iguazú Falls - Day 2, Component 1                            | "Iguazú Falls Tour with Train Ride (Argentinian side) H&T Argentina"           | excursion                   
-25       | Classic Iguazú Falls - Day 3, Component 1                            | "Cataratas/Puerto Iguazú Hotel to Puerto Iguazú Airport (IGR) to Activity H&T" | transfer                    
-26       | Buenos Aires In Depth - Day 1, Component 1                           | "Airport EZE - Recoleta Hotels H&T Guided"                                     | transfer                    
-26       | Buenos Aires In Depth - Day 3, Component 1                           | "Colonia de Sacramento Day Trip H&T Argentina"                                 | excursion                   
-26       | Buenos Aires In Depth - Day 4, Component 1                           | "Buenos Aires Hotel to AEP Airport H&T Driver Only"                            | transfer                    
-26       | Buenos Aires In Depth - Day 2, Component 1                           | "Buenos Aires City Tour Extended Highlights (ANT) H&T Argentina"               | excursion                   
-26       | Buenos Aires In Depth - Day 1, Component 2                           | "Palladio Hotel"                                                               | ground_accommodation        
-26       | Buenos Aires In Depth - Day 2, Component 2                           | "Palladio Hotel"                                                               | ground_accommodation        
-26       | Buenos Aires In Depth - Day 3, Component 2                           | "Palladio Hotel"                                                               | ground_accommodation        
-27       | Classic Buenos Aires - Day 1, Component 1                            | "Airport EZE - Recoleta Hotels H&T Guided"                                     | transfer                    
-27       | Classic Buenos Aires - Day 3, Component 1                            | "Buenos Aires Hotel to AEP Airport H&T Driver Only"                            | transfer                    
-27       | Classic Buenos Aires - Day 2, Component 2                            | "Buenos Aires Tango Show H&T Argentina"                                        | excursion                   
-27       | Classic Buenos Aires - Day 2, Component 3                            | "The Argentine Experience H&T Argentina"                                       | excursion                   
-27       | Classic Buenos Aires - Day 2, Component 1                            | "Buenos Aires City Tour Extended Highlights (ANT) H&T Argentina"               | excursion                   
-27       | Classic Buenos Aires - Day 1, Component 2                            | "Palladio Hotel"                                                               | ground_accommodation        
-27       | Classic Buenos Aires - Day 2, Component 4                            | "Palladio Hotel"                                                               | ground_accommodation        
-28       | Relax & Re-energise in Buenos Aires - Day 1, Compo                   | "AEP - San Antonio de Areco (Estancia La Bamba de Areco) H&T Driver Only"      | transfer                    
-28       | Relax & Re-energise in Buenos Aires - Day 2, Compo                   | "La Bamba de Areco Estancia Day H&T Argentina"                                 | excursion                   
-28       | Relax & Re-energise in Buenos Aires - Day 3, Compo                   | "San Antonio de Areco (Estancia La Bamba de Areco) - AEP H&T Driver Only"      | transfer                    
-29       | Active Buenos Aires - Day 1, Component 1                             | "Airport EZE - Recoleta Hotels H&T Guided"                                     | transfer                    
-29       | Active Buenos Aires - Day 3, Component 1                             | "Buenos Aires Hotel to AEP Airport H&T Driver Only"                            | transfer                    
-29       | Active Buenos Aires - Day 1, Component 3                             | "Palladio Hotel"                                                               | ground_accommodation        
-29       | Active Buenos Aires - Day 2, Component 2                             | "Palladio Hotel"                                                               | ground_accommodation        
-29       | Active Buenos Aires - Day 1, Component 2                             | "Palermo Premium Food Tour - Buenos Aires H&T Argentina"                       | excursion                   
-29       | Active Buenos Aires - Day 2, Component 1                             | "Historic Buenos Aires by bike H&T Argentina"                                  | excursion                   
-30       | Buenos Aires Foodie - Day 1, Component 1                             | "Airport EZE - Recoleta Hotels H&T Guided"                                     | transfer                    
-30       | Buenos Aires Foodie - Day 3, Component 1                             | "Buenos Aires Hotel to AEP Airport H&T Driver Only"                            | transfer                    
-30       | Buenos Aires Foodie - Day 2, Component 2                             | "Fogón Asado Experience H&T Argentina"                                         | excursion                   
-30       | Buenos Aires Foodie - Day 2, Component 1                             | "Buenos Aires City Tour Extended Highlights (ANT) H&T Argentina"               | excursion                   
-30       | Buenos Aires Foodie - Day 1, Component 3                             | "Palladio Hotel"                                                               | ground_accommodation        
-30       | Buenos Aires Foodie - Day 2, Component 3                             | "Palladio Hotel"                                                               | ground_accommodation        
-30       | Buenos Aires Foodie - Day 1, Component 2                             | "Palermo Premium Food Tour - Buenos Aires H&T Argentina"                       | excursion                   
-31       | Iguazu Falls Express - Day 1, Component 2                            | "Iguazú Falls Tour with Train Ride (Argentinian side) H&T Argentina"           | excursion                   
-31       | Iguazu Falls Express - Day 2, Component 1                            | "Iguazú Falls Tour with Train Ride (Argentinian side) H&T Argentina"           | excursion                   
-31       | Iguazu Falls Express - Day 1, Component 1                            | "IGR - Puerto Iguazú Hotel H&T Driver Only"                                    | transfer                    
-31       | Iguazu Falls Express - Day 1, Component 3                            | "Iguazú Interactive Six-course Group Dining Experience with Drinks"            | actvity                     
-31       | Iguazu Falls Express - Day 2, Component 2                            | "Puerto Iguazú Hotel - IGR H&T Driver Only"                                    | transfer                    
-32       | Classic Iguazu Falls - Day 1, Component 2                            | "Iguazú Falls Tour (Brazilian side) H&T Argentina"                             | excursion                   
-32       | Classic Iguazu Falls - Day 3, Component 1                            | "Iguazú Falls Tour (Brazilian side) H&T Argentina"                             | excursion                   
-32       | Classic Iguazu Falls - Day 2, Component 1                            | "Iguazú Falls Tour with Train Ride (Argentinian side) H&T Argentina"           | excursion                   
-32       | Classic Iguazu Falls - Day 1, Component 1                            | "IGR - Puerto Iguazú Hotel H&T Driver Only"                                    | transfer                    
-32       | Classic Iguazu Falls - Day 1, Component 3                            | "Iguazú Interactive Six-course Group Dining Experience with Drinks"            | actvity                     
-33       | Iguazu Falls in Depth - Day 3, Component 1                           | "Iguazú Falls Tour (Brazilian side) H&T Argentina"                             | excursion                   
-33       | Iguazu Falls in Depth - Day 2, Component 1                           | "Iguazú Falls Tour with Train Ride (Argentinian side) H&T Argentina"           | excursion                   
-33       | Iguazu Falls in Depth - Day 1, Component 1                           | "IGR - Puerto Iguazú Hotel H&T Driver Only"                                    | transfer                    
-33       | Iguazu Falls in Depth - Day 1, Component 2                           | "Iguazú Interactive Six-course Group Dining Experience with Drinks"            | actvity                     
-33       | Iguazu Falls in Depth - Day 4, Component 1                           | "Puerto Iguazú Hotel - IGR H&T Driver Only"                                    | transfer                    
-34       | Mendoza Express - Day 1, Component 1                                 | "MDZ - Downtown Mendoza H&T Driver Only"                                       | transfer                    
-34       | Mendoza Express - Day 1, Component 2                                 | "Villa Mansa"                                                                  | ground_accommodation        
-34       | Mendoza Express - Day 2, Component 2                                 | "Villa Mansa"                                                                  | ground_accommodation        
-34       | Mendoza Express - Day 2, Component 1                                 | "Lújan de Cuyo Wine Region Tour H&T Argentina"                                 | excursion                   
-35       | Classic Mendoza - Day 1, Component 1                                 | "MDZ - Downtown Mendoza H&T Driver Only"                                       | transfer                    
-35       | Classic Mendoza - Day 1, Component 2                                 | "Villa Mansa"                                                                  | ground_accommodation        
-35       | Classic Mendoza - Day 2, Component 2                                 | "Villa Mansa"                                                                  | ground_accommodation        
-35       | Classic Mendoza - Day 3, Component 2                                 | "Villa Mansa"                                                                  | ground_accommodation        
-35       | Classic Mendoza - Day 2, Component 1                                 | "Lújan de Cuyo Wine Region Tour H&T Argentina"                                 | excursion                   
-36       | Mendoza in Depth - Day 1, Component 1                                | "MDZ - Downtown Mendoza H&T Driver Only"                                       | transfer                    
-36       | Mendoza in Depth - Day 1, Component 2                                | "Villa Mansa"                                                                  | ground_accommodation        
-36       | Mendoza in Depth - Day 2, Component 2                                | "Villa Mansa"                                                                  | ground_accommodation        
-36       | Mendoza in Depth - Day 3, Component 2                                | "Villa Mansa"                                                                  | ground_accommodation        
-37       | Best of Aysen Roadtrip - Day 4, Component 2                          | "Mallín Colorado Lodge"                                                        | ground_accommodation        
-37       | Best of Aysen Roadtrip - Day 5, Component 2                          | "Mallín Colorado Lodge"                                                        | ground_accommodation        
-37       | Best of Aysen Roadtrip - Day 9, Component 2                          | "Los Raices B&B"                                                               | ground_accommodation        
-37       | Best of Aysen Roadtrip - Day 1, Component 2                          | "B&B and Cabins Cerro Castillo"                                                | ground_accommodation        
-37       | Best of Aysen Roadtrip - Day 2, Component 2                          | "B&B and Cabins Cerro Castillo"                                                | ground_accommodation        
-37       | Best of Aysen Roadtrip - Day 3, Component 2                          | "B&B and Cabins Cerro Castillo"                                                | ground_accommodation        
-37       | Best of Aysen Roadtrip - Day 2, Component 1                          | "Laguna Cerro Castillo Hike Senderos Patagonia Aysén"                          | excursion                   
-37       | Best of Aysen Roadtrip - Day 3, Component 1                          | "Estero Parada Valley & Laguna Duff Senderos Patagonia Aysén"                  | excursion                   
-37       | Best of Aysen Roadtrip - Day 4, Component 1                          | "Marble Caves kayaking from Puerto Tranquillo Senderos Patagonia Aysén"        | excursion                   
-37       | Best of Aysen Roadtrip - Day 5, Component 1                          | "Half-day San Rafael Lagoon & Glacier Boat Trip Senderos Patagonia Aysén"      | excursion                   
-37       | Best of Aysen Roadtrip - Day 6, Component 1                          | "Baker River Rafting Senderos Patagonia Aysén"                                 | excursion                   
-37       | Best of Aysen Roadtrip - Day 6, Component 2                          | "Hotel Ultimo Paraíso"                                                         | ground_accommodation        
-37       | Best of Aysen Roadtrip - Day 7, Component 2                          | "Hotel Ultimo Paraíso"                                                         | ground_accommodation        
-37       | Best of Aysen Roadtrip - Day 8, Component 2                          | "Hotel Ultimo Paraíso"                                                         | ground_accommodation        
-37       | Best of Aysen Roadtrip - Day 7, Component 1                          | "Patagonia Park - Day Hike Senderos Patagonia Aysén"                           | excursion                   
-37       | Best of Aysen Roadtrip - Day 8, Component 1                          | "Patagonia Park - Day Hike (Tamango side) Senderos Patagonia Aysén"            | excursion                   
-37       | Best of Aysen Roadtrip - Day 9, Component 1                          | "Cochrane to Coyhaique Senderos Patagonia Aysén"                               | transfer                    
-37       | Best of Aysen Roadtrip - Day 10, Component 1                         | "Coyhaique to Balmaceda Airport (BBA) Senderos Patagonia Aysén"                | transfer                    
-38       | Highlights of Aysen Roadtrip - Day 5, Component 2                    | "Los Raices B&B"                                                               | ground_accommodation        
-38       | Highlights of Aysen Roadtrip - Day 1, Component 2                    | "B&B and Cabins Cerro Castillo"                                                | ground_accommodation        
-38       | Highlights of Aysen Roadtrip - Day 2, Component 2                    | "B&B and Cabins Cerro Castillo"                                                | ground_accommodation        
-38       | Highlights of Aysen Roadtrip - Day 2, Component 1                    | "Laguna Cerro Castillo Hike Senderos Patagonia Aysén"                          | excursion                   
-38       | Highlights of Aysen Roadtrip - Day 3, Component 1                    | "Marble Caves kayaking from Puerto Tranquillo Senderos Patagonia Aysén"        | excursion                   
-38       | Highlights of Aysen Roadtrip - Day 4, Component 1                    | "Half-day San Rafael Lagoon & Glacier Boat Trip Senderos Patagonia Aysén"      | excursion                   
-38       | Highlights of Aysen Roadtrip - Day 3, Component 2                    | "El Puesto"                                                                    | ground_accommodation        
-38       | Highlights of Aysen Roadtrip - Day 4, Component 2                    | "El Puesto"                                                                    | ground_accommodation        
-38       | Highlights of Aysen Roadtrip - Day 5, Component 1                    | "Puerto Tranquilo to Coyhaique Senderos Patagonia Aysén"                       | transfer                    
-39       | Los Glaciares Multisport Adventure - Day 1, Compon                   | "El Chaltén Rock Climbing Serac"                                               | excursion                   
-39       | Los Glaciares Multisport Adventure - Day 2, Compon                   | "Lago del Desierto Bike Ride & HIke Serac"                                     | excursion                   
-39       | Los Glaciares Multisport Adventure - Day 2, Compon                   | "Hosteria El Pilar"                                                            | ground_accommodation        
-39       | Los Glaciares Multisport Adventure - Day 3, Compon                   | "Laguna de Los Tres and Fitz Roy Comfort Camp Hike Serac"                      | excursion                   
-39       | Los Glaciares Multisport Adventure - Day 3, Compon                   | "Fitz Roy Comfort Camp"                                                        | ground_accommodation        
-39       | Los Glaciares Multisport Adventure - Day 4, Compon                   | "Laguna Torre from Fitz Roy Comfort Camp Hike Serac"                           | excursion                   
-39       | Los Glaciares Multisport Adventure - Day 5, Compon                   | "Río La Leona kayaking Serac"                                                  | excursion                   
-39       | Los Glaciares Multisport Adventure - Day 5, Compon                   | "Kosten Aike"                                                                  | ground_accommodation        
-39       | Los Glaciares Multisport Adventure - Day 6, Compon                   | "Kosten Aike"                                                                  | ground_accommodation        
-39       | Los Glaciares Multisport Adventure - Day 6, Compon                   | "Perito Moreno Minitrekking I Serac"                                           | excursion                   
-40       | Santiago Express - Day 1, Component 2                                | "Santiago Half Day City Tour Southbound"                                       | excursion                   
-42       | Easter Island Highlights - Day 2, Component 1                        | "The Moai of Easter Island Southbound"                                         | excursion                   
-42       | Easter Island Highlights - Day 3, Component 1                        | "Island Interior and Birdman Cult Southbound"                                  | excursion                   
-43       | Highlights of the Atacama - Day 1, Component 2                       | "Salt Mountains/Moon Valley Hike Southbound"                                   | excursion                   
-43       | Highlights of the Atacama - Day 2, Component 1                       | "Guatin Cactus Valley Hike Southbound"                                         | excursion                   
-43       | Highlights of the Atacama - Day 2, Component 2                       | "Rainbow Valley - Half-day Hike Southbound"                                    | excursion                   
-43       | Highlights of the Atacama - Day 3, Component 1                       | "Tatio Geysers Southbound"                                                     | excursion                   
-44       | Classic Santiago, Wines and Valparaíso - Day 1, Co                   | "Santiago City Sensations Tour Southbound"                                     | excursion                   
-44       | Classic Santiago, Wines and Valparaíso - Day 2, Co                   | "Casablanca Valley Wine Tasting Tour Southbound"                               | excursion                   
-44       | Classic Santiago, Wines and Valparaíso - Day 2, Co                   | "Valparaíso City Tour Southbound"                                              | excursion                   
-44       | Classic Santiago, Wines and Valparaíso - Day 2, Co                   | "Palacio Astoreca"                                                             | ground_accommodation        
-44       | Classic Santiago, Wines and Valparaíso - Day 3, Co                   | "Palacio Astoreca"                                                             | ground_accommodation        
-44       | Classic Santiago, Wines and Valparaíso - Day 3, Co                   | "Valparaíso Solo Exploration Independent"                                      | excursion                   
-45       | Central Valley Vineyard Retreat - Day 2, Component                   | "5-course lunch with wine pairing at La Casona Matetic Vineyard Southbound"    | excursion                   
-46       | Classic Santiago - Day 2, Component 2                                | "Santa Rita Vineyard Visit Southbound"                                         | excursion                   
-47       | Santiago In Depth - Day 3, Component 2                               | "Casablanca Valley Wine Tasting Tour Southbound"                               | excursion                   
-47       | Santiago In Depth - Day 3, Component 1                               | "Valparaíso & Viña del Mar Tour Southbound"                                    | excursion                   
-48       | Active Santiago - Day 2, Component 1                                 | "Yerba Loca Nature Sanctuary Hike Southbound"                                  | excursion                   
-49       | Foodie Santiago - Day 2, Component 2                                 | "Santa Rita Vineyard Visit Southbound"                                         | excursion                   
-49       | Foodie Santiago - Day 2, Component 1                                 | "Santiago Central Market & Cooking Class Southbound"                           | excursion                   
-50       | Relax & Re-energise in Santiago - Day 2, Component                   | "Matetic Vineyard Exploration & Wine Tasting Southbound"                       | excursion                   
-51       | Classic Atacama - Day 1, Component 2                                 | "Salt Mountains/Moon Valley Hike Southbound"                                   | excursion                   
-51       | Classic Atacama - Day 3, Component 1                                 | "Tatio Geysers Southbound"                                                     | excursion                   
-51       | Classic Atacama - Day 2, Component 1                                 | "Ascend to the Altiplanic Lagoons Tour Southbound"                             | excursion                   
-52       | Active Atacama - Day 2, Component 2                                  | "Salt Mountains/Moon Valley Hike Southbound"                                   | excursion                   
-52       | Active Atacama - Day 3, Component 1                                  | "Guatin Cactus Valley Hike Southbound"                                         | excursion                   
-52       | Active Atacama - Day 4, Component 1                                  | "Tatio Geysers Southbound"                                                     | excursion                   
-53       | Highlights of Tierra del Fuego - Day 2, Component                    | "Tierra del Fuego National Park Half Day Tour Tierra Turismo"                  | excursion                   
-53       | Highlights of Tierra del Fuego - Day 2, Component                    | "Beagle Channel Half-Day Boat Excursion Tierra Turismo"                        | excursion                   
-53       | Highlights of Tierra del Fuego - Day 3, Component                    | "Andes 4x4 Off-road Adventure with Canoeing Tierra Turismo"                    | excursion                   
-53       | Highlights of Tierra del Fuego - Day 4, Component                    | "Beagle Foodie Experience Tierra Turismo"                                      | excursion                   
-53       | Highlights of Tierra del Fuego - Day 5, Component                    | "Ushuaia Hotel to Ushuaia Airport (USH) Tierra Turismo"                        | transfer                    
-54       | Day Hikes in Tierra del Fuego - Day 2, Component 1                   | "Beagle Channel Half-Day Boat Excursion Tierra Turismo"                        | excursion                   
-54       | Day Hikes in Tierra del Fuego - Day 4, Component 2                   | "Ushuaia Hotel to Ushuaia Airport (USH) Tierra Turismo"                        | transfer                    
-54       | Day Hikes in Tierra del Fuego - Day 1, Component 2                   | "Martial Glacier Dinner at Night Tierra Turismo"                               | excursion                   
-54       | Day Hikes in Tierra del Fuego - Day 2, Component 2                   | "Mount Susana Hike Tierra Turismo"                                             | excursion                   
-54       | Day Hikes in Tierra del Fuego - Day 3, Component 1                   | "Vinciguerra Glacier Valley Day Hike Tierra Turismo"                           | excursion                   
-54       | Day Hikes in Tierra del Fuego - Day 4, Component 1                   | "Laguna Esmeralda Hike Tierra Turismo"                                         | excursion                   
-55       | Tierra del Fuego Winter Experience - Day 4, Compon                   | "Ushuaia Hotel to Ushuaia Airport (USH) Tierra Turismo"                        | transfer                    
-55       | Tierra del Fuego Winter Experience - Day 2, Compon                   | "Laguna Esmeralda Hike Tierra Turismo"                                         | excursion                   
-55       | Tierra del Fuego Winter Experience - Day 1, Compon                   | "End of the World Train and National Park Walk Tierra Turismo"                 | excursion                   
-55       | Tierra del Fuego Winter Experience - Day 3, Compon                   | "Andes 4x4 Off-road Adventure Tierra Turismo"                                  | excursion                   
-56       | The Best of Tierra del Fuego - Day 4, Component 1                    | "Beagle Foodie Experience Tierra Turismo"                                      | excursion                   
-56       | The Best of Tierra del Fuego - Day 5, Component 1                    | "Ushuaia Hotel to Ushuaia Airport (USH) Tierra Turismo"                        | transfer                    
-56       | The Best of Tierra del Fuego - Day 3, Component 1                    | "Laguna Esmeralda Hike Tierra Turismo"                                         | excursion                   
-56       | The Best of Tierra del Fuego - Day 2, Component 1                    | "Lapataia Experience - Ushuaia Tierra Turismo"                                 | excursion                   
-56       | The Best of Tierra del Fuego - Day 4, Component 2                    | "Penguin watching by Boat from Puerto Almanza Tierra Turismo"                  | excursion                   
-57       | Hike, Ride & Raft in Tierra del Fuego - Day 5, Com                   | "Ushuaia Hotel to Ushuaia Airport (USH) Tierra Turismo"                        | transfer                    
-57       | Hike, Ride & Raft in Tierra del Fuego - Day 1, Com                   | "Estancia Túnel Biking Tierra Turismo"                                         | excursion                   
-57       | Hike, Ride & Raft in Tierra del Fuego - Day 2, Com                   | "Gable Island & Penguin Colony with Canoeing Tierra Turismo"                   | excursion                   
-57       | Hike, Ride & Raft in Tierra del Fuego - Day 3, Com                   | "Monte Susana Horse Ride Tierra Turismo"                                       | excursion                   
-57       | Hike, Ride & Raft in Tierra del Fuego - Day 4, Com                   | "Laguna Turquesa & Carabajal Valley Hike Tierra Turismo"                       | excursion                   
-58       | Ushuaia Express - Day 2, Component 1                                 | "Tierra del Fuego National Park Half Day Tour Tierra Turismo"                  | excursion                   
-58       | Ushuaia Express - Day 2, Component 2                                 | "Ushuaia Hotel to Ushuaia Airport (USH) Tierra Turismo"                        | transfer                    
-59       | Ushuaia Express - Day 2, Component 1                                 | "Tierra del Fuego National Park Half Day Tour Tierra Turismo"                  | excursion                   
-59       | Ushuaia Express - Day 1, Component 1                                 | "USH - Town Hotel H&T Driver Only"                                             | transfer                    
-59       | Ushuaia Express - Day 2, Component 2                                 | "Ushuaia Hotel to Ushuaia Airport (USH) H&T"                                   | transfer                    
-60       | Ushuaia Express - Day 2, Component 3                                 | "Ushuaia Hotel to Ushuaia Airport (USH) Tierra Turismo"                        | transfer                    
-60       | Ushuaia Express - Day 2, Component 1                                 | "End of the World Train and National Park Walk Tierra Turismo"                 | excursion                   
-60       | Ushuaia Express - Day 2, Component 2                                 | "Tierra del Fuego National Park Half Day Trails Hike Tierra Turismo"           | excursion                   
-61       | Ushuaia Foodie - Day 3, Component 1                                  | "Tierra del Fuego National Park Half Day Tour Tierra Turismo"                  | excursion                   
-61       | Ushuaia Foodie - Day 2, Component 1                                  | "Puerto Almanza Gastronomic Experience Tierra Turismo"                         | excursion                   
-62       | Ushuaia Classic - Day 2, Component 1                                 | "End of the World Train and National Park Walk Tierra Turismo"                 | excursion                   
-62       | Ushuaia Classic - Day 2, Component 2                                 | "Tierra del Fuego National Park Half Day Trails Hike Tierra Turismo"           | excursion                   
-63       | Active Ushuaia - Day 2, Component 1                                  | "Laguna Esmeralda Hike Tierra Turismo"                                         | excursion                   
-64       | Highlights of Los Glaciares - Day 3, Component 3                     | "Kosten Aike"                                                                  | ground_accommodation        
-64       | Highlights of Los Glaciares - Day 4, Component 6                     | "Kosten Aike"                                                                  | ground_accommodation        
-64       | Highlights of Los Glaciares - Day 2, Component 2                     | "Laguna de Los Tres full-day Hike Walk Patagonia"                              | excursion                   
-64       | Highlights of Los Glaciares - Day 3, Component 1                     | "Laguna Torre Full-day Hike Walk Patagonia"                                    | excursion                   
-64       | Highlights of Los Glaciares - Day 4, Component 2                     | "Perito Moreno Mayo Spirit Boat and Hike Walk Patagonia"                       | excursion                   
-64       | Highlights of Los Glaciares - Day 4, Component 3                     | "Perito Moreno Glacier kayaking Walk Patagonia"                                | excursion                   
-64       | Highlights of Los Glaciares - Day 4, Component 4                     | "Perito Moreno Big Ice Hike Walk Patagonia"                                    | excursion                   
-64       | Highlights of Los Glaciares - Day 4, Component 5                     | "Perito Moreno Minitrekking I Walk Patagonia"                                  | excursion                   
-65       | The Best of Los Glaciares - Day 5, Component 3                       | "Kosten Aike"                                                                  | ground_accommodation        
-65       | The Best of Los Glaciares - Day 6, Component 4                       | "Kosten Aike"                                                                  | ground_accommodation        
-65       | The Best of Los Glaciares - Day 2, Component 2                       | "Laguna de Los Tres full-day Hike Walk Patagonia"                              | excursion                   
-65       | The Best of Los Glaciares - Day 5, Component 1                       | "Laguna Torre Full-day Hike Walk Patagonia"                                    | excursion                   
-65       | The Best of Los Glaciares - Day 6, Component 3                       | "Perito Moreno Big Ice Hike Walk Patagonia"                                    | excursion                   
-65       | The Best of Los Glaciares - Day 3, Component 1                       | "Loma del Pliegue Tumbado Hike Walk Patagonia"                                 | excursion                   
-65       | The Best of Los Glaciares - Day 4, Component 2                       | "Lago del Desierto kayak and Hike Walk Patagonia"                              | excursion                   
-65       | The Best of Los Glaciares - Day 6, Component 2                       | "Perito Moreno Mayo Spirit Boat and Hike Walk Patagonia"                       | excursion (shared)          
-66       | Los Glaciares Winter Experience - Day 2, Component                   | "Perito Moreno Minitrekking I Walk Patagonia"                                  | excursion                   
-66       | Los Glaciares Winter Experience - Day 2, Component                   | "Perito Moreno Safari Nautico Boat Trip & Walkways Walk Patagonia"             | excursion                   
-67       | Los Huemules Adventure - Day 1, Component 2                          | "Refugio Puesto Cagliero Hike Walk Patagonia"                                  | excursion                   
-67       | Los Huemules Adventure - Day 2, Component 1                          | "Refugio Puesto Cagliero to Los Huemules Reserve Entrance Hike Walk Patagonia" | excursion                   
-68       | Fitz Roy Lakeside Retreat - Day 4, Component 1                       | "Laguna de Los Tres full-day Hike Walk Patagonia"                              | excursion                   
-68       | Fitz Roy Lakeside Retreat - Day 2, Component 1                       | "Perito Moreno Mayo Spirit Boat and Hike Walk Patagonia"                       | excursion                   
-68       | Fitz Roy Lakeside Retreat - Day 3, Component 2                       | "Cerro Torre Viewpoint Half-day Hike Walk Patagonia"                           | excursion                   
-68       | Fitz Roy Lakeside Retreat - Day 5, Component 1                       | "Fitz Roy Viewpoints from Lago del Desierto Hike Aguas Arriba Lodge"           | excursion                   
-68       | Fitz Roy Lakeside Retreat - Day 6, Component 1                       | "Aguas Arriba to the Chilean Border Aguas Arriba Lodge"                        | excursion                   
-69       | Los Glaciares Gentle Adventure - Day 2, Component                    | "Cerro Torre Viewpoint Half-day Hike Walk Patagonia"                           | excursion                   
-69       | Los Glaciares Gentle Adventure - Day 1, Component                    | "Madsen House Tour - El Chaltén Walk Patagonia"                                | excursion                   
-69       | Los Glaciares Gentle Adventure - Day 2, Component                    | "Laguna Capri - Half-day Hike Walk Patagonia"                                  | excursion                   
-69       | Los Glaciares Gentle Adventure - Day 2, Component                    | "Condor and Aguila Viewpoints Hike Walk Patagonia"                             | excursion                   
-69       | Los Glaciares Gentle Adventure - Day 3, Component                    | "Lago del Desierto and Huemul Glacier Viewpoint Hike Walk Patagonia"           | excursion                   
-69       | Los Glaciares Gentle Adventure - Day 4, Component                    | "Nativo Experience Walk Patagonia"                                             | excursion                   
-69       | Los Glaciares Gentle Adventure - Day 5, Component                    | "Perito Moreno Pioneros Adventure Walk Patagonia"                              | excursion                   
-69       | Los Glaciares Gentle Adventure - Day 5, Component                    | "Maria Turquesa Boat Cruise to Perito Moreno Glacier Walk Patagonia"           | excursion                   
