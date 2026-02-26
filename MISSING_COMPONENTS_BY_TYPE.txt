@@ -1,13 +1,276 @@
 MISSING COMPONENT REFERENCES REPORT (BY TYPE)
-Generated: 2026-01-30 11:43:41
+Generated: 2026-02-26 13:22:55
 
 This report groups all unique missing component references by type.
 Each entry shows the component name and how many times it was missing.
 
 ====================================================================================================
 
-TYPE: location
+TYPE: transfer
 --------------------------------------------------------------------------------
-Missing Component          | Occurrences
------------------------------------------
-"Poincenot Comfort Camp"   | 1
+Missing Component                                                                | Occurrences
+-----------------------------------------------------------------------------------------------
+"Activity to Remota Lodge Remota Lodge"                                          | 24
+"Remota Lodge to Activity Remota Lodge"                                          | 24
+"Activity to Ushuaia Hotel H&T"                                                  | 18
+"Ushuaia Hotel to Activity H&T"                                                  | 18
+"El Chaltén Hotel to Activity H&T Driver Only"                                   | 15
+"Activity to El Chaltén Hotel H&T"                                               | 14
+"Activity to Tierra Atacama Tierra Guided"                                       | 11
+"Tierra Patagonia to Activity Tierra"                                            | 11
+"Activity to Tierra Patagonia Tierra"                                            | 9
+"Tierra Atacama to Activity Tierra Guided"                                       | 9
+"Airport EZE - Recoleta Hotels H&T Guided"                                       | 8
+"Buenos Aires Hotel to AEP Airport H&T Driver Only"                              | 8
+"Ushuaia Hotel to Ushuaia Airport (USH) Tierra Turismo"                          | 7
+"Activity to Bariloche Andestrack Guided"                                        | 5
+"Bariloche to Activity Andestrack Guided"                                        | 5
+"Remota Lodge to Puerto Natales Remota Lodge Driver Only"                        | 5
+"Activity to Río Hermoso Lodge Andestrack"                                       | 4
+"Río Hermoso Lodge to Activity Andestrack"                                       | 4
+"Beagle Channel to Errante Ecolodge Errante Ecolodge Driver Only"                | 3
+"IGR - Puerto Iguazú Hotel H&T Driver Only"                                      | 3
+"MDZ - Downtown Mendoza H&T Driver Only"                                         | 3
+"Activity to Errante Ecolodge Errante Ecolodge Driver Only"                      | 2
+"Errante Ecolodge to Activity Errante Ecolodge Driver Only"                      | 2
+"Errante Ecolodge to Beagle Channel Errante Ecolodge Driver Only"                | 2
+"Lago Pehoé: Pudeto Dock to Paine Grande Dock Hotel Río Serrano"                 | 2
+"Lago Pehoé: Pudeto Dock to Paine Grande Dock Remota Lodge"                      | 2
+"Puerto Iguazú Hotel - IGR H&T Driver Only"                                      | 2
+"Puerto Natales to Remota Lodge Remota Lodge Driver Only"                        | 2
+"Activity to Aguas Arriba Lodge Aguas Arriba Lodge"                              | 1
+"Activity to Cataratas/Puerto Iguazú Hotel H&T"                                  | 1
+"Activity to Puerto Iguazu (IGR) H&T"                                            | 1
+"AEP - San Antonio de Areco (Estancia La Bamba de Areco) H&T Driver Only"        | 1
+"AEP - San Miguel de Monte (Estancia La Bandada) H&T Driver Only"                | 1
+"Aguas Arriba Lodge to Activity Aguas Arriba Lodge"                              | 1
+"Altas Hike to Hotel Ultimo Paraiso Senderos Patagonia Aysén"                    | 1
+"Aviles Hike to Hotel Ultimo Paraiso Senderos Patagonia Aysén"                   | 1
+"Awasi Atacama to El Tatio Geysers"                                              | 1
+"Bariloche Airport (BRC) to Bariloche Andestrack Guided"                         | 1
+"Bariloche to Bariloche Airport (BRC) Andestrack Guided"                         | 1
+"Beagle Channel Biking"                                                          | 1
+"Cataratas/Puerto Iguazú Hotel to Activity H&T"                                  | 1
+"Cataratas/Puerto Iguazú Hotel to Puerto Iguazú Airport (IGR) to Activity H&T"   | 1
+"Cochrane to Coyhaique Senderos Patagonia Aysén"                                 | 1
+"Coyhaique to Balmaceda Airport (BBA) Senderos Patagonia Aysén"                  | 1
+"Errante Ecolodge to Omora Ethnobotanical Park Errante Ecolodge Driver Only"     | 1
+"Errante Ecolodge to Puerto Navarino Errante Ecolodge Driver Only"               | 1
+"Errante Ecolodge to Puerto Williams Errante Ecolodge Driver Only"               | 1
+"Hotel Ultimo Paraiso to Altas Hike Senderos Patagonia Aysén"                    | 1
+"Hotel Ultimo Paraiso to Aviles Hike Senderos Patagonia Aysén"                   | 1
+"Lago Pehoé: Paine Grande Dock to Pudeto Dock Tierra Patagonia"                  | 1
+"Lago Pehoé: Pudeto Dock to Paine Grande Dock Tierra Patagonia"                  | 1
+"Mallín Colorado to Puerto Bertrand Senderos Patagonia Aysén"                    | 1
+"Omora Ethnobotanical Park to Errante Ecolodge Errante Ecolodge Driver Only"     | 1
+"Puerto Betrand to Cochrane Senderos Patagonia Aysén"                            | 1
+"Puerto Iguazu (IGR) to Activity H&T"                                            | 1
+"Puerto Navarino to Errante Ecolodge Errante Ecolodge Driver Only"               | 1
+"Puerto Tranquilo to Coyhaique Senderos Patagonia Aysén"                         | 1
+"Puerto Williams to Errante Ecolodge Errante Ecolodge Driver Only"               | 1
+"San Antonio de Areco (Estancia La Bamba de Areco) - AEP H&T Driver Only"        | 1
+"San Miguel de Monte (Estancia La Bandada) - AEP H&T Driver Only"                | 1
+"USH - Town Hotel H&T Driver Only"                                               | 1
+"Ushuaia Hotel to Ushuaia Airport (USH) H&T"                                     | 1
+
+TYPE: activity
+--------------------------------------------------------------------------------
+Missing Component                                                          | Occurrences
+-----------------------------------------------------------------------------------------
+"Cerro Torre Viewpoint Hike"                                               | 4
+"End of the World Train Station and Tierra del Fuego National Park Walk"   | 2
+"Blugrin - Cochrane River and Lake"                                        | 1
+"Cochrane River"                                                           | 1
+"Errante Ecolodge to Beagle Channel Errante Ecolodge Driver Only"          | 1
+"Laguna Torre Hike"                                                        | 1
+
+TYPE: excursion
+--------------------------------------------------------------------------------
+Missing Component                                                                | Occurrences
+-----------------------------------------------------------------------------------------------
+"Iguazú Falls Tour with Train Ride (Argentinian side) H&T Argentina"             | 5
+"Buenos Aires City Tour Extended Highlights (ANT) H&T Argentina"                 | 4
+"Buenos Aires Tango Show H&T Argentina"                                          | 4
+"Iguazú Falls Tour (Brazilian side) H&T Argentina"                               | 4
+"Laguna Esmeralda Hike Tierra Turismo"                                           | 4
+"Tierra del Fuego National Park Half Day Tour Tierra Turismo"                    | 4
+"Buenos Aires City Tour Extended Highlights H&T Argentina"                       | 3
+"Darwin's Frog Trail Hike Birds Chile"                                           | 3
+"End of the World Train and National Park Walk Tierra Turismo"                   | 3
+"Fogón Asado Experience H&T Argentina"                                           | 3
+"Laguna de Los Tres full-day Hike Walk Patagonia"                                | 3
+"Puñihuil Penguin Colony Birds Chile"                                            | 3
+"Salt Mountains/Moon Valley Hike Southbound"                                     | 3
+"Tatio Geysers Southbound"                                                       | 3
+"100km Cooking Experience Birds Chile"                                           | 2
+"Beagle Channel Half-Day Boat Excursion Tierra Turismo"                          | 2
+"Beagle Foodie Experience Tierra Turismo"                                        | 2
+"Bike & Beer Excursion Birds Chile"                                              | 2
+"Casablanca Valley Wine Tasting Tour Southbound"                                 | 2
+"Castro Walking Tour Birds Chile"                                                | 2
+"Cerro Torre Viewpoint Half-day Hike Walk Patagonia"                             | 2
+"Colonia de Sacramento Day Trip H&T Argentina"                                   | 2
+"Desolación Hike Birds Chile"                                                    | 2
+"Duhatao Bay and Chepu River Hike Birds Chile"                                   | 2
+"El Amarillo Glacier viewpoint Hike Birds Chile"                                 | 2
+"El Cazador Foodie Experience Birds Chile"                                       | 2
+"Guatin Cactus Valley Hike Southbound"                                           | 2
+"Half-day San Rafael Lagoon & Glacier Boat Trip Senderos Patagonia Aysén"        | 2
+"Laguna Cerro Castillo Hike Senderos Patagonia Aysén"                            | 2
+"Laguna Torre Full-day Hike Walk Patagonia"                                      | 2
+"Lújan de Cuyo Wine Region Tour H&T Argentina"                                   | 2
+"Mapuche Community Visit with Dinner Birds Chile"                                | 2
+"Marble Caves kayaking from Puerto Tranquillo Senderos Patagonia Aysén"          | 2
+"Palermo Premium Food Tour - Buenos Aires H&T Argentina"                         | 2
+"Peninsula Valdés Full Day Tour Causana Viajes"                                  | 2
+"Peninsula Valdés Whale watching Boat Trip Causana Viajes"                       | 2
+"Peninsula Valdés Wildlife encounters Causana Viajes"                            | 2
+"Perito Moreno Big Ice Hike Walk Patagonia"                                      | 2
+"Perito Moreno Mayo Spirit Boat and Hike Walk Patagonia"                         | 2
+"Perito Moreno Minitrekking I Walk Patagonia"                                    | 2
+"Puerto Pirámides Kayaking Causana Viajes"                                       | 2
+"Pumalín Park - Chaitén Volcano Hike Birds Chile"                                | 2
+"Santa Rita Vineyard Visit Southbound"                                           | 2
+"The Argentine Experience H&T Argentina"                                         | 2
+"Tierra del Fuego National Park Half Day Trails Hike Tierra Turismo"             | 2
+"Villarrica Volcano Summit Hike Birds Chile"                                     | 2
+"5-course lunch with wine pairing at La Casona Matetic Vineyard Southbound"      | 1
+"Aguas Arriba to the Chilean Border Aguas Arriba Lodge"                          | 1
+"Alerces Hike Birds Chile"                                                       | 1
+"Andes 4x4 Off-road Adventure Tierra Turismo"                                    | 1
+"Andes 4x4 Off-road Adventure with Canoeing Tierra Turismo"                      | 1
+"Ascend to the Altiplanic Lagoons Tour Southbound"                               | 1
+"Baker River Rafting Senderos Patagonia Aysén"                                   | 1
+"Bariloche to Villa La Angostura Self-Drive H&T Argentina"                       | 1
+"Beter Horse Ride Explora"                                                       | 1
+"Cascadas Escondidas Hike Birds Chile"                                           | 1
+"Cerro Bellavista Hike Andestrack"                                               | 1
+"Cerro Goye Hike Andestrack"                                                     | 1
+"Chonchi Walking Tour Birds Chile"                                               | 1
+"Colonia Suiza Mountain Biking Andestrack"                                       | 1
+"Condor and Aguila Viewpoints Hike Walk Patagonia"                               | 1
+"Cordillera de la Sal Tour - Atacama Explora"                                    | 1
+"Curanto Lunch with María Luisa Birds Chile"                                     | 1
+"Dalcahue, Nercón and Chonchi Tour Birds Chile"                                  | 1
+"Dock of the Souls and Tepuhueico Park Birds Chile"                              | 1
+"El Chaltén Rock Climbing Serac"                                                 | 1
+"El Mirador Trail Hike Birds Chile"                                              | 1
+"Estancia Day at Estancia San Luis Chile Nativo"                                 | 1
+"Estancia Túnel Biking Tierra Turismo"                                           | 1
+"Estero Parada Valley & Laguna Duff Senderos Patagonia Aysén"                    | 1
+"Evening @ Espacio Patagón Birds Chile"                                          | 1
+"Fitz Roy Viewpoints from Lago del Desierto Hike Aguas Arriba Lodge"             | 1
+"Futaleufú River rafting Birds Chile"                                            | 1
+"Gable Island & Penguin Colony with Canoeing Tierra Turismo"                     | 1
+"Glaciar Yelcho Hike Birds Chile"                                                | 1
+"Glacier Grey Boat Trip Chile Nativo"                                            | 1
+"Glacier Grey Viewpoint Hike Chile Nativo"                                       | 1
+"Historic Buenos Aires by bike H&T Argentina"                                    | 1
+"Huerquehue National Park Trek Birds Chile"                                      | 1
+"Island Interior and Birdman Cult Southbound"                                    | 1
+"Kayak on Lake Mascardi Andestrack"                                              | 1
+"La Bamba de Areco Estancia Day H&T Argentina"                                   | 1
+"La Bandada Estancia Day H&T Argentina"                                          | 1
+"Lago del Desierto and Huemul Glacier Viewpoint Hike Walk Patagonia"             | 1
+"Lago del Desierto Bike Ride & HIke Serac"                                       | 1
+"Lago del Desierto kayak and Hike Walk Patagonia"                                | 1
+"Laguna Capri - Half-day Hike Walk Patagonia"                                    | 1
+"Laguna de Los Tres and Fitz Roy Comfort Camp Hike Serac"                        | 1
+"Laguna Torre from Fitz Roy Comfort Camp Hike Serac"                             | 1
+"Laguna Turquesa & Carabajal Valley Hike Tierra Turismo"                         | 1
+"Lagunas Altiplánicas Tour Explora"                                              | 1
+"Lake Sarmiento, Lake Nordenskjöld & Salto Grande Waterfall Tour Chile Nativo"   | 1
+"Lapataia Experience - Ushuaia Tierra Turismo"                                   | 1
+"Loma del Pliegue Tumbado Hike Walk Patagonia"                                   | 1
+"Madsen House Tour - El Chaltén Walk Patagonia"                                  | 1
+"Mallin Colorado Lagoon Horse Ride Aysen Journeys"                               | 1
+"Mallin Colorado Trails Hike Aysen Journeys"                                     | 1
+"Marble Caves kayaking from Puerto Tranquillo Aysen Journeys"                    | 1
+"Maria Turquesa Boat Cruise to Perito Moreno Glacier Walk Patagonia"             | 1
+"Martial Glacier Dinner at Night Tierra Turismo"                                 | 1
+"Matetic Vineyard Exploration & Wine Tasting Southbound"                         | 1
+"Monte Susana Horse Ride Tierra Turismo"                                         | 1
+"Mount Susana Hike Tierra Turismo"                                               | 1
+"Muelle de las Almas (Dock of Souls) Hike Birds Chile"                           | 1
+"Nahuel Huapi Estancia Horse Riding Andestrack"                                  | 1
+"Nativo Experience Walk Patagonia"                                               | 1
+"Panoramic Tour of Bariloche Andestrack"                                         | 1
+"Patagonia National Park Museum & Hike Aysen Journeys"                           | 1
+"Patagonia Park - Day Hike (Tamango side) Senderos Patagonia Aysén"              | 1
+"Patagonia Park - Day Hike Senderos Patagonia Aysén"                             | 1
+"Penguin watching by Boat from Puerto Almanza Tierra Turismo"                    | 1
+"Perito Moreno Glacier kayaking Walk Patagonia"                                  | 1
+"Perito Moreno Minitrekking I Serac"                                             | 1
+"Perito Moreno Pioneros Adventure Walk Patagonia"                                | 1
+"Perito Moreno Safari Nautico Boat Trip & Walkways Walk Patagonia"               | 1
+"Petrified lava flow in Pucón Biking Birds Chile"                                | 1
+"Petrohué Falls Hike Birds Chile"                                                | 1
+"Petrohué River Rafting Birds Chile"                                             | 1
+"Piedra de la Coca Bike Ride Explora"                                            | 1
+"Puerto Almanza Gastronomic Experience Tierra Turismo"                           | 1
+"Punta Loma and Cerro Avanzado coastal reserve Causana Viajes"                   | 1
+"Puritama Hike Explora"                                                          | 1
+"Queulat National Park Hike Birds Chile"                                         | 1
+"Rainbow Valley - Half-day Hike Southbound"                                      | 1
+"Refugio Puesto Cagliero Hike Walk Patagonia"                                    | 1
+"Refugio Puesto Cagliero to Los Huemules Reserve Entrance Hike Walk Patagonia"   | 1
+"Reloncaví Fjord full-day Kayak Birds Chile"                                     | 1
+"Río La Leona kayaking Serac"                                                    | 1
+"San Martín de Los Andes Day at Leisure H&T Argentina"                           | 1
+"San Martín de Los Andes to Bariloche Self-Drive H&T Argentina"                  | 1
+"San Rafael Lagoon & Glacier Boat Trip Aysen Journeys"                           | 1
+"Santiago Central Market & Cooking Class Southbound"                             | 1
+"Santiago City Sensations Tour Southbound"                                       | 1
+"Santiago Half Day City Tour Southbound"                                         | 1
+"The Moai of Easter Island Southbound"                                           | 1
+"Torres del Paine Wildlife Safari Chile Nativo"                                  | 1
+"Trancura River White-Water Rafting Birds Chile"                                 | 1
+"Valparaíso & Viña del Mar Tour Southbound"                                      | 1
+"Valparaíso City Tour Southbound"                                                | 1
+"Valparaíso Solo Exploration Independent"                                        | 1
+"Villa La Angostura Day at Leisure H&T Argentina"                                | 1
+"Villa La Angostura to San Martín de Los Andes Self-Drive H&T Argentina"         | 1
+"Vinciguerra Glacier Valley Day Hike Tierra Turismo"                             | 1
+"Visit Chepu River Valley Birds Chile"                                           | 1
+"Walk through Puerto Varas Birds Chile"                                          | 1
+"Whale watching on the Yellow Submarine Causana Viajes"                          | 1
+"Yerba Loca Nature Sanctuary Hike Southbound"                                    | 1
+
+TYPE: ground_accommodation
+--------------------------------------------------------------------------------
+Missing Component                 | Occurrences
+------------------------------------------------
+"Palladio Hotel"                  | 9
+"Villa Mansa"                     | 8
+"Kosten Aike"                     | 6
+"Mallín Colorado Lodge"           | 6
+"B&B and Cabins Cerro Castillo"   | 5
+"Del Nómade Hosteria"             | 5
+"Alma del Lago"                   | 4
+"Estancia Rincón Chico"           | 3
+"Hotel Ultimo Paraíso"            | 3
+"Los Raices B&B"                  | 3
+"Serrano Camp"                    | 3
+"Dazzler Puerto Madryn"           | 2
+"El Puesto"                       | 2
+"Estancia La Bandada"             | 2
+"Hotel El Barranco"               | 2
+"La Casa de Eugenia"              | 2
+"Las Balsas Relais & Châteaux"    | 2
+"Palacio Astoreca"                | 2
+"Pangue Lodge"                    | 2
+"Fitz Roy Comfort Camp"           | 1
+"Hosteria El Pilar"               | 1
+"Peninsula Petit"                 | 1
+
+TYPE: actvity
+--------------------------------------------------------------------------------
+Missing Component                                                     | Occurrences
+------------------------------------------------------------------------------------
+"Iguazú Interactive Six-course Group Dining Experience with Drinks"   | 3
+
+TYPE: excursion (shared)
+--------------------------------------------------------------------------------
+Missing Component                                          | Occurrences
+-------------------------------------------------------------------------
+"Perito Moreno Mayo Spirit Boat and Hike Walk Patagonia"   | 1

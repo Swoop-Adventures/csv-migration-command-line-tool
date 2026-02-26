@@ -1,0 +1,1500 @@
+{
+  "start_time": "2026-02-26T11:42:48.371369",
+  "end_time": "2026-02-26T11:43:31.846446",
+  "duration_seconds": 43.475077,
+  "sheets": {
+    "Private Tours Package": {
+      "total_rows": 146,
+      "success_count": 0,
+      "cached_count": 0,
+      "validation_errors": 0,
+      "upload_errors": 146,
+      "mapping_errors": 0,
+      "success_rate": 0.0,
+      "field_completeness": {
+        "description.web": 45.89041095890411,
+        "description.quote": 45.89041095890411,
+        "description.final": 45.89041095890411,
+        "destination": 100.0,
+        "tripId": 99.31506849315068,
+        "partners": 100.0,
+        "regions": 98.63013698630137,
+        "media.images": 0.0,
+        "package": 100.0
+      },
+      "rows": [
+        {
+          "row_number": 5,
+          "component_name": "Best of the Chilean Lake District",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 8949441045878332936, 'trace': 8701359601280036915}"
+          },
+          "duration_ms": 197.75
+        },
+        {
+          "row_number": 11,
+          "component_name": "Northern Carretera Austral Road Trip",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 4467750623382358270, 'trace': 1480590256908410164}"
+          },
+          "duration_ms": 181.204
+        },
+        {
+          "row_number": 10,
+          "component_name": "Highlights of Pumalín National Park",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 7426384548339138545, 'trace': 283932007889033988}"
+          },
+          "duration_ms": 185.51500000000001
+        },
+        {
+          "row_number": 7,
+          "component_name": "Best of Pucón",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 134601718594515468, 'trace': 5426089892477833764}"
+          },
+          "duration_ms": 218.881
+        },
+        {
+          "row_number": 8,
+          "component_name": "Highlights of the Chilean Lake District",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 7376344824737941712, 'trace': 4886174198265323818}"
+          },
+          "duration_ms": 218.252
+        },
+        {
+          "row_number": 2,
+          "component_name": "Highlights of Bariloche",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 8216548553729258554, 'trace': 6509720289459721157}"
+          },
+          "duration_ms": 246.188
+        },
+        {
+          "row_number": 3,
+          "component_name": "Luxury Mendoza",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 947380492636074258, 'trace': 4685653127155858331}"
+          },
+          "duration_ms": 257.976
+        },
+        {
+          "row_number": 9,
+          "component_name": "Day Hikes in Pucón",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 7519556818476193255, 'trace': 389587494476476940}"
+          },
+          "duration_ms": 238.798
+        },
+        {
+          "row_number": 4,
+          "component_name": "Gentle Adventure in Aysen",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 1640278531500582067, 'trace': 2980349562867119206}"
+          },
+          "duration_ms": 264.953
+        },
+        {
+          "row_number": 13,
+          "component_name": "Best of Peninsula Valdés",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 7151906144632159720, 'trace': 4505953631445405083}"
+          },
+          "duration_ms": 110.936
+        },
+        {
+          "row_number": 12,
+          "component_name": "Foodie Adventure in the Chilean Lake District",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 2727694458603313959, 'trace': 5443815399860709587}"
+          },
+          "duration_ms": 114.608
+        },
+        {
+          "row_number": 14,
+          "component_name": "Highlights of Peninsula Valdés",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 884442811808814933, 'trace': 8401993633887016605}"
+          },
+          "duration_ms": 111.17699999999999
+        },
+        {
+          "row_number": 17,
+          "component_name": "Luxury Atacama",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 7868314010582835865, 'trace': 5774277110369290418}"
+          },
+          "duration_ms": 90.061
+        },
+        {
+          "row_number": 18,
+          "component_name": "Buenos Aires In Depth",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 1959799419527433218, 'trace': 8484137029779400747}"
+          },
+          "duration_ms": 79.543
+        },
+        {
+          "row_number": 16,
+          "component_name": "Gentle Adventure in Torres del Paine",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 3961353492946172230, 'trace': 5346993630278043626}"
+          },
+          "duration_ms": 103.548
+        },
+        {
+          "row_number": 15,
+          "component_name": "Peninsula Valdés Wildlife In Depth",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 636713904346792996, 'trace': 6784818504472220890}"
+          },
+          "duration_ms": 115.485
+        },
+        {
+          "row_number": 20,
+          "component_name": "Relax & Re-energise in Buenos Aires",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 1015120720261970216, 'trace': 9150122033803686015}"
+          },
+          "duration_ms": 86.726
+        },
+        {
+          "row_number": 19,
+          "component_name": "Classic Buenos Aires",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 3665308124569909846, 'trace': 8306299117156969422}"
+          },
+          "duration_ms": 101.502
+        },
+        {
+          "row_number": 21,
+          "component_name": "Buenos Aires Express",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 261354988492638619, 'trace': 5491618510662707549}"
+          },
+          "duration_ms": 90.88799999999999
+        },
+        {
+          "row_number": 23,
+          "component_name": "Self-Drive Argentinian Lake District",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 906023549900846499, 'trace': 8718727327159533837}"
+          },
+          "duration_ms": 89.834
+        },
+        {
+          "row_number": 22,
+          "component_name": "Buenos Aires Express",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 1827034721664896385, 'trace': 7765236189956091198}"
+          },
+          "duration_ms": 111.898
+        },
+        {
+          "row_number": 28,
+          "component_name": "Active Buenos Aires",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 2338016415556409463, 'trace': 8300554843755399721}"
+          },
+          "duration_ms": 83.17099999999999
+        },
+        {
+          "row_number": 24,
+          "component_name": "Classic Iguazú Falls",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 4454600402522872294, 'trace': 4402507988117474099}"
+          },
+          "duration_ms": 109.425
+        },
+        {
+          "row_number": 25,
+          "component_name": "Buenos Aires In Depth",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 6339428777532080317, 'trace': 5315363844092088078}"
+          },
+          "duration_ms": 109.39500000000001
+        },
+        {
+          "row_number": 26,
+          "component_name": "Classic Buenos Aires",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 7382421048858776127, 'trace': 7817024353030807173}"
+          },
+          "duration_ms": 104.188
+        },
+        {
+          "row_number": 27,
+          "component_name": "Relax & Re-energise in Buenos Aires",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 3821322152198861556, 'trace': 9196454565561207559}"
+          },
+          "duration_ms": 99.94200000000001
+        },
+        {
+          "row_number": 29,
+          "component_name": "Buenos Aires Foodie",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 7938632063686231878, 'trace': 4133881592719223987}"
+          },
+          "duration_ms": 87.06899999999999
+        },
+        {
+          "row_number": 30,
+          "component_name": "Iguazu Falls Express",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 4217851461365124874, 'trace': 3936172571859607105}"
+          },
+          "duration_ms": 89.28899999999999
+        },
+        {
+          "row_number": 31,
+          "component_name": "Classic Iguazu Falls",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 9199680815959640385, 'trace': 4083075954536029934}"
+          },
+          "duration_ms": 92.774
+        },
+        {
+          "row_number": 35,
+          "component_name": "Mendoza in Depth",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 1599342448266986581, 'trace': 4661116742182638498}"
+          },
+          "duration_ms": 76.679
+        },
+        {
+          "row_number": 32,
+          "component_name": "Iguazu Falls in Depth",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 6002240745406636152, 'trace': 8248815138894793723}"
+          },
+          "duration_ms": 90.13300000000001
+        },
+        {
+          "row_number": 33,
+          "component_name": "Mendoza Express",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 7210483317259936308, 'trace': 2627577625888681500}"
+          },
+          "duration_ms": 89.364
+        },
+        {
+          "row_number": 34,
+          "component_name": "Classic Mendoza",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 4262014907919784503, 'trace': 277307313814241793}"
+          },
+          "duration_ms": 82.71199999999999
+        },
+        {
+          "row_number": 38,
+          "component_name": "Los Glaciares Multisport Adventure",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 3542685087809650281, 'trace': 1259858672862877852}"
+          },
+          "duration_ms": 81.701
+        },
+        {
+          "row_number": 36,
+          "component_name": "Best of Aysen Roadtrip",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 7761476403657096593, 'trace': 5512404719345616587}"
+          },
+          "duration_ms": 87.29599999999999
+        },
+        {
+          "row_number": 6,
+          "component_name": "Highlights of Chiloé Island",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 6477450134972132592, 'trace': 3420537102546409347}"
+          },
+          "duration_ms": 577.744
+        },
+        {
+          "row_number": 43,
+          "component_name": "Classic Santiago, Wines and Valparaíso",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 1917053789884868780, 'trace': 3867682187638444696}"
+          },
+          "duration_ms": 72.45500000000001
+        },
+        {
+          "row_number": 42,
+          "component_name": "Highlights of the Atacama",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 1234286921777070381, 'trace': 4920271495759658536}"
+          },
+          "duration_ms": 76.48299999999999
+        },
+        {
+          "row_number": 39,
+          "component_name": "Santiago Express",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 821042809411899453, 'trace': 6989063131935015583}"
+          },
+          "duration_ms": 101.672
+        },
+        {
+          "row_number": 41,
+          "component_name": "Easter Island Highlights",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 7081909300969609554, 'trace': 3789620372609929312}"
+          },
+          "duration_ms": 92.359
+        },
+        {
+          "row_number": 44,
+          "component_name": "Central Valley Vineyard Retreat",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 7663302402567613364, 'trace': 4929540138105636302}"
+          },
+          "duration_ms": 92.23299999999999
+        },
+        {
+          "row_number": 46,
+          "component_name": "Santiago In Depth",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 6209513906801019871, 'trace': 745494322458537160}"
+          },
+          "duration_ms": 88.851
+        },
+        {
+          "row_number": 47,
+          "component_name": "Active Santiago",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 6066044556120980051, 'trace': 2016367601688209507}"
+          },
+          "duration_ms": 83.898
+        },
+        {
+          "row_number": 53,
+          "component_name": "Day Hikes in Tierra del Fuego",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 7221045976439769738, 'trace': 3506928335087331955}"
+          },
+          "duration_ms": 72.02
+        },
+        {
+          "row_number": 51,
+          "component_name": "Active Atacama",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 4003758852645308640, 'trace': 307679088735088734}"
+          },
+          "duration_ms": 113.668
+        },
+        {
+          "row_number": 50,
+          "component_name": "Classic Atacama",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 8214965197577966595, 'trace': 3089735707873190861}"
+          },
+          "duration_ms": 126.918
+        },
+        {
+          "row_number": 49,
+          "component_name": "Relax & Re-energise in Santiago",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 1201741231184552028, 'trace': 9003682725234250083}"
+          },
+          "duration_ms": 129.684
+        },
+        {
+          "row_number": 52,
+          "component_name": "Highlights of Tierra del Fuego",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 5462257257956216224, 'trace': 6682883466173088129}"
+          },
+          "duration_ms": 114.15599999999999
+        },
+        {
+          "row_number": 54,
+          "component_name": "Tierra del Fuego Winter Experience",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 7716040245663023432, 'trace': 1607673400934579587}"
+          },
+          "duration_ms": 67.076
+        },
+        {
+          "row_number": 37,
+          "component_name": "Highlights of Aysen Roadtrip",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 9057498268939384286, 'trace': 2069441216521215151}"
+          },
+          "duration_ms": 304.664
+        },
+        {
+          "row_number": 59,
+          "component_name": "Ushuaia Express",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 3399439785038980209, 'trace': 5747712642718683397}"
+          },
+          "duration_ms": 68.73400000000001
+        },
+        {
+          "row_number": 58,
+          "component_name": "Ushuaia Express",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 6966009746358363865, 'trace': 69847504259436565}"
+          },
+          "duration_ms": 82.73
+        },
+        {
+          "row_number": 60,
+          "component_name": "Ushuaia Foodie",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 461094931207058916, 'trace': 5244710801900434610}"
+          },
+          "duration_ms": 73.863
+        },
+        {
+          "row_number": 56,
+          "component_name": "Hike, Ride & Raft in Tierra del Fuego",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 7032427019334456928, 'trace': 86548230847615727}"
+          },
+          "duration_ms": 104.242
+        },
+        {
+          "row_number": 61,
+          "component_name": "Ushuaia Classic",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 6341861889130123137, 'trace': 5019739052097390487}"
+          },
+          "duration_ms": 80.527
+        },
+        {
+          "row_number": 62,
+          "component_name": "Active Ushuaia",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 1413119649154336110, 'trace': 8225184389171486796}"
+          },
+          "duration_ms": 99.23899999999999
+        },
+        {
+          "row_number": 64,
+          "component_name": "The Best of Los Glaciares",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 8180023525703066368, 'trace': 8990507766749747739}"
+          },
+          "duration_ms": 89.518
+        },
+        {
+          "row_number": 63,
+          "component_name": "Highlights of Los Glaciares",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 3993772374282766911, 'trace': 6289238182966294939}"
+          },
+          "duration_ms": 91.169
+        },
+        {
+          "row_number": 65,
+          "component_name": "Los Glaciares Winter Experience",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 8566924075940573917, 'trace': 9000193671166311003}"
+          },
+          "duration_ms": 90.156
+        },
+        {
+          "row_number": 40,
+          "component_name": "Santiago Express",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 6210340832679926464, 'trace': 5848537074748581496}"
+          },
+          "duration_ms": 419.26000000000005
+        },
+        {
+          "row_number": 66,
+          "component_name": "Los Huemules Adventure",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 6718594175137368760, 'trace': 7584224297349250904}"
+          },
+          "duration_ms": 90.397
+        },
+        {
+          "row_number": 67,
+          "component_name": "Fitz Roy Lakeside Retreat",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 38120014353620006, 'trace': 130078217793594240}"
+          },
+          "duration_ms": 84.831
+        },
+        {
+          "row_number": 68,
+          "component_name": "Los Glaciares Gentle Adventure",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 4527925575626369287, 'trace': 5745707698501433915}"
+          },
+          "duration_ms": 97.528
+        },
+        {
+          "row_number": 55,
+          "component_name": "The Best of Tierra del Fuego",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 4786953732212396496, 'trace': 3172599424257157198}"
+          },
+          "duration_ms": 325.055
+        },
+        {
+          "row_number": 84,
+          "component_name": "Custom Santiago",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 6178327978233187192, 'trace': 8110389092776979092}"
+          },
+          "duration_ms": 100.62599999999999
+        },
+        {
+          "row_number": 85,
+          "component_name": "Custom Buenos Aires",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 5895468989392696195, 'trace': 4625770549348531164}"
+          },
+          "duration_ms": 101.313
+        },
+        {
+          "row_number": 87,
+          "component_name": "Custom Los Glaciares",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 921031687678507024, 'trace': 7189851616573600345}"
+          },
+          "duration_ms": 110.78399999999999
+        },
+        {
+          "row_number": 88,
+          "component_name": "Valparaiso Express",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 8202324631713142059, 'trace': 4719442067745139984}"
+          },
+          "duration_ms": 131.154
+        },
+        {
+          "row_number": 89,
+          "component_name": "Custom Tierra del Fuego",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 4494149037055852318, 'trace': 1918213176269801616}"
+          },
+          "duration_ms": 92.528
+        },
+        {
+          "row_number": 91,
+          "component_name": "Custom Puerto Natales",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 6337591546615825097, 'trace': 4786561892827013280}"
+          },
+          "duration_ms": 79.479
+        },
+        {
+          "row_number": 92,
+          "component_name": "Custom Puerto Natales",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 800799685648494390, 'trace': 2798571414770313858}"
+          },
+          "duration_ms": 75.634
+        },
+        {
+          "row_number": 90,
+          "component_name": "Custom Ushuaia",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 3070026411184230778, 'trace': 3665607157323410595}"
+          },
+          "duration_ms": 104.958
+        },
+        {
+          "row_number": 94,
+          "component_name": "Custom Los Glaciares Mountaineering",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 49434180559928441, 'trace': 3481867631116540744}"
+          },
+          "duration_ms": 85.471
+        },
+        {
+          "row_number": 93,
+          "component_name": "El Calafate Express",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 3813967166288605705, 'trace': 6613466720767389821}"
+          },
+          "duration_ms": 87.16
+        },
+        {
+          "row_number": 45,
+          "component_name": "Classic Santiago",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 3114241801899637415, 'trace': 8240958396951009647}"
+          },
+          "duration_ms": 1090.245
+        },
+        {
+          "row_number": 95,
+          "component_name": "Custom Puerto Varas",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 773642662670425248, 'trace': 3497392397591649291}"
+          },
+          "duration_ms": 151.924
+        },
+        {
+          "row_number": 97,
+          "component_name": "Highlights of Northwest Argentina",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 2823348136985812080, 'trace': 3365325254889493778}"
+          },
+          "duration_ms": 93.71799999999999
+        },
+        {
+          "row_number": 96,
+          "component_name": "El Calafate Express",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 3527919293680586218, 'trace': 6541586526059373047}"
+          },
+          "duration_ms": 115.68199999999999
+        },
+        {
+          "row_number": 48,
+          "component_name": "Foodie Santiago",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 5330319377632733156, 'trace': 994608090397003947}"
+          },
+          "duration_ms": 1100.3970000000002
+        },
+        {
+          "row_number": 98,
+          "component_name": "Punta Arenas & Isla Magdalena",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 6236159508030040218, 'trace': 3265082396539000624}"
+          },
+          "duration_ms": 80.40899999999999
+        },
+        {
+          "row_number": 100,
+          "component_name": "Colchagua Valley & Santiago",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 4263031465255077401, 'trace': 8663850620541577599}"
+          },
+          "duration_ms": 93.308
+        },
+        {
+          "row_number": 99,
+          "component_name": "Highlights of Mendoza",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 9009242707608717295, 'trace': 6561049922880543704}"
+          },
+          "duration_ms": 121.469
+        },
+        {
+          "row_number": 102,
+          "component_name": "La Barrosa Adventure",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 1391707753317767983, 'trace': 4205301085473304747}"
+          },
+          "duration_ms": 67.454
+        },
+        {
+          "row_number": 103,
+          "component_name": "Coyhaique River Lodge Adventure",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 9028622891228735720, 'trace': 2077406908023517536}"
+          },
+          "duration_ms": 96.756
+        },
+        {
+          "row_number": 57,
+          "component_name": "Ushuaia Express",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 8945986174923403978, 'trace': 842151170238373173}"
+          },
+          "duration_ms": 1091.281
+        },
+        {
+          "row_number": 105,
+          "component_name": "Fly-fishing at Río Palena Lodge",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 8684206235976078566, 'trace': 4926511766347670500}"
+          },
+          "duration_ms": 73.61099999999999
+        },
+        {
+          "row_number": 104,
+          "component_name": "Hotel Casa Real Vineyard Retreat",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 5860510257970228480, 'trace': 5156011512231404557}"
+          },
+          "duration_ms": 74.77399999999999
+        },
+        {
+          "row_number": 108,
+          "component_name": "Buenos Aires City Tour",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 8676235595504347990, 'trace': 2063780649630834029}"
+          },
+          "duration_ms": 76.92999999999999
+        },
+        {
+          "row_number": 110,
+          "component_name": "Santiago City Sensations Tour",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 4867086138039348546, 'trace': 6093635633857691343}"
+          },
+          "duration_ms": 72.48
+        },
+        {
+          "row_number": 111,
+          "component_name": "Isla Magdalena Tour (Add-on for Cascada Trips)",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 5994040657056956332, 'trace': 6820596835497902640}"
+          },
+          "duration_ms": 87.32
+        },
+        {
+          "row_number": 113,
+          "component_name": "Mayo Spirit Boat & Hike",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 3563410398095748303, 'trace': 6218472744766597849}"
+          },
+          "duration_ms": 85.658
+        },
+        {
+          "row_number": 112,
+          "component_name": "Mayo Spirit Boat & Hike",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 2906681366909058128, 'trace': 2013770604606897377}"
+          },
+          "duration_ms": 89.63799999999999
+        },
+        {
+          "row_number": 115,
+          "component_name": "Perito Moreno Glacier - Minitrekking 1",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 1226581435038613535, 'trace': 7171957923935290380}"
+          },
+          "duration_ms": 76.738
+        },
+        {
+          "row_number": 117,
+          "component_name": "Visit to Perito Moreno Glacier including Big Ice Hike",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 8489160519924065295, 'trace': 7839383773359847804}"
+          },
+          "duration_ms": 73.085
+        },
+        {
+          "row_number": 118,
+          "component_name": "Visit to Perito Moreno Glacier including Big Ice Hike",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 2853286884685402839, 'trace': 3040120015176446617}"
+          },
+          "duration_ms": 72.855
+        },
+        {
+          "row_number": 121,
+          "component_name": "Kayaking at Lago del Desierto",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 3748558984339150216, 'trace': 7746926897413964792}"
+          },
+          "duration_ms": 125.94500000000001
+        },
+        {
+          "row_number": 114,
+          "component_name": "Walkways & Safari Nautico Boat Trip",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 8196453685793048086, 'trace': 1857420147010785891}"
+          },
+          "duration_ms": 307.80999999999995
+        },
+        {
+          "row_number": 123,
+          "component_name": "Colonia Tour from Buenos Aires",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 100018428815809071, 'trace': 8252283645395771127}"
+          },
+          "duration_ms": 89.318
+        },
+        {
+          "row_number": 124,
+          "component_name": "Estancia San Antonio de Areco",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 5179307815705849816, 'trace': 3340826928710587663}"
+          },
+          "duration_ms": 94.57300000000001
+        },
+        {
+          "row_number": 122,
+          "component_name": "Perito Moreno Glacier with Pioneros Excursion",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 1962828876477444130, 'trace': 3788199861016530517}"
+          },
+          "duration_ms": 102.092
+        },
+        {
+          "row_number": 86,
+          "component_name": "Custom Los Glaciares",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 6484309033740613413, 'trace': 5561291899843403984}"
+          },
+          "duration_ms": 1086.5629999999999
+        },
+        {
+          "row_number": 126,
+          "component_name": "El Querandi Tango Show & Dinner",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 3667729010098078976, 'trace': 1481789354080188401}"
+          },
+          "duration_ms": 111.23700000000001
+        },
+        {
+          "row_number": 128,
+          "component_name": "Argentine Experience",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 2255970964233443068, 'trace': 7634384444327439450}"
+          },
+          "duration_ms": 79.201
+        },
+        {
+          "row_number": 127,
+          "component_name": "Buenos Aires Graffiti Tour",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 9175382522823141436, 'trace': 3061387213518709922}"
+          },
+          "duration_ms": 96.286
+        },
+        {
+          "row_number": 131,
+          "component_name": "Valparaiso City Tour",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 4338009377011991053, 'trace': 6741220975397727079}"
+          },
+          "duration_ms": 75.614
+        },
+        {
+          "row_number": 132,
+          "component_name": "Valparaiso Street Art Tour",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 6734855676491842865, 'trace': 5308871134920917078}"
+          },
+          "duration_ms": 76.308
+        },
+        {
+          "row_number": 133,
+          "component_name": "Valparaiso and Viña Full Day City Tour",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 7226568371822436683, 'trace': 7424674508621915559}"
+          },
+          "duration_ms": 70.464
+        },
+        {
+          "row_number": 130,
+          "component_name": "Buenos Aires Day at Leisure",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 6914291781798773488, 'trace': 4229864959138803530}"
+          },
+          "duration_ms": 96.902
+        },
+        {
+          "row_number": 137,
+          "component_name": "Beagle Channel Cruise: Penguin Island and Sea Lion Colony",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 6448536950441742855, 'trace': 4591445019580367944}"
+          },
+          "duration_ms": 73.262
+        },
+        {
+          "row_number": 135,
+          "component_name": "Private Casablanca Valley with Vineyards Tour",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 5703616355812359862, 'trace': 2266064943709636746}"
+          },
+          "duration_ms": 82.173
+        },
+        {
+          "row_number": 136,
+          "component_name": "Full Day Beagle Channel Cruise to Estancia Harberton & Isla Martillo",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 3104490077571317721, 'trace': 7801638566413888093}"
+          },
+          "duration_ms": 82.54599999999999
+        },
+        {
+          "row_number": 125,
+          "component_name": "Buenos Aires Tango Show - Gala",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 2129153909638953765, 'trace': 4184254008458184450}"
+          },
+          "duration_ms": 331.98199999999997
+        },
+        {
+          "row_number": 129,
+          "component_name": "Buenos Aires Cycling City Tour",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 2852791384153689913, 'trace': 1510519581536383616}"
+          },
+          "duration_ms": 292.21200000000005
+        },
+        {
+          "row_number": 138,
+          "component_name": "Day at Leisure in Ushuaia",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 2509553143937980525, 'trace': 642250699490265746}"
+          },
+          "duration_ms": 101.15599999999999
+        },
+        {
+          "row_number": 140,
+          "component_name": "Tierra del Fuego National Park with Trekking & Canoes",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 6722860044694414855, 'trace': 6611348097402757501}"
+          },
+          "duration_ms": 99.975
+        },
+        {
+          "row_number": 139,
+          "component_name": "Tierra del Fuego National Park Half Day Tour",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 1689900057100634071, 'trace': 1243174048546517656}"
+          },
+          "duration_ms": 103.783
+        },
+        {
+          "row_number": 142,
+          "component_name": "Half day Tierra del Fuego National Park hike",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 2528621902226046083, 'trace': 2186175195589058596}"
+          },
+          "duration_ms": 92.18700000000001
+        },
+        {
+          "row_number": 141,
+          "component_name": "Morning excursion to walk with penguins on Isla Martillo",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 6944223222415116839, 'trace': 7090605332019068502}"
+          },
+          "duration_ms": 116.351
+        },
+        {
+          "row_number": 144,
+          "component_name": "Half day Beagle channel yacht excursion",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 2571385445798943919, 'trace': 4155098755632969327}"
+          },
+          "duration_ms": 80.578
+        },
+        {
+          "row_number": 145,
+          "component_name": "Full day Estancia Rolito and Cape San Pablo",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 2239607300954430200, 'trace': 8512129380721332328}"
+          },
+          "duration_ms": 129.361
+        },
+        {
+          "row_number": 143,
+          "component_name": "4x4 and canoeing",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 2207516146649691860, 'trace': 6217836790952691328}"
+          },
+          "duration_ms": 133.856
+        },
+        {
+          "row_number": 147,
+          "component_name": "Kayaking, Penguins and Estancia Harberton",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 3521062703560392869, 'trace': 2464407640169184933}"
+          },
+          "duration_ms": 75.556
+        },
+        {
+          "row_number": 146,
+          "component_name": "Full Day Off-road Adventure in the Andes in a 4x4",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 2895145767696757060, 'trace': 7075435069177892797}"
+          },
+          "duration_ms": 91.40299999999999
+        },
+        {
+          "row_number": 148,
+          "component_name": "Estancia Harberton, Martillo Island Penguins and Hiking on Gable Island",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 4940669318669961016, 'trace': 7677955073745149493}"
+          },
+          "duration_ms": 86.95700000000001
+        },
+        {
+          "row_number": 150,
+          "component_name": "Tigre & San Isidro Tour",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 1563229481441761215, 'trace': 5895904876004571555}"
+          },
+          "duration_ms": 72.245
+        },
+        {
+          "row_number": 149,
+          "component_name": "Full Day Beagle Channel, Isla Martillo and Estancia Harberton Excursion",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 4028939499224816008, 'trace': 6464757242286026331}"
+          },
+          "duration_ms": 74.03999999999999
+        },
+        {
+          "row_number": 152,
+          "component_name": "Laguna Torre Hike",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 5473323917163755197, 'trace': 3003230358155255125}"
+          },
+          "duration_ms": 73.115
+        },
+        {
+          "row_number": 151,
+          "component_name": "Laguna de Los Tres Hike",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 6275233246156856781, 'trace': 8784228622519495997}"
+          },
+          "duration_ms": 81.716
+        },
+        {
+          "row_number": 153,
+          "component_name": "Loma del Pliegue Tumbado hike",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 2889564133463816303, 'trace': 1564810012055151974}"
+          },
+          "duration_ms": 84.688
+        },
+        {
+          "row_number": 156,
+          "component_name": "Kayaking La Leona",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 6591091859959046360, 'trace': 3313917588687510196}"
+          },
+          "duration_ms": 69.619
+        },
+        {
+          "row_number": 155,
+          "component_name": "Los Huemules Hike",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 4520637382345670816, 'trace': 6549570831537882669}"
+          },
+          "duration_ms": 81.734
+        },
+        {
+          "row_number": 157,
+          "component_name": "Visit to Perito Moreno Glacier including minitrekking on the Ice",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 6421930485129799534, 'trace': 412039750992869261}"
+          },
+          "duration_ms": 72.387
+        },
+        {
+          "row_number": 158,
+          "component_name": "Visit to Perito Moreno Glacier including Kayaking",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 8015339899542512821, 'trace': 6299587502371464260}"
+          },
+          "duration_ms": 67.604
+        },
+        {
+          "row_number": 109,
+          "component_name": "Santiago Half Day City Tour",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 1593767292705331456, 'trace': 3964689800235437569}"
+          },
+          "duration_ms": 1075.962
+        },
+        {
+          "row_number": 160,
+          "component_name": "Beer & Bike (35km)",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 4702580149376418972, 'trace': 3802905335713518047}"
+          },
+          "duration_ms": 68.07100000000001
+        },
+        {
+          "row_number": 159,
+          "component_name": "Tierra del Fuego National Park Half Day Tour (Private)",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 1744232073617675875, 'trace': 294821926594316893}"
+          },
+          "duration_ms": 81.211
+        },
+        {
+          "row_number": 161,
+          "component_name": "100km Cooking Class",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 5131076765091321704, 'trace': 1852307681028680946}"
+          },
+          "duration_ms": 73.287
+        },
+        {
+          "row_number": 162,
+          "component_name": "Horseback Riding Estancia La Estela",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 9126639769378318142, 'trace': 8150308549357969624}"
+          },
+          "duration_ms": 86.37899999999999
+        },
+        {
+          "row_number": 163,
+          "component_name": "Huemules Reserve & Puesto Cagliero",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 8640844709414207113, 'trace': 2088470430735580710}"
+          },
+          "duration_ms": 77.664
+        },
+        {
+          "row_number": 164,
+          "component_name": "Lago del Desierto and Huemul Glacier Viewpoint Hike",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 1347334358281273888, 'trace': 3197120646953600196}"
+          },
+          "duration_ms": 73.756
+        },
+        {
+          "row_number": 116,
+          "component_name": "Visit to Perito Moreno Glacier including Minitrekking on the Ice",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 6289903006100684272, 'trace': 9039315781102838163}"
+          },
+          "duration_ms": 1099.045
+        },
+        {
+          "row_number": 165,
+          "component_name": "Lago del Desierto Kayak & Hike",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 3562476592775008315, 'trace': 8936914892391304688}"
+          },
+          "duration_ms": 83.106
+        },
+        {
+          "row_number": 119,
+          "component_name": "Estancia Cristina Discovery",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 5524296700262381699, 'trace': 1731827367323990036}"
+          },
+          "duration_ms": 1090.9
+        },
+        {
+          "row_number": 120,
+          "component_name": "Estancia Cristina Discovery",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 5031985954235395611, 'trace': 4395800817828086033}"
+          },
+          "duration_ms": 1090.8770000000002
+        },
+        {
+          "row_number": 134,
+          "component_name": "Full day wine tasting excursion in the Casablanca Valley",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 2781384140191865929, 'trace': 3191558326333419439}"
+          },
+          "duration_ms": 1426.85
+        },
+        {
+          "row_number": 154,
+          "component_name": "Rafting Río de Las Vueltas",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'invalid access token', 'span': 5559372737839460594, 'trace': 5715158724585832526}"
+          },
+          "duration_ms": 1083.95
+        }
+      ]
+    }
+  },
+  "overall_field_completeness": {
+    "description.web": 45.89041095890411,
+    "description.quote": 45.89041095890411,
+    "description.final": 45.89041095890411,
+    "destination": 100.0,
+    "tripId": 99.31506849315068,
+    "partners": 100.0,
+    "regions": 98.63013698630137,
+    "media.images": 0.0,
+    "package": 100.0
+  }
+}

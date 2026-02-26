@@ -25,20 +25,20 @@ from mappings.multi_day_activity import map_multi_day_activity_component
 from mappings.cruise import map_cruise_component
 from mappings.ship_accom import map_ship_accommodation_component
 
-ACCESS_TOKEN = ""
+ACCESS_TOKEN = "ya29.a0ATkoCc5VdeI3A6RBBFBU23NJOVngCcgrQTp-uq1clfbr0Itl4_V-LnEDeCnzI6HKHTCJrou5IrMHhxuTRQPaVuJCbIcJjN1GI4e5urjV_RBL-hUOkYNky1T-eUDRcGnDTUFvJ6NFu3HiqeCUd8aZVJMRwBttmGcxRmNviNu5M3rLykxSs_b5uihFNAbV-SS7JGADyHr4hSfpaCgYKASYSARUSFQHGX2MimHgszLPGLxSt7P8l6AFo3Q0211"
 
 SHEET_PROCESS_ORDER = [
-    "Location",
-    "Ground Accom",
-    "Ship Accom",
-    "ANT Ship Accom",
+    # "Location",
+    # "Ground Accom",
+    # "Ship Accom",
+    # "ANT Ship Accom",
     # "Journeys",
     # "All Activities - For Upload",
     # "ANT Activities",
     # "All Transfers - For Upload",
     # "ANT Transfers",
-    # "Excursions Package",
-    # "Private Tours Package",
+    "Excursions Package",
+    "Private Tours Package",
     # "All Inclusive Hotel Package",
     # "Multi-day Activity Package",
     # "PAT Cruise Packages ",
@@ -105,32 +105,32 @@ SHEET_TEMPLATE_MAP = {
     ],
     "Excursions Package": [
         "template_aca16a46ec3842ca85d182ee9348f627", # Base
-        "template_3b7714dcfa374cd19b9dc97af1510204", # Pkg
-        "template_a6a2dbfd478143de994dca40dc07e054"
+        "template_c3307de1e53640c4b4d1bb8fa99c4c7a", # Pkg
+        "template_a6a2dbfd478143de994dca40dc07e054"  # Excursion
     ],
     "Private Tours Package": [
         "template_aca16a46ec3842ca85d182ee9348f627", # Base
-        "template_3b7714dcfa374cd19b9dc97af1510204", # Pkg
+        "template_c3307de1e53640c4b4d1bb8fa99c4c7a", # Pkg
         "template_d9081bfcc3b7461987a3728e57ca7363"
     ],
     "All Inclusive Hotel Package": [
         "template_aca16a46ec3842ca85d182ee9348f627", # Base
-        "template_3b7714dcfa374cd19b9dc97af1510204", # Pkg
+        "template_c3307de1e53640c4b4d1bb8fa99c4c7a", # Pkg
         "template_ba7999ff957c4ca3a5e61496df6178ac"
     ],
     "Multi-day Activity Package": [
         "template_aca16a46ec3842ca85d182ee9348f627", # Base
-        "template_3b7714dcfa374cd19b9dc97af1510204", # Pkg
+        "template_c3307de1e53640c4b4d1bb8fa99c4c7a", # Pkg
         "template_a64e161de5824fcb9515274b0f67d698"
     ],
     "PAT Cruise Packages ": [
         "template_aca16a46ec3842ca85d182ee9348f627", # Base
-        "template_3b7714dcfa374cd19b9dc97af1510204", # Pkg
+        "template_c3307de1e53640c4b4d1bb8fa99c4c7a", # Pkg
         "template_63a57a90570c47b89f830d2c7618324f"
     ],
     "ANT Cruise Packages": [
         "template_aca16a46ec3842ca85d182ee9348f627", # Base
-        "template_3b7714dcfa374cd19b9dc97af1510204", # Pkg
+        "template_c3307de1e53640c4b4d1bb8fa99c4c7a", # Pkg
         "template_63a57a90570c47b89f830d2c7618324f"
     ]
 }
@@ -185,7 +185,7 @@ TEMPLATE_TYPES = {
     "template_e2f0e9e5343349358037a0564a3366a0": "activity",
     "template_12345678123456781234567812345678": "cruise_activity",
     "template_901d40ac12214820995880915c5b62f5": "transfer",
-    "template_3b7714dcfa374cd19b9dc97af1510204": "package",
+    "template_c3307de1e53640c4b4d1bb8fa99c4c7a": "package",
 
     "template_a6a2dbfd478143de994dca40dc07e054": "excursion",
     "template_d9081bfcc3b7461987a3728e57ca7363": "private_tour",
