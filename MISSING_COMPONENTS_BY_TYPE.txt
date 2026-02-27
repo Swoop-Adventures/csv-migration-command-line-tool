@@ -1,132 +1,87 @@
 MISSING COMPONENT REFERENCES REPORT (BY TYPE)
-Generated: 2026-02-26 16:00:47
+Generated: 2026-02-27 12:06:00
 
 This report groups all unique missing component references by type.
 Each entry shows the component name and how many times it was missing.
 
 ====================================================================================================
 
-TYPE: location
---------------------------------------------------------------------------------
-Missing Component                                                  | Occurrences
----------------------------------------------------------------------------------
-"Arturo Merino Benítez International Airport (SCL)"                | 26
-"Aeroparque Internacional Jorge Newbery (AEP)"                     | 14
-"Ministro Pistarini International Airport, Ezeiza (EZE)"           | 14
-"Puerto Montt, El Tepual Airport (PMC)"                            | 11
-"Punta Arenas Airport (PUQ)"                                       | 10
-"Puerto Natales Airport (PNT)"                                     | 9
-"El Calafate Airport (FTE)"                                        | 8
-"Cataratas del Iguazú International Airport (IGR)"                 | 6
-"El Plumerillo International Airport, Mendoza MDZ"                 | 6
-"Bariloche Airport (BRC)"                                          | 5
-"Calama Airport (CJC)"                                             | 5
-"Balmaceda Airport (BBA)"                                          | 4
-"Foz do Iguaçu International Airport (IGU)"                        | 4
-"Temuco Airport (ZCO)"                                             | 4
-"Ushuaia - Malvinas Argentinas International Airport (USH)"        | 4
-"Ushuaia Airport (USH)"                                            | 4
-"Mataveri International Airport (IPC)"                             | 3
-"Presidente Carlos Ibáñez del Campo International Airport (PUQ)"   | 3
-"Jorge Newbery Airport, Buenos Aires (AEP)"                        | 2
-"Puerto Madryn Airport (PMY)"                                      | 2
-"Puerto Montt Aerodrome (SCPF)"                                    | 2
-"Torres Del Paine"                                                 | 2
-"Trelew Airport (REL)"                                             | 2
-"Ayres De Recoleta"                                                | 1
-"Castro Mocopuli Airport (MHC)"                                    | 1
-"Chaitén Airport (WCH)"                                            | 1
-"El Loa Airport (CJC)"                                             | 1
-"Hilton Garden Inn Santiago Airport"                               | 1
-"Los Huemules Reserve/Explora Chaltén"                             | 1
-"Oco's Place"                                                      | 1
-"Pehoé/Serrano Village/Administration"                             | 1
-"Poincenot Comfort Camp"                                           | 1
-"Puerto Williams Airport (WPU)"                                    | 1
-"Rupestre"                                                         | 1
-"Santiago Airport Holiday Inn"                                     | 1
-"Uyuni Airport (UYU)"                                              | 1
-
-TYPE: journey
---------------------------------------------------------------------------------
-Missing Component                                                                        | Occurrences
--------------------------------------------------------------------------------------------------------
-"Puerto Natales to El Calafate (or reverse)"                                             | 6
-"Puerto Natales to Refugio Central/EcoCamp/Las Torres via Cerro Castillo (or reverse)"   | 5
-"Arakur Hotel - Port"                                                                    | 3
-"City Hotel - Aeroparque Internacional Jorge Newbery (AEP)"                              | 3
-"El Chaltén to Rio Electrico (Laguna de Los Tres)"                                       | 3
-"Recoleta Hotel - Ministro Pistarini International Airport, Ezeiza (EZE)"                | 3
-"Ushuaia Malvinas Argentinas (USH) - Arakur"                                             | 3
-"Ushuaia Malvinas Argentinas (USH) - Hotel (downtown)"                                   | 3
-"Ushuaia Malvinas Argentinas (USH) - Port"                                               | 3
-"Aeroparque Internacional Jorge Newbery (AEP) - City Hotel"                              | 2
-"Ushuaia Malvinas Argentinas (USH) - Port or reverse"                                    | 2
-"City Hotel - Arturo Merino Benitez International Airport SCL"                           | 1
-"Hotel (City Center) - Lake Esmeralda or reverse"                                        | 1
-"Hotel (City Center) - Tierra Del Fuego National Park or reverse"                        | 1
-"Las Hayas hotel - Port"                                                                 | 1
-"Los Cauquenes - Port"                                                                   | 1
-"Puerto Varas to Bariloche or reverse"                                                   | 1
-"Ushuaia Malvinas Argentinas (USH) - Las Hayas"                                          | 1
-"Ushuaia Malvinas Argentinas (USH) - Los Cauquenes"                                      | 1
-
 TYPE: transfer
 --------------------------------------------------------------------------------
-Missing Component                                                              | Occurrences
----------------------------------------------------------------------------------------------
-"Activity to Remota Lodge Remota Lodge"                                        | 24
-"Remota Lodge to Activity Remota Lodge"                                        | 24
-"Activity to Ushuaia Hotel H&T"                                                | 18
-"Ushuaia Hotel to Activity H&T"                                                | 18
-"El Chaltén Hotel to Activity H&T Driver Only"                                 | 15
-"Activity to El Chaltén Hotel H&T"                                             | 14
-"Activity to Tierra Atacama Tierra Guided"                                     | 11
-"Tierra Patagonia to Activity Tierra"                                          | 11
-"Activity to Tierra Patagonia Tierra"                                          | 9
-"Tierra Atacama to Activity Tierra Guided"                                     | 9
-"Activity to Bariloche Andestrack Guided"                                      | 5
-"Bariloche to Activity Andestrack Guided"                                      | 5
-"Remota Lodge to Puerto Natales Remota Lodge Driver Only"                      | 5
-"Activity to Río Hermoso Lodge Andestrack"                                     | 4
-"Río Hermoso Lodge to Activity Andestrack"                                     | 4
-"Beagle Channel to Errante Ecolodge Errante Ecolodge Driver Only"              | 3
-"Activity to Errante Ecolodge Errante Ecolodge Driver Only"                    | 2
-"Errante Ecolodge to Activity Errante Ecolodge Driver Only"                    | 2
-"Errante Ecolodge to Beagle Channel Errante Ecolodge Driver Only"              | 2
-"Lago Pehoé: Pudeto Dock to Paine Grande Dock Hotel Río Serrano"               | 2
-"Lago Pehoé: Pudeto Dock to Paine Grande Dock Remota Lodge"                    | 2
-"Puerto Natales to Remota Lodge Remota Lodge Driver Only"                      | 2
-"Activity to Aguas Arriba Lodge Aguas Arriba Lodge"                            | 1
-"Activity to Cataratas/Puerto Iguazú Hotel H&T"                                | 1
-"Activity to Puerto Iguazu (IGR) H&T"                                          | 1
-"Aguas Arriba Lodge to Activity Aguas Arriba Lodge"                            | 1
-"Altas Hike to Hotel Ultimo Paraiso Senderos Patagonia Aysén"                  | 1
-"Aviles Hike to Hotel Ultimo Paraiso Senderos Patagonia Aysén"                 | 1
-"Awasi Atacama to El Tatio Geysers"                                            | 1
-"Beagle Channel Biking"                                                        | 1
-"Cataratas/Puerto Iguazú Hotel to Activity H&T"                                | 1
-"Errante Ecolodge to Omora Ethnobotanical Park Errante Ecolodge Driver Only"   | 1
-"Errante Ecolodge to Puerto Navarino Errante Ecolodge Driver Only"             | 1
-"Errante Ecolodge to Puerto Williams Errante Ecolodge Driver Only"             | 1
-"Hotel Ultimo Paraiso to Altas Hike Senderos Patagonia Aysén"                  | 1
-"Hotel Ultimo Paraiso to Aviles Hike Senderos Patagonia Aysén"                 | 1
-"Lago Pehoé: Paine Grande Dock to Pudeto Dock Tierra Patagonia"                | 1
-"Lago Pehoé: Pudeto Dock to Paine Grande Dock Tierra Patagonia"                | 1
-"Mallín Colorado to Puerto Bertrand Senderos Patagonia Aysén"                  | 1
-"Omora Ethnobotanical Park to Errante Ecolodge Errante Ecolodge Driver Only"   | 1
-"Puerto Betrand to Cochrane Senderos Patagonia Aysén"                          | 1
-"Puerto Iguazu (IGR) to Activity H&T"                                          | 1
-"Puerto Navarino to Errante Ecolodge Errante Ecolodge Driver Only"             | 1
-"Puerto Williams to Errante Ecolodge Errante Ecolodge Driver Only"             | 1
+Missing Component                                                                | Occurrences
+-----------------------------------------------------------------------------------------------
+"Airport EZE - Recoleta Hotels H&T Guided"                                       | 8
+"Buenos Aires Hotel to AEP Airport H&T Driver Only"                              | 8
+"Ushuaia Hotel to Ushuaia Airport (USH) Tierra Turismo"                          | 7
+"IGR - Puerto Iguazú Hotel H&T Driver Only"                                      | 3
+"MDZ - Downtown Mendoza H&T Driver Only"                                         | 3
+"Puerto Iguazú Hotel - IGR H&T Driver Only"                                      | 2
+"AEP - San Antonio de Areco (Estancia La Bamba de Areco) H&T Driver Only"        | 1
+"AEP - San Miguel de Monte (Estancia La Bandada) H&T Driver Only"                | 1
+"Bariloche Airport (BRC) to Bariloche Andestrack Guided"                         | 1
+"Bariloche to Bariloche Airport (BRC) Andestrack Guided"                         | 1
+"Cataratas/Puerto Iguazú Hotel to Puerto Iguazú Airport (IGR) to Activity H&T"   | 1
+"Cochrane to Coyhaique Senderos Patagonia Aysén"                                 | 1
+"Coyhaique to Balmaceda Airport (BBA) Senderos Patagonia Aysén"                  | 1
+"Puerto Tranquilo to Coyhaique Senderos Patagonia Aysén"                         | 1
+"San Antonio de Areco (Estancia La Bamba de Areco) - AEP H&T Driver Only"        | 1
+"San Miguel de Monte (Estancia La Bandada) - AEP H&T Driver Only"                | 1
+"USH - Town Hotel H&T Driver Only"                                               | 1
+"Ushuaia Hotel to Ushuaia Airport (USH) H&T"                                     | 1
 
-TYPE: activity
+TYPE: ground_accommodation
 --------------------------------------------------------------------------------
-Missing Component                                                          | Occurrences
------------------------------------------------------------------------------------------
-"Cerro Torre Viewpoint Hike"                                               | 4
-"End of the World Train Station and Tierra del Fuego National Park Walk"   | 2
-"Blugrin - Cochrane River and Lake"                                        | 1
-"Cochrane River"                                                           | 1
-"Errante Ecolodge to Beagle Channel Errante Ecolodge Driver Only"          | 1
-"Laguna Torre Hike"                                                        | 1
+Missing Component                 | Occurrences
+------------------------------------------------
+"Palladio Hotel"                  | 9
+"Villa Mansa"                     | 8
+"Kosten Aike"                     | 6
+"Mallín Colorado Lodge"           | 6
+"B&B and Cabins Cerro Castillo"   | 5
+"Del Nómade Hosteria"             | 5
+"Alma del Lago"                   | 4
+"Estancia Rincón Chico"           | 3
+"Hotel Ultimo Paraíso"            | 3
+"Los Raices B&B"                  | 3
+"Serrano Camp"                    | 3
+"Dazzler Puerto Madryn"           | 2
+"El Puesto"                       | 2
+"Estancia La Bandada"             | 2
+"Hotel El Barranco"               | 2
+"La Casa de Eugenia"              | 2
+"Las Balsas Relais & Châteaux"    | 2
+"Palacio Astoreca"                | 2
+"Pangue Lodge"                    | 2
+"Fitz Roy Comfort Camp"           | 1
+"Hosteria El Pilar"               | 1
+"Peninsula Petit"                 | 1
+
+TYPE: excursion
+--------------------------------------------------------------------------------
+Missing Component                                                      | Occurrences
+-------------------------------------------------------------------------------------
+"Iguazú Falls Tour with Train Ride (Argentinian side) H&T Argentina"   | 5
+"Iguazú Falls Tour (Brazilian side) H&T Argentina"                     | 4
+"Cerro Torre Viewpoint Half-day Hike Walk Patagonia"                   | 2
+"Aguas Arriba to the Chilean Border Aguas Arriba Lodge"                | 1
+"Baker River Rafting Senderos Patagonia Aysén"                         | 1
+"Cerro Bellavista Hike Andestrack"                                     | 1
+"Cerro Goye Hike Andestrack"                                           | 1
+"Colonia Suiza Mountain Biking Andestrack"                             | 1
+"Kayak on Lake Mascardi Andestrack"                                    | 1
+"Lago del Desierto kayak and Hike Walk Patagonia"                      | 1
+"Nahuel Huapi Estancia Horse Riding Andestrack"                        | 1
+"Patagonia Park - Day Hike (Tamango side) Senderos Patagonia Aysén"    | 1
+"Patagonia Park - Day Hike Senderos Patagonia Aysén"                   | 1
+
+TYPE: actvity
+--------------------------------------------------------------------------------
+Missing Component                                                     | Occurrences
+------------------------------------------------------------------------------------
+"Iguazú Interactive Six-course Group Dining Experience with Drinks"   | 3
+
+TYPE: excursion (shared)
+--------------------------------------------------------------------------------
+Missing Component                                          | Occurrences
+-------------------------------------------------------------------------
+"Perito Moreno Mayo Spirit Boat and Hike Walk Patagonia"   | 1

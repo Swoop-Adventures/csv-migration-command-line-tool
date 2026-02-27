@@ -27,17 +27,19 @@ from mappings.ship_accom import map_ship_accommodation_component
 
 ACCESS_TOKEN = ""
 
+SKIP_AIRPORTS = True
+
 SHEET_PROCESS_ORDER = [
-    "Location",
-    "Ground Accom",
-    "Ship Accom",
-    "ANT Ship Accom",
-    "Journeys",
-    "All Activities - For Upload",
-    "ANT Activities",
-    "All Transfers - For Upload",
-    "ANT Transfers",
-    "Excursions Package",
+    # "Location",
+    # "Ground Accom",
+    # "Ship Accom",
+    # "ANT Ship Accom",
+    # "Journeys",
+    # "All Activities - For Upload",
+    # "ANT Activities",
+    # "All Transfers - For Upload",
+    # "ANT Transfers",
+    # "Excursions Package",
     # "Private Tours Package",
     # "All Inclusive Hotel Package",
     # "Multi-day Activity Package",
@@ -746,6 +748,20 @@ class CoreDataService:
                     component_name=component_name,
                     status=OperationStatus.UPLOAD_ERROR,
                     error_details={"message": "Skipping blacklisted or empty row"},
+                    template_type=template_type,
+                    component=component
+                ))
+            return None
+
+        if SKIP_AIRPORTS and component["templateId"] in SHEET_TEMPLATE_MAP.get("Location", []) and component["componentFields"][0]["data"].get("type", "") == "Airport":
+            ts_print("Skipping Airport")
+            if self.tracker and self.sheet_name:
+                self.tracker.add_sheet_result(RowResult(
+                    sheet_name=self.sheet_name,
+                    row_number=idx + 2,
+                    component_name=component_name,
+                    status=OperationStatus.UPLOAD_ERROR,
+                    error_details={"message": "Skipping Airport"},
                     template_type=template_type,
                     component=component
                 ))

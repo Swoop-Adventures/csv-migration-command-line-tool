@@ -1,0 +1,468 @@
+[{
+  "_id": "template_bb8caab1d3104257a75b7cb7dd958136",
+  "orgId": "swoop",
+  "parentRevisionGroupId": "template_rg_748bf81692574dffa392a9e844793170",
+  "revisionGroupId": "template_rg_5b1f4dd592ee4a85861fee5e8e43e9b5",
+  "revision": 1,
+  "metadata": {
+    "version": 4,
+    "createdAt": {
+      "$date": "2025-09-19T10:10:15.615Z"
+    },
+    "lastModified": {
+      "$date": "2026-02-26T10:32:17.012Z"
+    },
+    "createdById": "115298321572087800684",
+    "modifiedById": "113242859634067177927"
+  },
+  "name": "ship accommodation",
+  "masterSchema": "[{\"required\":false,\"name\":\"Type\",\"fieldType\":\"enum\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"],\"enumOptions\":{\"enumValues\":[\"Other\",\"Luxury\",\"Comfort & Adventure\",\"Yacht\",\"Expedition\"]}},{\"required\":true,\"name\":\"Ship Facilities\",\"fieldType\":\"object\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"],\"objectOptions\":{\"properties\":[{\"required\":true,\"name\":\"Igloo\",\"fieldType\":\"boolean\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"]},{\"required\":true,\"name\":\"Wraparound Deck\",\"fieldType\":\"boolean\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"]},{\"required\":true,\"name\":\"Mudroom\",\"fieldType\":\"boolean\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"]},{\"required\":true,\"name\":\"Observation Lounge\",\"fieldType\":\"boolean\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"]},{\"required\":true,\"name\":\"Open Bridge Policy\",\"fieldType\":\"boolean\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"]},{\"required\":true,\"name\":\"Science Centre/Laboratory\",\"fieldType\":\"boolean\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"]}]}},{\"required\":false,\"name\":\"Guest To Staff Ratio\",\"fieldType\":\"string\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"]},{\"required\":false,\"name\":\"Vessel Id\",\"fieldType\":\"string\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"]}]",
+  "validationSchemas": {
+    "componentSchema": "{\"type\":\"object\",\"properties\":{\"type\":{\"title\":\"Type\",\"type\":\"string\",\"x-type\":\"enum\",\"enum\":[\"Other\",\"Luxury\",\"Comfort & Adventure\",\"Yacht\",\"Expedition\"]},\"shipFacilities\":{\"title\":\"Ship Facilities\",\"type\":\"object\",\"x-type\":\"object\",\"properties\":{\"igloo\":{\"title\":\"Igloo\",\"type\":\"boolean\",\"x-type\":\"boolean\"},\"wraparoundDeck\":{\"title\":\"Wraparound Deck\",\"type\":\"boolean\",\"x-type\":\"boolean\"},\"mudroom\":{\"title\":\"Mudroom\",\"type\":\"boolean\",\"x-type\":\"boolean\"},\"observationLounge\":{\"title\":\"Observation Lounge\",\"type\":\"boolean\",\"x-type\":\"boolean\"},\"openBridgePolicy\":{\"title\":\"Open Bridge Policy\",\"type\":\"boolean\",\"x-type\":\"boolean\"},\"scienceCentreLaboratory\":{\"title\":\"Science Centre/Laboratory\",\"type\":\"boolean\",\"x-type\":\"boolean\"}},\"required\":[]},\"guestToStaffRatio\":{\"title\":\"Guest To Staff Ratio\",\"type\":\"string\",\"x-type\":\"string\"},\"vesselId\":{\"title\":\"Vessel Id\",\"type\":\"string\",\"x-type\":\"string\"}},\"required\":[\"shipFacilities\"]}",
+    "componentInstanceSchema": "{\"type\":\"object\",\"properties\":{},\"required\":[]}",
+    "userComponentInstanceSchema": "{\"type\":\"object\",\"properties\":{},\"required\":[]}"
+  },
+  "typeId": 7
+},
+{
+  "_id": "template_a64e161de5824fcb9515274b0f67d698",
+  "orgId": "swoop",
+  "parentRevisionGroupId": "template_rg_4af737b9abff4b029ff4bc4f7729c1de",
+  "revisionGroupId": "template_rg_9a09365cf9e8419fbffb0bfba313b804",
+  "revision": 1,
+  "metadata": {
+    "version": 1,
+    "createdAt": {
+      "$date": "2025-09-08T16:07:01.143Z"
+    },
+    "lastModified": {
+      "$date": "2025-09-08T16:07:01.143Z"
+    },
+    "createdById": "115298321572087800684",
+    "modifiedById": "115298321572087800684"
+  },
+  "name": "multi day activity",
+  "masterSchema": "[]",
+  "validationSchemas": {
+    "componentSchema": "{\"type\":\"object\",\"properties\":{},\"required\":[]}",
+    "componentInstanceSchema": "{\"type\":\"object\",\"properties\":{},\"required\":[]}",
+    "userComponentInstanceSchema": "{\"type\":\"object\",\"properties\":{},\"required\":[]}"
+  },
+  "typeId": 2
+},
+{
+  "_id": "template_63a57a90570c47b89f830d2c7618324f",
+  "orgId": "swoop",
+  "parentRevisionGroupId": "template_rg_4af737b9abff4b029ff4bc4f7729c1de",
+  "revisionGroupId": "template_rg_beb428094e0f4c51be714d16d671246b",
+  "revision": 1,
+  "metadata": {
+    "version": 2,
+    "createdAt": {
+      "$date": "2025-10-23T09:47:50.381Z"
+    },
+    "lastModified": {
+      "$date": "2025-10-23T09:47:50.381Z"
+    },
+    "createdById": "115298321572087800684",
+    "modifiedById": "115298321572087800684"
+  },
+  "name": "cruise",
+  "masterSchema": "[\n  {\n    \"required\": false,\n    \"name\": \"activities\",\n    \"fieldType\": \"array\",\n    \"existsFrom\": \"0\",\n    \"editableIn\": [\n      \"0\"\n    ],\n    \"arrayOptions\": {\n      \"itemDefinition\": {\n        \"fieldType\": \"component\",\n        \"componentOptions\": {\n          \"templateIds\": [\n            \"template_12345678123456781234567812345678\"\n          ]\n        }\n      }\n    }\n  },\n  {\n    \"required\": false,\n    \"name\": \"Itinerary\",\n    \"fieldType\": \"array\",\n    \"existsFrom\": \"1\",\n    \"editableIn\": [\n      \"1\"\n    ],\n    \"arrayOptions\": {\n      \"itemDefinition\": {\n        \"fieldType\": \"object\",\n        \"objectOptions\": {\n          \"properties\": [\n            {\n              \"required\": false,\n              \"fieldType\": \"integer\",\n              \"editableIn\": [\n                \"1\"\n              ],\n              \"existsFrom\": \"1\",\n              \"name\": \"Start Day\"\n            },\n            {\n              \"required\": false,\n              \"name\": \"Description\",\n              \"fieldType\": \"string\",\n              \"editableIn\": [\n                \"1\"\n              ],\n              \"existsFrom\": \"1\"\n            },\n            {\n              \"required\": false,\n              \"name\": \"Title\",\n              \"fieldType\": \"string\",\n              \"existsFrom\": \"1\",\n              \"editableIn\": [\n                \"1\"\n              ]\n            },\n            {\n              \"required\": false,\n              \"fieldType\": \"number\",\n              \"name\": \"End Day\",\n              \"editableIn\": [\n                \"1\"\n              ],\n              \"existsFrom\": \"1\"\n            }\n          ]\n        }\n      }\n    }\n  },\n  {\n    \"required\": false,\n    \"name\": \"Ship\",\n    \"fieldType\": \"component\",\n    \"existsFrom\": \"1\",\n    \"editableIn\": [\n      \"1\"\n    ],\n    \"componentOptions\": {\n      \"templateIds\": [\n        \"template_bb8caab1d3104257a75b7cb7dd958136\"\n      ]\n    }\n  },\n  {\n    \"required\": false,\n    \"name\": \"Itinerary Title\",\n    \"fieldType\": \"string\",\n    \"existsFrom\": \"1\",\n    \"editableIn\": [\n      \"1\"\n    ]\n  },\n  {\n    \"required\": false,\n    \"name\": \"Cabin Number\",\n    \"fieldType\": \"string\",\n    \"existsFrom\": \"1\",\n    \"editableIn\": [\n      \"1\"\n    ]\n  },\n  {\n    \"required\": false,\n    \"name\": \"Trip Variant Id\",\n    \"fieldType\": \"string\",\n    \"existsFrom\": \"1\",\n    \"editableIn\": [\n      \"1\"\n    ]\n  }\n]",
+  "validationSchemas": {
+    "componentSchema": "{\"type\":\"object\",\"properties\":{\"activities\":{\"title\":\"activities\",\"type\":\"array\",\"x-type\":\"array\",\"items\":{\"type\":\"string\",\"x-type\":\"component\"}}},\"required\":[]}",
+    "componentInstanceSchema": "{\"type\":\"object\",\"properties\":{\"itinerary\":{\"title\":\"Itinerary\",\"type\":\"array\",\"x-type\":\"array\",\"items\":{\"type\":\"object\",\"x-type\":\"object\",\"properties\":{\"startDay\":{\"title\":\"Start Day\",\"type\":\"integer\",\"x-type\":\"integer\"},\"description\":{\"title\":\"Description\",\"type\":\"string\",\"x-type\":\"string\"},\"title\":{\"title\":\"Title\",\"type\":\"string\",\"x-type\":\"string\"},\"endDay\":{\"title\":\"End Day\",\"type\":\"number\",\"x-type\":\"number\"}},\"required\":[]}},\"ship\":{\"title\":\"Ship\",\"type\":\"string\",\"x-type\":\"component\"},\"itineraryTitle\":{\"title\":\"Itinerary Title\",\"type\":\"string\",\"x-type\":\"string\"},\"cabinNumber\":{\"title\":\"Cabin Number\",\"type\":\"string\",\"x-type\":\"string\"},\"tripVariantId\":{\"title\":\"Trip Variant Id\",\"type\":\"string\",\"x-type\":\"string\"}},\"required\":[]}",
+    "userComponentInstanceSchema": "{\"type\":\"object\",\"properties\":{},\"required\":[]}"
+  },
+  "typeId": 3
+},
+{
+  "_id": "template_ba7999ff957c4ca3a5e61496df6178ac",
+  "orgId": "swoop",
+  "parentRevisionGroupId": "template_rg_4af737b9abff4b029ff4bc4f7729c1de",
+  "revisionGroupId": "template_rg_a0a2702b93c849d29f31eca0805f0769",
+  "revision": 1,
+  "metadata": {
+    "version": 1,
+    "createdAt": {
+      "$date": "2025-09-08T16:06:41.448Z"
+    },
+    "lastModified": {
+      "$date": "2025-09-08T16:06:41.448Z"
+    },
+    "createdById": "115298321572087800684",
+    "modifiedById": "115298321572087800684"
+  },
+  "name": "all inclusive hotel",
+  "masterSchema": "[]",
+  "validationSchemas": {
+    "componentSchema": "{\"type\":\"object\",\"properties\":{},\"required\":[]}",
+    "componentInstanceSchema": "{\"type\":\"object\",\"properties\":{},\"required\":[]}",
+    "userComponentInstanceSchema": "{\"type\":\"object\",\"properties\":{},\"required\":[]}"
+  },
+  "typeId": 2
+},
+{
+  "_id": "template_c3307de1e53640c4b4d1bb8fa99c4c7a",
+  "orgId": "swoop",
+  "typeId": 6,
+  "parentRevisionGroupId": "template_rg_b66aae9d3f4e4a07986281763e61504a",
+  "revisionGroupId": "template_rg_4af737b9abff4b029ff4bc4f7729c1de",
+  "revision": 1,
+  "metadata": {
+    "version": 2,
+    "createdAt": {
+      "$date": "2026-02-13T12:03:28.899Z"
+    },
+    "lastModified": {
+      "$date": "2026-02-13T12:03:28.899Z"
+    },
+    "createdById": "110747691254228377196",
+    "modifiedById": "110747691254228377196"
+  },
+  "name": "package",
+  "masterSchema": "[{\"required\":true,\"fieldType\":\"boolean\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"],\"name\":\"Private\"},{\"required\":true,\"name\":\"Difficulty\",\"fieldType\":\"enum\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"],\"enumOptions\":{\"enumValues\":[\"Other\",\"Easy\",\"Medium\",\"Hard\",\"Advanced\",\"Extreme\"]}},{\"required\":true,\"name\":\"Guided\",\"fieldType\":\"boolean\",\"editableIn\":[\"0\"],\"existsFrom\":\"0\"},{\"required\":false,\"name\":\"Guide Guest Ratio\",\"fieldType\":\"number\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"],\"numberOptions\":{\"minimum\":0}},{\"required\":false,\"name\":\"Board Basis\",\"fieldType\":\"enum\",\"existsFrom\":\"0\",\"editableIn\":[\"1\"],\"enumOptions\":{\"enumValues\":[\"Lunch\",\"Box lunch\",\"Breakfast\",\"Dinner\",\"None\"]}},{\"required\":false,\"name\":\"Requirements\",\"fieldType\":\"object\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"],\"objectOptions\":{\"properties\":[{\"required\":false,\"name\":\"Gear\",\"fieldType\":\"array\",\"arrayOptions\":{\"itemDefinition\":{\"fieldType\":\"string\"}},\"editableIn\":[\"0\",\"1\"]},{\"required\":false,\"name\":\"Minimum Age\",\"fieldType\":\"integer\",\"editableIn\":[\"0\"]},{\"required\":false,\"name\":\"Maximum Age\",\"fieldType\":\"number\",\"editableIn\":[\"0\"]},{\"required\":false,\"name\":\"Lower Weight Limit (Kg)\",\"fieldType\":\"string\",\"editableIn\":[\"0\"],\"existsFrom\":\"0\"},{\"required\":false,\"fieldType\":\"integer\",\"name\":\"Upper Weight Limit (Kg)\",\"editableIn\":[\"0\"],\"existsFrom\":\"0\"},{\"required\":false,\"fieldType\":\"number\",\"name\":\"Lower Height Limit (M)\",\"editableIn\":[\"0\"],\"existsFrom\":\"0\"},{\"required\":false,\"fieldType\":\"number\",\"name\":\"Upper Height Limit (M)\",\"editableIn\":[\"0\"],\"existsFrom\":\"0\"},{\"required\":false,\"name\":\"Other\",\"fieldType\":\"string\",\"editableIn\":[\"0\",\"1\"],\"existsFrom\":\"0\"}]}},{\"required\":true,\"fieldType\":\"object\",\"name\":\"Facilities\",\"editableIn\":[\"0\"],\"existsFrom\":\"0\",\"objectOptions\":{\"properties\":[{\"required\":true,\"fieldType\":\"boolean\",\"name\":\"Is Wheel Chair Accessible\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"]},{\"required\":true,\"fieldType\":\"boolean\",\"name\":\"Is Ok When Pregnant\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"]},{\"required\":true,\"fieldType\":\"boolean\",\"name\":\"Is Ok With Breathing Machines\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"]},{\"required\":true,\"fieldType\":\"boolean\",\"name\":\"Has Drinks Included\",\"editableIn\":[\"0\"]},{\"required\":true,\"fieldType\":\"boolean\",\"name\":\"Has Complementary Gifts\",\"editableIn\":[\"0\"],\"existsFrom\":\"0\"},{\"required\":true,\"fieldType\":\"boolean\",\"name\":\"Has National Park Fee\",\"editableIn\":[\"0\"],\"existsFrom\":\"0\"}]}},{\"required\":false,\"name\":\"Inclusions\",\"fieldType\":\"array\",\"existsFrom\":\"0\",\"editableIn\":[\"0\",\"1\"],\"arrayOptions\":{\"itemDefinition\":{\"fieldType\":\"string\"}}},{\"required\":false,\"name\":\"Exclusions\",\"fieldType\":\"array\",\"existsFrom\":\"0\",\"editableIn\":[\"0\",\"1\"],\"arrayOptions\":{\"itemDefinition\":{\"fieldType\":\"string\"},\"uniqueItems\":false}},{\"required\":false,\"name\":\"Additional Notes\",\"fieldType\":\"array\",\"existsFrom\":\"0\",\"editableIn\":[\"0\",\"1\"],\"arrayOptions\":{\"maxItems\":100,\"minItems\":1,\"itemDefinition\":{\"fieldType\":\"string\"}}},{\"required\":false,\"name\":\"Welcome Note\",\"fieldType\":\"string\",\"existsFrom\":\"1\",\"editableIn\":[\"1\"],\"stringOptions\":{\"maxLength\":100},\"arrayOptions\":{\"maxItems\":100,\"minItems\":0,\"itemDefinition\":{\"fieldType\":\"string\"}}},{\"required\":false,\"name\":\"Recommendations\",\"fieldType\":\"array\",\"existsFrom\":\"1\",\"editableIn\":[\"1\"],\"arrayOptions\":{\"itemDefinition\":{\"fieldType\":\"string\"}}},{\"required\":false,\"name\":\"Important Information\",\"fieldType\":\"array\",\"existsFrom\":\"1\",\"editableIn\":[\"1\"],\"arrayOptions\":{\"itemDefinition\":{\"fieldType\":\"string\"}}},{\"required\":false,\"name\":\"Trip Summary\",\"fieldType\":\"string\",\"description\":\"Trip Summary\",\"editableIn\":[\"0\",\"1\"],\"existsFrom\":\"0\"}]",
+  "validationSchemas": {
+    "componentSchema": "{\"type\":\"object\",\"properties\":{\"private\":{\"title\":\"Private\",\"type\":\"boolean\",\"x-type\":\"boolean\"},\"difficulty\":{\"title\":\"Difficulty\",\"type\":\"string\",\"x-type\":\"enum\",\"enum\":[\"Other\",\"Easy\",\"Medium\",\"Hard\",\"Advanced\",\"Extreme\"]},\"guided\":{\"title\":\"Guided\",\"type\":\"boolean\",\"x-type\":\"boolean\"},\"guideGuestRatio\":{\"title\":\"Guide Guest Ratio\",\"type\":\"number\",\"x-type\":\"number\"},\"requirements\":{\"title\":\"Requirements\",\"type\":\"object\",\"x-type\":\"object\",\"properties\":{\"gear\":{\"title\":\"Gear\",\"type\":\"array\",\"x-type\":\"array\",\"items\":{\"type\":\"string\",\"x-type\":\"string\"}},\"minimumAge\":{\"title\":\"Minimum Age\",\"type\":\"integer\",\"x-type\":\"integer\"},\"maximumAge\":{\"title\":\"Maximum Age\",\"type\":\"number\",\"x-type\":\"number\"},\"lowerWeightLimitKg\":{\"title\":\"Lower Weight Limit (Kg)\",\"type\":\"string\",\"x-type\":\"string\"},\"upperWeightLimitKg\":{\"title\":\"Upper Weight Limit (Kg)\",\"type\":\"integer\",\"x-type\":\"integer\"},\"lowerHeightLimitM\":{\"title\":\"Lower Height Limit (M)\",\"type\":\"number\",\"x-type\":\"number\"},\"upperHeightLimitM\":{\"title\":\"Upper Height Limit (M)\",\"type\":\"number\",\"x-type\":\"number\"},\"other\":{\"title\":\"Other\",\"type\":\"string\",\"x-type\":\"string\"}},\"required\":[]},\"facilities\":{\"title\":\"Facilities\",\"type\":\"object\",\"x-type\":\"object\",\"properties\":{\"isWheelChairAccessible\":{\"title\":\"Is Wheel Chair Accessible\",\"type\":\"boolean\",\"x-type\":\"boolean\"},\"isOkWhenPregnant\":{\"title\":\"Is Ok When Pregnant\",\"type\":\"boolean\",\"x-type\":\"boolean\"},\"isOkWithBreathingMachines\":{\"title\":\"Is Ok With Breathing Machines\",\"type\":\"boolean\",\"x-type\":\"boolean\"},\"hasDrinksIncluded\":{\"title\":\"Has Drinks Included\",\"type\":\"boolean\",\"x-type\":\"boolean\"},\"hasComplementaryGifts\":{\"title\":\"Has Complementary Gifts\",\"type\":\"boolean\",\"x-type\":\"boolean\"},\"hasNationalParkFee\":{\"title\":\"Has National Park Fee\",\"type\":\"boolean\",\"x-type\":\"boolean\"}},\"required\":[]},\"inclusions\":{\"title\":\"Inclusions\",\"type\":\"array\",\"x-type\":\"array\",\"items\":{\"type\":\"string\",\"x-type\":\"string\"}},\"exclusions\":{\"title\":\"Exclusions\",\"type\":\"array\",\"x-type\":\"array\",\"items\":{\"type\":\"string\",\"x-type\":\"string\"}},\"additionalNotes\":{\"title\":\"Additional Notes\",\"type\":\"array\",\"x-type\":\"array\",\"items\":{\"type\":\"string\",\"x-type\":\"string\"}},\"tripSummary\":{\"title\":\"Trip Summary\",\"type\":\"string\",\"x-type\":\"string\"}},\"required\":[\"difficulty\",\"facilities\"]}",
+    "componentInstanceSchema": "{\"type\":\"object\",\"properties\":{\"boardBasis\":{\"title\":\"Board Basis\",\"type\":\"string\",\"x-type\":\"enum\",\"enum\":[\"Lunch\",\"Box lunch\",\"Breakfast\",\"Dinner\",\"None\"]},\"inclusions\":{\"title\":\"Inclusions\",\"type\":\"array\",\"x-type\":\"array\",\"items\":{\"type\":\"string\",\"x-type\":\"string\"}},\"exclusions\":{\"title\":\"Exclusions\",\"type\":\"array\",\"x-type\":\"array\",\"items\":{\"type\":\"string\",\"x-type\":\"string\"}},\"additionalNotes\":{\"title\":\"Additional Notes\",\"type\":\"array\",\"x-type\":\"array\",\"items\":{\"type\":\"string\",\"x-type\":\"string\"}},\"welcomeNote\":{\"title\":\"Welcome Note\",\"type\":\"string\",\"x-type\":\"string\",\"maxLength\":100},\"recommendations\":{\"title\":\"Recommendations\",\"type\":\"array\",\"x-type\":\"array\",\"items\":{\"type\":\"string\",\"x-type\":\"string\"}},\"importantInformation\":{\"title\":\"Important Information\",\"type\":\"array\",\"x-type\":\"array\",\"items\":{\"type\":\"string\",\"x-type\":\"string\"}},\"tripSummary\":{\"title\":\"Trip Summary\",\"type\":\"string\",\"x-type\":\"string\"}},\"required\":[]}",
+    "userComponentInstanceSchema": "{\"type\":\"object\",\"properties\":{},\"required\":[]}"
+  }
+},
+{
+  "_id": "template_68c8d409a9f7462aa528a1216cadf2b5",
+  "orgId": "swoop",
+  "parentRevisionGroupId": "template_rg_748bf81692574dffa392a9e844793170",
+  "revisionGroupId": "template_rg_0c0fd614f0304e23840c48e766c2320d",
+  "revision": 1,
+  "metadata": {
+    "version": 2,
+    "createdAt": {
+      "$date": "2025-10-23T09:44:28.240Z"
+    },
+    "lastModified": {
+      "$date": "2025-10-23T09:44:28.240Z"
+    },
+    "createdById": "115298321572087800684",
+    "modifiedById": "115298321572087800684"
+  },
+  "name": "ground accommodation",
+  "masterSchema": "[\n    {\n        \"required\": true,\n        \"name\": \"Type\",\n        \"fieldType\": \"enum\",\n        \"existsFrom\": \"0\",\n        \"editableIn\": [\n            \"0\"\n        ],\n        \"enumOptions\": {\n            \"enumValues\": [\n                \"Luxury Lodge\",\n                \"Standard Hotel\",\n                \"Premium Hotel\",\n                \"Boutique Hotel\",\n                \"Premium Boutique Hotel\",\n                \"Refugio\",\n                \"Camping\",\n                \"Lodge\",\n                \"Glamping\",\n                \"Estancia\"\n            ]\n        }\n    },\n    {\n        \"required\": false,\n        \"name\": \"Address\",\n        \"fieldType\": \"string\",\n        \"existsFrom\": \"1\",\n        \"editableIn\": [\n            \"1\"\n        ]\n    },\n    {\n        \"required\": false,\n        \"name\": \"Contact Information\",\n        \"fieldType\": \"string\",\n        \"existsFrom\": \"1\",\n        \"editableIn\": [\n            \"1\"\n        ]\n    }\n]",
+  "validationSchemas": {
+    "componentSchema": "{\"type\":\"object\",\"properties\":{\"type\":{\"title\":\"Type\",\"type\":\"string\",\"x-type\":\"enum\",\"enum\":[\"Luxury Lodge\",\"Standard Hotel\",\"Premium Hotel\",\"Boutique Hotel\",\"Premium Boutique Hotel\",\"Refugio\",\"Camping\",\"Lodge\",\"Glamping\",\"Estancia\"]}},\"required\":[\"type\"]}",
+    "componentInstanceSchema": "{\"type\":\"object\",\"properties\":{\"address\":{\"title\":\"Address\",\"type\":\"string\",\"x-type\":\"string\"},\"contactInformation\":{\"title\":\"Contact Information\",\"type\":\"string\",\"x-type\":\"string\"}},\"required\":[]}",
+    "userComponentInstanceSchema": "{\"type\":\"object\",\"properties\":{},\"required\":[]}"
+  },
+  "typeId": 7
+},
+{
+  "_id": "template_4aec70add8e74467814fe7337f4e41b3",
+  "orgId": "swoop",
+  "typeId": 1,
+  "parentRevisionGroupId": "template_rg_b66aae9d3f4e4a07986281763e61504a",
+  "revisionGroupId": "template_rg_c086d3a7695a4a0686fec207c1195470",
+  "revision": 1,
+  "metadata": {
+    "version": 3,
+    "createdAt": {
+      "$date": "2026-02-25T16:28:27.078Z"
+    },
+    "lastModified": {
+      "$date": "2026-02-25T16:28:27.078Z"
+    },
+    "createdById": "104139847419208840640",
+    "modifiedById": "104139847419208840640"
+  },
+  "name": "flight",
+  "masterSchema": "[{\"required\":true,\"name\":\"Name\",\"fieldType\":\"string\",\"editableIn\":[\"1\"],\"existsFrom\":\"1\"},{\"required\":false,\"name\":\"Departure Date\",\"fieldType\":\"string\",\"editableIn\":[\"1\"],\"existsFrom\":\"1\",\"stringOptions\":{\"format\":\"date\"}},{\"required\":false,\"name\":\"Arrival Date\",\"fieldType\":\"string\",\"existsFrom\":\"1\",\"editableIn\":[\"1\"],\"stringOptions\":{\"format\":\"date\"}},{\"required\":true,\"name\":\"Departure Airport\",\"fieldType\":\"component\",\"existsFrom\":\"1\",\"editableIn\":[\"1\"],\"componentOptions\":{\"templateIds\":[\"template_0c105b25350647b096753b4f863ab06c\"]}},{\"required\":true,\"name\":\"Arrival Airport\",\"fieldType\":\"component\",\"existsFrom\":\"1\",\"editableIn\":[\"1\"],\"componentOptions\":{\"templateIds\":[\"template_0c105b25350647b096753b4f863ab06c\"]}},{\"required\":false,\"name\":\"Welcome Note\",\"fieldType\":\"string\",\"existsFrom\":\"1\",\"editableIn\":[\"1\"],\"stringOptions\":{\"maxLength\":512}},{\"required\":false,\"name\":\"Flight Number\",\"fieldType\":\"string\",\"editableIn\":[\"1\"],\"existsFrom\":\"1\"},{\"required\":false,\"name\":\"Flight Reference\",\"fieldType\":\"string\",\"editableIn\":[\"1\"],\"existsFrom\":\"1\"},{\"required\":false,\"name\":\"Flight Seating Class\",\"fieldType\":\"string\",\"editableIn\":[\"1\"],\"existsFrom\":\"1\"},{\"required\":false,\"name\":\"Flight information\",\"fieldType\":\"string\",\"editableIn\":[\"1\"],\"existsFrom\":\"1\"},{\"required\":false,\"name\":\"Booked By\",\"fieldType\":\"string\",\"editableIn\":[\"1\"],\"existsFrom\":\"1\",\"stringOptions\":{\"enum\":[\"Independent\",\"Swoop\",\"Charter\"]}},{\"required\":false,\"name\":\"Airline\",\"fieldType\":\"string\",\"editableIn\":[\"1\"],\"existsFrom\":\"1\",\"stringOptions\":{\"enum\":[\"Aerolineas Argentina International\",\"Aerolineas Argentinas- Domestic\",\"Aeromexico\",\"Air Canada\",\"Air Europa\",\"Air France\",\"Air New Zealand\",\"Amazonas Airlines\",\"American Airlines\",\"Avianca\",\"British Airways\",\"Cathay Pacific\",\"Copa Airlines\",\"DAP\",\"Delta\",\"Emirates\",\"Iberia\",\"Jetsmart\",\"KLM\",\"LATAM\",\"Lufthansa\",\"Norwegian\",\"Quantas\",\"Sky Airline\"]}},{\"required\":false,\"name\":\"Departure Time\",\"fieldType\":\"string\",\"existsFrom\":\"1\",\"editableIn\":[\"1\"],\"stringOptions\":{\"format\":\"time\"}},{\"required\":false,\"name\":\"Arrival Time\",\"fieldType\":\"string\",\"existsFrom\":\"1\",\"editableIn\":[\"1\"],\"stringOptions\":{\"format\":\"time\"}}]",
+  "validationSchemas": {
+    "componentSchema": "{\"type\":\"object\",\"properties\":{},\"required\":[]}",
+    "componentInstanceSchema": "{\"type\":\"object\",\"properties\":{\"name\":{\"title\":\"Name\",\"type\":\"string\",\"x-type\":\"string\"},\"departureDate\":{\"title\":\"Departure Date\",\"type\":\"string\",\"x-type\":\"string\",\"format\":\"date\"},\"arrivalDate\":{\"title\":\"Arrival Date\",\"type\":\"string\",\"x-type\":\"string\",\"format\":\"date\"},\"departureAirport\":{\"title\":\"Departure Airport\",\"type\":\"string\",\"x-type\":\"component\"},\"arrivalAirport\":{\"title\":\"Arrival Airport\",\"type\":\"string\",\"x-type\":\"component\"},\"welcomeNote\":{\"title\":\"Welcome Note\",\"type\":\"string\",\"x-type\":\"string\",\"maxLength\":512},\"flightNumber\":{\"title\":\"Flight Number\",\"type\":\"string\",\"x-type\":\"string\"},\"flightReference\":{\"title\":\"Flight Reference\",\"type\":\"string\",\"x-type\":\"string\"},\"flightSeatingClass\":{\"title\":\"Flight Seating Class\",\"type\":\"string\",\"x-type\":\"string\"},\"flightInformation\":{\"title\":\"Flight information\",\"type\":\"string\",\"x-type\":\"string\"},\"bookedBy\":{\"title\":\"Booked By\",\"type\":\"string\",\"x-type\":\"string\",\"enum\":[\"Independent\",\"Swoop\",\"Charter\"]},\"airline\":{\"title\":\"Airline\",\"type\":\"string\",\"x-type\":\"string\",\"enum\":[\"Aerolineas Argentina International\",\"Aerolineas Argentinas- Domestic\",\"Aeromexico\",\"Air Canada\",\"Air Europa\",\"Air France\",\"Air New Zealand\",\"Amazonas Airlines\",\"American Airlines\",\"Avianca\",\"British Airways\",\"Cathay Pacific\",\"Copa Airlines\",\"DAP\",\"Delta\",\"Emirates\",\"Iberia\",\"Jetsmart\",\"KLM\",\"LATAM\",\"Lufthansa\",\"Norwegian\",\"Quantas\",\"Sky Airline\"]},\"departureTime\":{\"title\":\"Departure Time\",\"type\":\"string\",\"x-type\":\"string\",\"format\":\"time\"},\"arrivalTime\":{\"title\":\"Arrival Time\",\"type\":\"string\",\"x-type\":\"string\",\"format\":\"time\"}},\"required\":[\"name\",\"departureAirport\",\"arrivalAirport\"]}",
+    "userComponentInstanceSchema": "{\"type\":\"object\",\"properties\":{},\"required\":[]}"
+  }
+},
+{
+  "_id": "template_932b514e6d804e248bf04a9fa1f836de",
+  "orgId": "swoop",
+  "parentRevisionGroupId": "template_rg_b66aae9d3f4e4a07986281763e61504a",
+  "revisionGroupId": "template_rg_46e06122221c43e982b535f513f23d11",
+  "revision": 1,
+  "metadata": {
+    "version": 3,
+    "createdAt": {
+      "$date": "2025-09-09T11:09:25.299Z"
+    },
+    "lastModified": {
+      "$date": "2025-09-09T11:09:25.299Z"
+    },
+    "createdById": "115298321572087800684",
+    "modifiedById": "115298321572087800684"
+  },
+  "name": "independent arrangement",
+  "masterSchema": "[{\"required\":true,\"name\":\"Title\",\"fieldType\":\"string\",\"existsFrom\":\"1\",\"editableIn\":[\"1\"]},{\"required\":true,\"name\":\"Description\",\"fieldType\":\"string\",\"existsFrom\":\"1\",\"editableIn\":[\"1\"]},{\"required\":true,\"name\":\"Location\",\"fieldType\":\"component\",\"editableIn\":[\"1\"],\"existsFrom\":\"1\",\"componentOptions\":{\"templateIds\":[\"template_0c105b25350647b096753b4f863ab06c\"]}},{\"required\":false,\"name\":\"Welcome Note\",\"fieldType\":\"string\",\"existsFrom\":\"1\",\"editableIn\":[\"1\"],\"stringOptions\":{\"maxLength\":100}}]",
+  "validationSchemas": {
+    "componentSchema": "{\"type\":\"object\",\"properties\":{},\"required\":[]}",
+    "componentInstanceSchema": "{\"type\":\"object\",\"properties\":{\"title\":{\"title\":\"Title\",\"type\":\"string\",\"x-type\":\"string\"},\"description\":{\"title\":\"Description\",\"type\":\"string\",\"x-type\":\"string\"},\"location\":{\"title\":\"Location\",\"type\":\"string\",\"x-type\":\"component\"},\"welcomeNote\":{\"title\":\"Welcome Note\",\"type\":\"string\",\"x-type\":\"string\",\"maxLength\":100}},\"required\":[\"title\",\"description\",\"location\"]}",
+    "userComponentInstanceSchema": "{\"type\":\"object\",\"properties\":{},\"required\":[]}"
+  },
+  "typeId": 4
+},
+{
+  "_id": "template_901d40ac12214820995880915c5b62f5",
+  "orgId": "swoop",
+  "typeId": 9,
+  "parentRevisionGroupId": "template_rg_b66aae9d3f4e4a07986281763e61504a",
+  "revisionGroupId": "template_rg_b5cbbd21f6004d58a4764623a9372250",
+  "revision": 1,
+  "metadata": {
+    "version": 2,
+    "createdAt": {
+      "$date": "2026-02-05T16:36:06.865Z"
+    },
+    "lastModified": {
+      "$date": "2026-02-05T16:36:06.865Z"
+    },
+    "createdById": "110747691254228377196",
+    "modifiedById": "110747691254228377196"
+  },
+  "name": "transfer",
+  "masterSchema": "[{\"required\":true,\"name\":\"Journey\",\"fieldType\":\"component\",\"existsFrom\":\"0\",\"editableIn\":[\"0\",\"1\"],\"componentOptions\":{\"templateIds\":[]}},{\"required\":false,\"name\":\"Type\",\"fieldType\":\"string\",\"existsFrom\":\"0\",\"editableIn\":[\"0\",\"1\"]},{\"required\":true,\"name\":\"Driver\",\"fieldType\":\"boolean\",\"existsFrom\":\"0\",\"editableIn\":[\"0\",\"1\"]},{\"required\":true,\"name\":\"Guided\",\"fieldType\":\"boolean\",\"existsFrom\":\"0\",\"editableIn\":[\"0\",\"1\"]},{\"required\":false,\"name\":\"Operator\",\"fieldType\":\"string\",\"existsFrom\":\"0\",\"editableIn\":[\"0\",\"1\"]},{\"required\":false,\"name\":\"Notes\",\"fieldType\":\"object\",\"existsFrom\":\"0\",\"editableIn\":[\"0\",\"1\"],\"objectOptions\":{\"properties\":[{\"required\":false,\"name\":\"Pickup\",\"fieldType\":\"string\",\"editableIn\":[\"0\",\"1\"]},{\"required\":false,\"name\":\"Schedule\",\"fieldType\":\"string\",\"existsFrom\":\"0\",\"editableIn\":[\"0\",\"1\"]}]}},{\"required\":false,\"name\":\"Departure Time\",\"fieldType\":\"string\",\"existsFrom\":\"0\",\"editableIn\":[\"1\",\"0\"],\"stringOptions\":{\"format\":\"time\"}},{\"required\":false,\"name\":\"Arrival Time\",\"fieldType\":\"string\",\"existsFrom\":\"0\",\"editableIn\":[\"0\",\"1\"],\"stringOptions\":{\"format\":\"time\"}},{\"required\":false,\"name\":\"Important Information\",\"fieldType\":\"string\",\"existsFrom\":\"0\",\"editableIn\":[\"0\",\"1\",\"2\"]},{\"required\":false,\"name\":\"Schedule Notes\",\"fieldType\":\"string\",\"existsFrom\":\"0\",\"editableIn\":[\"0\",\"1\",\"2\"]},{\"required\":false,\"name\":\"Welcome Note\",\"fieldType\":\"string\",\"existsFrom\":\"1\",\"editableIn\":[\"1\"],\"stringOptions\":{\"maxLength\":100}},{\"required\":false,\"name\":\"test boolean\",\"fieldType\":\"boolean\",\"description\":\"boolean test\",\"editableIn\":[\"0\"],\"existsFrom\":\"0\"}]",
+  "validationSchemas": {
+    "componentSchema": "{\"type\":\"object\",\"properties\":{\"journey\":{\"title\":\"Journey\",\"type\":\"string\",\"x-type\":\"component\"},\"type\":{\"title\":\"Type\",\"type\":\"string\",\"x-type\":\"string\"},\"driver\":{\"title\":\"Driver\",\"type\":\"boolean\",\"x-type\":\"boolean\"},\"guided\":{\"title\":\"Guided\",\"type\":\"boolean\",\"x-type\":\"boolean\"},\"operator\":{\"title\":\"Operator\",\"type\":\"string\",\"x-type\":\"string\"},\"notes\":{\"title\":\"Notes\",\"type\":\"object\",\"x-type\":\"object\",\"properties\":{\"pickup\":{\"title\":\"Pickup\",\"type\":\"string\",\"x-type\":\"string\"},\"schedule\":{\"title\":\"Schedule\",\"type\":\"string\",\"x-type\":\"string\"}},\"required\":[]},\"departureTime\":{\"title\":\"Departure Time\",\"type\":\"string\",\"x-type\":\"string\",\"format\":\"time\"},\"arrivalTime\":{\"title\":\"Arrival Time\",\"type\":\"string\",\"x-type\":\"string\",\"format\":\"time\"},\"importantInformation\":{\"title\":\"Important Information\",\"type\":\"string\",\"x-type\":\"string\"},\"scheduleNotes\":{\"title\":\"Schedule Notes\",\"type\":\"string\",\"x-type\":\"string\"},\"testBoolean\":{\"title\":\"test boolean\",\"type\":\"boolean\",\"x-type\":\"boolean\"}},\"required\":[\"journey\"]}",
+    "componentInstanceSchema": "{\"type\":\"object\",\"properties\":{\"journey\":{\"title\":\"Journey\",\"type\":\"string\",\"x-type\":\"component\"},\"type\":{\"title\":\"Type\",\"type\":\"string\",\"x-type\":\"string\"},\"driver\":{\"title\":\"Driver\",\"type\":\"boolean\",\"x-type\":\"boolean\"},\"guided\":{\"title\":\"Guided\",\"type\":\"boolean\",\"x-type\":\"boolean\"},\"operator\":{\"title\":\"Operator\",\"type\":\"string\",\"x-type\":\"string\"},\"notes\":{\"title\":\"Notes\",\"type\":\"object\",\"x-type\":\"object\",\"properties\":{\"pickup\":{\"title\":\"Pickup\",\"type\":\"string\",\"x-type\":\"string\"},\"schedule\":{\"title\":\"Schedule\",\"type\":\"string\",\"x-type\":\"string\"}},\"required\":[]},\"departureTime\":{\"title\":\"Departure Time\",\"type\":\"string\",\"x-type\":\"string\",\"format\":\"time\"},\"arrivalTime\":{\"title\":\"Arrival Time\",\"type\":\"string\",\"x-type\":\"string\",\"format\":\"time\"},\"importantInformation\":{\"title\":\"Important Information\",\"type\":\"string\",\"x-type\":\"string\"},\"scheduleNotes\":{\"title\":\"Schedule Notes\",\"type\":\"string\",\"x-type\":\"string\"},\"welcomeNote\":{\"title\":\"Welcome Note\",\"type\":\"string\",\"x-type\":\"string\",\"maxLength\":100}},\"required\":[\"journey\"]}",
+    "userComponentInstanceSchema": "{\"type\":\"object\",\"properties\":{\"importantInformation\":{\"title\":\"Important Information\",\"type\":\"string\",\"x-type\":\"string\"},\"scheduleNotes\":{\"title\":\"Schedule Notes\",\"type\":\"string\",\"x-type\":\"string\"}},\"required\":[]}"
+  }
+},
+{
+  "_id": "template_7546d5da287241629b5190f95346840e",
+  "orgId": "swoop",
+  "parentRevisionGroupId": "template_rg_b66aae9d3f4e4a07986281763e61504a",
+  "revisionGroupId": "template_rg_748bf81692574dffa392a9e844793170",
+  "revision": 1,
+  "metadata": {
+    "version": 5,
+    "createdAt": {
+      "$date": "2025-10-23T12:26:40.500Z"
+    },
+    "lastModified": {
+      "$date": "2025-10-23T12:26:40.500Z"
+    },
+    "createdById": "115298321572087800684",
+    "modifiedById": "115298321572087800684"
+  },
+  "name": "accommodation",
+  "masterSchema": "[{\"required\":true,\"name\":\"Location\",\"fieldType\":\"component\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"],\"componentOptions\":{\"x-templateIds\":[\"template_0c105b25350647b096753b4f863ab06c\"]}},{\"required\":false,\"name\":\"Facilities\",\"fieldType\":\"object\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"],\"objectOptions\":{\"properties\":[{\"required\":true,\"name\":\"Bar\",\"fieldType\":\"boolean\",\"editableIn\":[\"0\"],\"existsFrom\":\"0\"},{\"required\":true,\"name\":\"Elevator\",\"fieldType\":\"boolean\",\"editableIn\":[\"0\"],\"existsFrom\":\"0\"},{\"required\":true,\"name\":\"Jacuzzi\",\"fieldType\":\"boolean\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"]},{\"required\":true,\"name\":\"Library\",\"fieldType\":\"boolean\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"]},{\"required\":true,\"name\":\"Pool\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"],\"fieldType\":\"boolean\"},{\"required\":true,\"name\":\"Spa\",\"fieldType\":\"boolean\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"]},{\"required\":true,\"name\":\"Steam Room\",\"fieldType\":\"boolean\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"]},{\"required\":true,\"name\":\"Laundry\",\"fieldType\":\"boolean\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"]},{\"required\":true,\"name\":\"Shop\",\"fieldType\":\"boolean\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"]},{\"required\":true,\"name\":\"Restaurants\",\"fieldType\":\"boolean\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"]},{\"required\":true,\"name\":\"Sauna\",\"fieldType\":\"boolean\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"]},{\"required\":true,\"name\":\"Gym\",\"fieldType\":\"boolean\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"]},{\"required\":true,\"name\":\"Massage\",\"fieldType\":\"boolean\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"]},{\"required\":true,\"name\":\"Room Service\",\"fieldType\":\"boolean\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"]},{\"required\":true,\"name\":\"WiFi\",\"fieldType\":\"boolean\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"]},{\"required\":true,\"name\":\"Phone Signal\",\"fieldType\":\"boolean\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"]}]}},{\"required\":false,\"name\":\"Check-in\",\"fieldType\":\"object\",\"editableIn\":[\"0\",\"1\"],\"existsFrom\":\"0\",\"objectOptions\":{\"properties\":[{\"required\":false,\"name\":\"Start\",\"fieldType\":\"string\",\"stringOptions\":{\"format\":\"time\"},\"editableIn\":[\"0\",\"1\"],\"existsFrom\":\"0\"},{\"required\":false,\"name\":\"End\",\"fieldType\":\"string\",\"existsFrom\":\"0\",\"editableIn\":[\"0\",\"1\"],\"stringOptions\":{\"format\":\"time\"}},{\"required\":false,\"name\":\"Out\",\"fieldType\":\"string\",\"existsFrom\":\"0\",\"editableIn\":[\"0\",\"1\"],\"stringOptions\":{\"format\":\"time\"}}]}},{\"required\":false,\"name\":\"Info\",\"fieldType\":\"object\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"],\"objectOptions\":{\"properties\":[{\"required\":false,\"name\":\"Year Built\",\"fieldType\":\"integer\",\"editableIn\":[\"0\"],\"stringOptions\":{},\"existsFrom\":\"0\"},{\"required\":false,\"name\":\"Capacity\",\"fieldType\":\"integer\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"]}]}},{\"required\":true,\"name\":\"Rooms\",\"fieldType\":\"array\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"],\"arrayOptions\":{\"itemDefinition\":{\"fieldType\":\"object\",\"objectOptions\":{\"properties\":[{\"required\":true,\"name\":\"Size (m^2)\",\"fieldType\":\"number\",\"editableIn\":[\"0\"],\"existsFrom\":\"0\"},{\"required\":true,\"name\":\"Bed Configurations\",\"fieldType\":\"array\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"],\"arrayOptions\":{\"itemDefinition\":{\"fieldType\":\"enum\",\"enumOptions\":{\"enumValues\":[\"Other\",\"Double\",\"Twin\",\"Bunk Bed\",\"Single\",\"Triple\",\"Quad\",\"Quintuple\"]}},\"uniqueItems\":true}},{\"required\":true,\"name\":\"Bathroom configurations\",\"fieldType\":\"array\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"],\"arrayOptions\":{\"itemDefinition\":{\"fieldType\":\"enum\",\"enumOptions\":{\"enumValues\":[\"En-suite\",\"Shower\",\"Sink\",\"Shared Bathroom\",\"WC\",\"Wetroom\",\"Toilet\",\"Composting Toilet\",\"Combi Bath/Shower\"]}},\"uniqueItems\":true}},{\"required\":true,\"name\":\"Energy Type\",\"fieldType\":\"array\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"],\"enumOptions\":{\"enumValues\":[\"Other\",\"Non-renewable\",\"Solar\",\"Hydro-electric\",\"Micro Hydro-turbines\",\"Mini Hydro-electric\",\"Wind\"]},\"arrayOptions\":{\"itemDefinition\":{\"fieldType\":\"enum\",\"enumOptions\":{\"enumValues\":[\"Other\",\"Non-renewable\",\"Solar\",\"Hydroelectric\",\"Wind\",\"Carbon Neutral\"]}}}},{\"required\":true,\"name\":\"Name\",\"fieldType\":\"string\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"]},{\"required\":true,\"name\":\"Type\",\"fieldType\":\"enum\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"],\"enumOptions\":{\"enumValues\":[\"Cabin\",\"Hotel\"]}},{\"required\":false,\"name\":\"Description\",\"fieldType\":\"string\",\"editableIn\":[\"0\"],\"existsFrom\":\"0\"},{\"required\":false,\"fieldType\":\"string\",\"name\":\"RoomID\",\"description\":\"this can be a cabin_id or room_id\",\"editableIn\":[\"0\"]},{\"required\":false,\"name\":\"Image\",\"fieldType\":\"image\",\"description\":\"cabin image\",\"editableIn\":[\"0\"]}]}}}},{\"required\":false,\"name\":\"Requirements\",\"fieldType\":\"object\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"],\"objectOptions\":{\"properties\":[{\"required\":false,\"name\":\"Minimum Age\",\"fieldType\":\"integer\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"],\"integerOptions\":{\"minimum\":0}}]}},{\"required\":false,\"name\":\"Inspections\",\"fieldType\":\"array\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"],\"arrayOptions\":{\"itemDefinition\":{\"fieldType\":\"object\",\"objectOptions\":{\"properties\":[{\"required\":true,\"name\":\"Inspected By\",\"fieldType\":\"string\",\"editableIn\":[\"0\"],\"existsFrom\":\"0\"},{\"required\":false,\"name\":\"Date\",\"fieldType\":\"string\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"],\"stringOptions\":{\"format\":\"date\"}},{\"required\":false,\"name\":\"Notes\",\"fieldType\":\"string\",\"editableIn\":[\"0\"],\"existsFrom\":\"0\"}]}}}},{\"required\":false,\"name\":\"What we Like\",\"fieldType\":\"string\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"]},{\"required\":false,\"name\":\"Things to Note\",\"fieldType\":\"string\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"]},{\"required\":false,\"name\":\"Recommendations\",\"fieldType\":\"string\",\"existsFrom\":\"0\",\"editableIn\":[\"0\",\"1\",\"2\"]},{\"required\":false,\"name\":\"Swooper\",\"fieldType\":\"string\",\"editableIn\":[\"0\",\"1\"],\"existsFrom\":\"0\"},{\"required\":false,\"name\":\"Swoop Says\",\"fieldType\":\"string\",\"existsFrom\":\"0\",\"editableIn\":[\"0\",\"1\",\"2\"]},{\"required\":false,\"name\":\"Important Information\",\"fieldType\":\"string\",\"existsFrom\":\"0\",\"editableIn\":[\"0\",\"1\",\"2\"]},{\"required\":false,\"name\":\"Room Number\",\"fieldType\":\"string\",\"existsFrom\":\"2\",\"editableIn\":[\"2\"]},{\"required\":false,\"name\":\"Room Name\",\"fieldType\":\"string\",\"editableIn\":[\"2\"],\"existsFrom\":\"2\"},{\"required\":false,\"name\":\"Breakfast End Time\",\"fieldType\":\"string\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"],\"stringOptions\":{}},{\"required\":false,\"name\":\"Board Basis\",\"fieldType\":\"object\",\"existsFrom\":\"1\",\"editableIn\":[\"1\"],\"objectOptions\":{\"properties\":[{\"required\":false,\"name\":\"Breakfast\",\"fieldType\":\"boolean\",\"editableIn\":[\"0\"],\"existsFrom\":\"0\"},{\"required\":false,\"name\":\"Lunch\",\"fieldType\":\"boolean\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"]},{\"required\":false,\"name\":\"Box Lunch\",\"fieldType\":\"boolean\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"]},{\"required\":false,\"name\":\"Dinner\",\"fieldType\":\"boolean\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"]},{\"required\":false,\"name\":\"Snacks\",\"fieldType\":\"boolean\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"]}]}}]",
+  "validationSchemas": {
+    "componentSchema": "{\"type\":\"object\",\"properties\":{\"location\":{\"title\":\"Location\",\"type\":\"string\",\"x-type\":\"component\",\"x-templateIds\":[\"template_0c105b25350647b096753b4f863ab06c\"]},\"facilities\":{\"title\":\"Facilities\",\"type\":\"object\",\"x-type\":\"object\",\"properties\":{\"bar\":{\"title\":\"Bar\",\"type\":\"boolean\",\"x-type\":\"boolean\"},\"elevator\":{\"title\":\"Elevator\",\"type\":\"boolean\",\"x-type\":\"boolean\"},\"jacuzzi\":{\"title\":\"Jacuzzi\",\"type\":\"boolean\",\"x-type\":\"boolean\"},\"library\":{\"title\":\"Library\",\"type\":\"boolean\",\"x-type\":\"boolean\"},\"pool\":{\"title\":\"Pool\",\"type\":\"boolean\",\"x-type\":\"boolean\"},\"spa\":{\"title\":\"Spa\",\"type\":\"boolean\",\"x-type\":\"boolean\"},\"steamRoom\":{\"title\":\"Steam Room\",\"type\":\"boolean\",\"x-type\":\"boolean\"},\"laundry\":{\"title\":\"Laundry\",\"type\":\"boolean\",\"x-type\":\"boolean\"},\"shop\":{\"title\":\"Shop\",\"type\":\"boolean\",\"x-type\":\"boolean\"},\"restaurants\":{\"title\":\"Restaurants\",\"type\":\"boolean\",\"x-type\":\"boolean\"},\"sauna\":{\"title\":\"Sauna\",\"type\":\"boolean\",\"x-type\":\"boolean\"},\"gym\":{\"title\":\"Gym\",\"type\":\"boolean\",\"x-type\":\"boolean\"},\"massage\":{\"title\":\"Massage\",\"type\":\"boolean\",\"x-type\":\"boolean\"},\"roomService\":{\"title\":\"Room Service\",\"type\":\"boolean\",\"x-type\":\"boolean\"},\"wiFi\":{\"title\":\"WiFi\",\"type\":\"boolean\",\"x-type\":\"boolean\"},\"phoneSignal\":{\"title\":\"Phone Signal\",\"type\":\"boolean\",\"x-type\":\"boolean\"}},\"required\":[]},\"checkin\":{\"title\":\"Check-in\",\"type\":\"object\",\"x-type\":\"object\",\"properties\":{\"start\":{\"title\":\"Start\",\"type\":\"string\",\"x-type\":\"string\",\"format\":\"time\"},\"end\":{\"title\":\"End\",\"type\":\"string\",\"x-type\":\"string\",\"format\":\"time\"},\"out\":{\"title\":\"Out\",\"type\":\"string\",\"x-type\":\"string\",\"format\":\"time\"}},\"required\":[]},\"info\":{\"title\":\"Info\",\"type\":\"object\",\"x-type\":\"object\",\"properties\":{\"yearBuilt\":{\"title\":\"Year Built\",\"type\":\"integer\",\"x-type\":\"integer\"},\"capacity\":{\"title\":\"Capacity\",\"type\":\"integer\",\"x-type\":\"integer\"}},\"required\":[]},\"rooms\":{\"title\":\"Rooms\",\"type\":\"array\",\"x-type\":\"array\",\"items\":{\"type\":\"object\",\"x-type\":\"object\",\"properties\":{\"sizem2\":{\"title\":\"Size (m^2)\",\"type\":\"number\",\"x-type\":\"number\"},\"bedConfigurations\":{\"title\":\"Bed Configurations\",\"type\":\"array\",\"x-type\":\"array\",\"items\":{\"type\":\"string\",\"x-type\":\"enum\",\"enum\":[\"Other\",\"Double\",\"Twin\",\"Bunk Bed\",\"Single\",\"Triple\",\"Quad\",\"Quintuple\"]}},\"bathroomConfigurations\":{\"title\":\"Bathroom configurations\",\"type\":\"array\",\"x-type\":\"array\",\"items\":{\"type\":\"string\",\"x-type\":\"enum\",\"enum\":[\"En-suite\",\"Shower\",\"Sink\",\"Shared Bathroom\",\"WC\",\"Wetroom\",\"Toilet\",\"Composting Toilet\",\"Combi Bath/Shower\"]}},\"energyType\":{\"title\":\"Energy Type\",\"type\":\"array\",\"x-type\":\"array\",\"items\":{\"type\":\"string\",\"x-type\":\"enum\",\"enum\":[\"Other\",\"Non-renewable\",\"Solar\",\"Hydroelectric\",\"Wind\",\"Carbon Neutral\"]}},\"name\":{\"title\":\"Name\",\"type\":\"string\",\"x-type\":\"string\"},\"type\":{\"title\":\"Type\",\"type\":\"string\",\"x-type\":\"enum\",\"enum\":[\"Cabin\",\"Hotel\"]},\"description\":{\"title\":\"Description\",\"type\":\"string\",\"x-type\":\"string\"},\"roomID\":{\"title\":\"RoomID\",\"type\":\"string\",\"x-type\":\"string\"},\"image\":{\"title\":\"Image\",\"type\":\"string\",\"x-type\":\"image\"}},\"required\":[\"sizem2\",\"bedConfigurations\",\"bathroomConfigurations\",\"energyType\",\"name\",\"type\"]}},\"requirements\":{\"title\":\"Requirements\",\"type\":\"object\",\"x-type\":\"object\",\"properties\":{\"minimumAge\":{\"title\":\"Minimum Age\",\"type\":\"integer\",\"x-type\":\"integer\"}},\"required\":[]},\"inspections\":{\"title\":\"Inspections\",\"type\":\"array\",\"x-type\":\"array\",\"items\":{\"type\":\"object\",\"x-type\":\"object\",\"properties\":{\"inspectedBy\":{\"title\":\"Inspected By\",\"type\":\"string\",\"x-type\":\"string\"},\"date\":{\"title\":\"Date\",\"type\":\"string\",\"x-type\":\"string\",\"format\":\"date\"},\"notes\":{\"title\":\"Notes\",\"type\":\"string\",\"x-type\":\"string\"}},\"required\":[\"inspectedBy\"]}},\"whatWeLike\":{\"title\":\"What we Like\",\"type\":\"string\",\"x-type\":\"string\"},\"thingsToNote\":{\"title\":\"Things to Note\",\"type\":\"string\",\"x-type\":\"string\"},\"recommendations\":{\"title\":\"Recommendations\",\"type\":\"string\",\"x-type\":\"string\"},\"swooper\":{\"title\":\"Swooper\",\"type\":\"string\",\"x-type\":\"string\"},\"swoopSays\":{\"title\":\"Swoop Says\",\"type\":\"string\",\"x-type\":\"string\"},\"importantInformation\":{\"title\":\"Important Information\",\"type\":\"string\",\"x-type\":\"string\"},\"breakfastEndTime\":{\"title\":\"Breakfast End Time\",\"type\":\"string\",\"x-type\":\"string\"}},\"required\":[\"location\",\"rooms\"]}",
+    "componentInstanceSchema": "{\"type\":\"object\",\"properties\":{\"checkin\":{\"title\":\"Check-in\",\"type\":\"object\",\"x-type\":\"object\",\"properties\":{\"start\":{\"title\":\"Start\",\"type\":\"string\",\"x-type\":\"string\",\"format\":\"time\"},\"end\":{\"title\":\"End\",\"type\":\"string\",\"x-type\":\"string\",\"format\":\"time\"},\"out\":{\"title\":\"Out\",\"type\":\"string\",\"x-type\":\"string\",\"format\":\"time\"}},\"required\":[]},\"recommendations\":{\"title\":\"Recommendations\",\"type\":\"string\",\"x-type\":\"string\"},\"swooper\":{\"title\":\"Swooper\",\"type\":\"string\",\"x-type\":\"string\"},\"swoopSays\":{\"title\":\"Swoop Says\",\"type\":\"string\",\"x-type\":\"string\"},\"importantInformation\":{\"title\":\"Important Information\",\"type\":\"string\",\"x-type\":\"string\"},\"boardBasis\":{\"title\":\"Board Basis\",\"type\":\"object\",\"x-type\":\"object\",\"properties\":{\"breakfast\":{\"title\":\"Breakfast\",\"type\":\"boolean\",\"x-type\":\"boolean\"},\"lunch\":{\"title\":\"Lunch\",\"type\":\"boolean\",\"x-type\":\"boolean\"},\"boxLunch\":{\"title\":\"Box Lunch\",\"type\":\"boolean\",\"x-type\":\"boolean\"},\"dinner\":{\"title\":\"Dinner\",\"type\":\"boolean\",\"x-type\":\"boolean\"},\"snacks\":{\"title\":\"Snacks\",\"type\":\"boolean\",\"x-type\":\"boolean\"}},\"required\":[]}},\"required\":[]}",
+    "userComponentInstanceSchema": "{\"type\":\"object\",\"properties\":{\"recommendations\":{\"title\":\"Recommendations\",\"type\":\"string\",\"x-type\":\"string\"},\"swoopSays\":{\"title\":\"Swoop Says\",\"type\":\"string\",\"x-type\":\"string\"},\"importantInformation\":{\"title\":\"Important Information\",\"type\":\"string\",\"x-type\":\"string\"},\"roomNumber\":{\"title\":\"Room Number\",\"type\":\"string\",\"x-type\":\"string\"},\"roomName\":{\"title\":\"Room Name\",\"type\":\"string\",\"x-type\":\"string\"}},\"required\":[]}"
+  },
+  "typeId": 7
+},
+{
+  "_id": "template_14cc18c1408a4b73a16d4e1dad2efca9",
+  "orgId": "swoop",
+  "typeId": 9,
+  "parentRevisionGroupId": "template_rg_b66aae9d3f4e4a07986281763e61504a",
+  "revisionGroupId": "template_rg_87870680e82743e2b433abfb0aff4eae",
+  "revision": 1,
+  "metadata": {
+    "version": 2,
+    "createdAt": {
+      "$date": "2025-12-15T11:07:42.280Z"
+    },
+    "lastModified": {
+      "$date": "2025-12-15T11:07:42.280Z"
+    },
+    "createdById": "104139847419208840640",
+    "modifiedById": "104139847419208840640"
+  },
+  "name": "journey",
+  "masterSchema": "[{\"required\":true,\"fieldType\":\"component\",\"name\":\"Start Location\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"],\"componentOptions\":{\"templateIds\":[\"template_d0904afaccec4ef69057572ff77e2790\"]}},{\"required\":true,\"fieldType\":\"component\",\"name\":\"End Location\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"],\"componentOptions\":{\"templateIds\":[\"template_d0904afaccec4ef69057572ff77e2790\"]}},{\"required\":false,\"name\":\"Distance (Km)\",\"fieldType\":\"number\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"]},{\"required\":false,\"fieldType\":\"string\",\"name\":\"Minimum Duration\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"],\"stringOptions\":{}},{\"required\":false,\"name\":\"Maximum Duration\",\"fieldType\":\"string\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"]},{\"required\":false,\"name\":\"Welcome Note\",\"fieldType\":\"string\",\"existsFrom\":\"1\",\"editableIn\":[\"1\"],\"stringOptions\":{\"maxLength\":100}}]",
+  "validationSchemas": {
+    "componentSchema": "{\"type\":\"object\",\"properties\":{\"startLocation\":{\"title\":\"Start Location\",\"type\":\"string\",\"x-type\":\"component\"},\"endLocation\":{\"title\":\"End Location\",\"type\":\"string\",\"x-type\":\"component\"},\"distanceKm\":{\"title\":\"Distance (Km)\",\"type\":\"number\",\"x-type\":\"number\"},\"minimumDuration\":{\"title\":\"Minimum Duration\",\"type\":\"string\",\"x-type\":\"string\"},\"maximumDuration\":{\"title\":\"Maximum Duration\",\"type\":\"string\",\"x-type\":\"string\"}},\"required\":[\"startLocation\",\"endLocation\"]}",
+    "componentInstanceSchema": "{\"type\":\"object\",\"properties\":{\"welcomeNote\":{\"title\":\"Welcome Note\",\"type\":\"string\",\"x-type\":\"string\",\"maxLength\":100}},\"required\":[]}",
+    "userComponentInstanceSchema": "{\"type\":\"object\",\"properties\":{},\"required\":[]}"
+  }
+},
+{
+  "_id": "template_d9081bfcc3b7461987a3728e57ca7363",
+  "orgId": "swoop",
+  "parentRevisionGroupId": "template_rg_4af737b9abff4b029ff4bc4f7729c1de",
+  "revisionGroupId": "template_rg_ce06691f1148434e950a8fae56ef1076",
+  "revision": 1,
+  "metadata": {
+    "version": 1,
+    "createdAt": {
+      "$date": "2025-09-08T16:06:15.642Z"
+    },
+    "lastModified": {
+      "$date": "2025-09-08T16:06:15.642Z"
+    },
+    "createdById": "115298321572087800684",
+    "modifiedById": "115298321572087800684"
+  },
+  "name": "private tour",
+  "masterSchema": "[]",
+  "validationSchemas": {
+    "componentSchema": "{\"type\":\"object\",\"properties\":{},\"required\":[]}",
+    "componentInstanceSchema": "{\"type\":\"object\",\"properties\":{},\"required\":[]}",
+    "userComponentInstanceSchema": "{\"type\":\"object\",\"properties\":{},\"required\":[]}"
+  },
+  "typeId": 2
+},
+{
+  "_id": "template_aca16a46ec3842ca85d182ee9348f627",
+  "orgId": "swoop",
+  "parentRevisionGroupId": "",
+  "revisionGroupId": "template_rg_b66aae9d3f4e4a07986281763e61504a",
+  "revision": 1,
+  "metadata": {
+    "version": 1,
+    "createdAt": {
+      "$date": "2025-05-20T12:33:28.862Z"
+    },
+    "lastModified": {
+      "$date": "2025-05-20T12:33:28.862Z"
+    },
+    "createdById": "system",
+    "modifiedById": "system"
+  },
+  "name": "Base",
+  "masterSchema": "[]",
+  "validationSchemas": {
+    "userComponentInstanceSchema": "{\"type\":\"object\",\"properties\":{},\"required\":[]}",
+    "componentSchema": "{\"type\":\"object\",\"properties\":{},\"required\":[]}",
+    "componentInstanceSchema": "{\"type\":\"object\",\"properties\":{},\"required\":[]}"
+  },
+  "typeId": 4
+},
+{
+  "_id": "template_a6a2dbfd478143de994dca40dc07e054",
+  "orgId": "swoop",
+  "parentRevisionGroupId": "template_rg_4af737b9abff4b029ff4bc4f7729c1de",
+  "revisionGroupId": "template_rg_ed059ed34ca540bc857c99df6f62ba35",
+  "revision": 1,
+  "metadata": {
+    "version": 1,
+    "createdAt": {
+      "$date": "2025-09-08T16:04:56.900Z"
+    },
+    "lastModified": {
+      "$date": "2025-09-08T16:04:56.900Z"
+    },
+    "createdById": "115298321572087800684",
+    "modifiedById": "115298321572087800684"
+  },
+  "name": "excursion",
+  "masterSchema": "[]",
+  "validationSchemas": {
+    "componentSchema": "{\"type\":\"object\",\"properties\":{},\"required\":[]}",
+    "componentInstanceSchema": "{\"type\":\"object\",\"properties\":{},\"required\":[]}",
+    "userComponentInstanceSchema": "{\"type\":\"object\",\"properties\":{},\"required\":[]}"
+  },
+  "typeId": 10
+},
+{
+  "_id": "template_0c105b25350647b096753b4f863ab06c",
+  "orgId": "swoop",
+  "parentRevisionGroupId": "template_rg_b66aae9d3f4e4a07986281763e61504a",
+  "revisionGroupId": "template_rg_e1f59bc21ee04b09af09b87a598b99d9",
+  "revision": 1,
+  "metadata": {
+    "version": 1,
+    "createdAt": {
+      "$date": "2025-08-26T13:16:43.584Z"
+    },
+    "lastModified": {
+      "$date": "2025-08-26T13:16:43.584Z"
+    },
+    "createdById": "system",
+    "modifiedById": "system"
+  },
+  "name": "location",
+  "masterSchema": "[{\"required\":true,\"name\":\"type\",\"fieldType\":\"enum\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"],\"enumOptions\":{\"enumValues\":[\"Other\",\"Airport\",\"Apartments\",\"Bay\",\"Bridge\",\"Campsite\",\"City\",\"Estancia\",\"Fjord\",\"Glacier\",\"Glamping \",\"Site\",\"Hotel\",\"Island\",\"Lake\",\"Landing Site\",\"Lighthouse\",\"Lodge\",\"Mountain\",\"Mountain Pass\",\"National Park\",\"Peninsula\",\"Port\",\"Refugio\",\"River\",\"Town\",\"Trailhead\",\"Valley\",\"Viewpoint\",\"Vineyard\",\"Village\",\"Volcano\",\"Waterfall\",\"Wildlife\",\"Winery\"]}},{\"required\":true,\"name\":\"Longitude\",\"fieldType\":\"number\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"]},{\"required\":true,\"name\":\"Latitude\",\"fieldType\":\"number\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"]},{\"required\":false,\"name\":\"What Three Words\",\"fieldType\":\"string\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"]},{\"required\":false,\"name\":\"Override URL\",\"fieldType\":\"string\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"]},{\"required\":false,\"name\":\"country\",\"fieldType\":\"string\",\"description\":\"country\",\"editableIn\":[\"0\"],\"existsFrom\":\"0\"},{\"required\":false,\"name\":\"aitaCode\",\"fieldType\":\"string\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"],\"description\":\"aitaCode\"},{\"required\":false,\"name\":\"icaoCode\",\"description\":\"icaoCode\",\"fieldType\":\"string\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"]},{\"required\":false,\"name\":\"timezone\",\"fieldType\":\"string\",\"description\":\"timezone\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"]}]",
+  "validationSchemas": {
+    "componentSchema": "{\"type\":\"object\",\"properties\":{\"type\":{\"title\":\"type\",\"type\":\"string\",\"x-type\":\"enum\",\"enum\":[\"Other\",\"Airport\",\"Apartments\",\"Bay\",\"Bridge\",\"Campsite\",\"City\",\"Estancia\",\"Fjord\",\"Glacier\",\"Glamping \",\"Site\",\"Hotel\",\"Island\",\"Lake\",\"Landing Site\",\"Lighthouse\",\"Lodge\",\"Mountain\",\"Mountain Pass\",\"National Park\",\"Peninsula\",\"Port\",\"Refugio\",\"River\",\"Town\",\"Trailhead\",\"Valley\",\"Viewpoint\",\"Vineyard\",\"Village\",\"Volcano\",\"Waterfall\",\"Wildlife\",\"Winery\"]},\"longitude\":{\"title\":\"Longitude\",\"type\":\"number\",\"x-type\":\"number\"},\"latitude\":{\"title\":\"Latitude\",\"type\":\"number\",\"x-type\":\"number\"},\"whatThreeWords\":{\"title\":\"What Three Words\",\"type\":\"string\",\"x-type\":\"string\"},\"overrideURL\":{\"title\":\"Override URL\",\"type\":\"string\",\"x-type\":\"string\"},\"country\":{\"title\":\"country\",\"type\":\"string\",\"x-type\":\"string\"},\"aitaCode\":{\"title\":\"aitaCode\",\"type\":\"string\",\"x-type\":\"string\"},\"icaoCode\":{\"title\":\"icaoCode\",\"type\":\"string\",\"x-type\":\"string\"},\"timezone\":{\"title\":\"timezone\",\"type\":\"string\",\"x-type\":\"string\"}},\"required\":[\"type\",\"longitude\",\"latitude\"]}",
+    "componentInstanceSchema": "{\"type\":\"object\",\"properties\":{},\"required\":[]}",
+    "userComponentInstanceSchema": "{\"type\":\"object\",\"properties\":{},\"required\":[]}"
+  },
+  "typeId": 6
+},
+{
+  "_id": "template_e2f0e9e5343349358037a0564a3366a0",
+  "orgId": "swoop",
+  "parentRevisionGroupId": "template_rg_b66aae9d3f4e4a07986281763e61504a",
+  "revisionGroupId": "template_rg_96176c18e65c4e7dadd6a7837f85974e",
+  "revision": 1,
+  "metadata": {
+    "version": 2,
+    "createdAt": {
+      "$date": "2025-08-23T12:47:13.328Z"
+    },
+    "lastModified": {
+      "$date": "2025-08-23T12:47:13.328Z"
+    },
+    "createdById": "system",
+    "modifiedById": "system"
+  },
+  "name": "activity",
+  "masterSchema": "[{\"required\":true,\"name\":\"Difficulty\",\"fieldType\":\"enum\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"],\"enumOptions\":{\"enumValues\":[\"Easy\",\"Moderate\",\"Hard\",\"Advanced\",\"Extreme\",\"Other\"]}},{\"required\":true,\"name\":\"Elevation\",\"fieldType\":\"object\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"],\"objectOptions\":{\"properties\":[{\"required\":false,\"name\":\"Ascent (m)\",\"fieldType\":\"number\",\"editableIn\":[\"0\"],\"existsFrom\":\"0\"},{\"required\":false,\"name\":\"Descent (m)\",\"fieldType\":\"number\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"]}]}},{\"required\":false,\"name\":\"Start Location\",\"fieldType\":\"component\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"],\"componentOptions\":{\"templateIds\":[\"template_0c105b25350647b096753b4f863ab06c\"]}},{\"required\":false,\"name\":\"End Location\",\"fieldType\":\"component\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"],\"componentOptions\":{\"templateIds\":[\"template_0c105b25350647b096753b4f863ab06c\"]}},{\"required\":false,\"name\":\"Welcome Note\",\"fieldType\":\"string\",\"existsFrom\":\"1\",\"editableIn\":[\"1\"],\"stringOptions\":{\"maxLength\":100}},{\"required\":false,\"name\":\"Meals\",\"fieldType\":\"object\",\"existsFrom\":\"1\",\"objectOptions\":{\"properties\":[{\"required\":false,\"name\":\"Breakfast\",\"fieldType\":\"boolean\",\"editableIn\":[\"1\"]},{\"required\":false,\"name\":\"Lunch\",\"fieldType\":\"boolean\",\"existsFrom\":\"1\",\"editableIn\":[\"1\"]},{\"required\":false,\"name\":\"Box Lunch\",\"fieldType\":\"boolean\",\"existsFrom\":\"1\",\"editableIn\":[\"1\"]},{\"required\":false,\"name\":\"Dinner\",\"fieldType\":\"boolean\",\"existsFrom\":\"1\",\"editableIn\":[\"1\"]},{\"required\":false,\"name\":\"Snacks\",\"fieldType\":\"boolean\",\"existsFrom\":\"1\",\"editableIn\":[\"1\"]}]},\"editableIn\":[\"1\"]}]",
+  "validationSchemas": {
+    "componentSchema": "{\"type\":\"object\",\"properties\":{\"difficulty\":{\"title\":\"Difficulty\",\"type\":\"string\",\"x-type\":\"enum\",\"enum\":[\"Easy\",\"Moderate\",\"Hard\",\"Advanced\",\"Extreme\",\"Other\"]},\"elevation\":{\"title\":\"Elevation\",\"type\":\"object\",\"x-type\":\"object\",\"properties\":{\"ascentm\":{\"title\":\"Ascent (m)\",\"type\":\"number\",\"x-type\":\"number\"},\"descentm\":{\"title\":\"Descent (m)\",\"type\":\"number\",\"x-type\":\"number\"}},\"required\":[]},\"startLocation\":{\"title\":\"Start Location\",\"type\":\"string\",\"x-type\":\"component\"},\"endLocation\":{\"title\":\"End Location\",\"type\":\"string\",\"x-type\":\"component\"}},\"required\":[\"difficulty\",\"elevation\"]}",
+    "componentInstanceSchema": "{\"type\":\"object\",\"properties\":{\"welcomeNote\":{\"title\":\"Welcome Note\",\"type\":\"string\",\"x-type\":\"string\",\"maxLength\":100},\"meals\":{\"title\":\"Meals\",\"type\":\"object\",\"x-type\":\"object\",\"properties\":{\"breakfast\":{\"title\":\"Breakfast\",\"type\":\"boolean\",\"x-type\":\"boolean\"},\"lunch\":{\"title\":\"Lunch\",\"type\":\"boolean\",\"x-type\":\"boolean\"},\"boxLunch\":{\"title\":\"Box Lunch\",\"type\":\"boolean\",\"x-type\":\"boolean\"},\"dinner\":{\"title\":\"Dinner\",\"type\":\"boolean\",\"x-type\":\"boolean\"},\"snacks\":{\"title\":\"Snacks\",\"type\":\"boolean\",\"x-type\":\"boolean\"}},\"required\":[]}},\"required\":[]}",
+    "userComponentInstanceSchema": "{\"type\":\"object\",\"properties\":{},\"required\":[]}"
+  },
+  "typeId": 4
+},
+{
+  "_id": "template_12345678123456781234567812345678",
+  "orgId": "swoop",
+  "parentRevisionGroupId": "template_rg_b66aae9d3f4e4a07986281763e61504a",
+  "revisionGroupId": "template_rg_ab1f4dd592ee4a85861fee5e8e43e9b5",
+  "revision": 1,
+  "metadata": {
+    "version": 2,
+    "createdAt": {
+      "$date": "2025-09-19T10:10:15.615Z"
+    },
+    "lastModified": {
+      "$date": "2025-09-19T10:10:15.615Z"
+    },
+    "createdById": "115298321572087800684",
+    "modifiedById": "115298321572087800684"
+  },
+  "name": "cruise activity",
+  "masterSchema": "[{\"required\":false,\"name\":\"Complementary\",\"fieldType\":\"boolean\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"]},{\"required\":false,\"name\":\"Requirements\",\"fieldType\":\"object\",\"existsFrom\":\"0\",\"editableIn\":[\"0\",\"1\"],\"objectOptions\":{\"properties\":[{\"required\":false,\"name\":\"Minimum Age\",\"fieldType\":\"integer\",\"editableIn\":[\"0\"],\"existsFrom\":\"0\"},{\"required\":false,\"name\":\"Maximum Age\",\"fieldType\":\"integer\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"]},{\"required\":false,\"name\":\"Minimum Height (m)\",\"fieldType\":\"number\",\"editableIn\":[\"0\"],\"existsFrom\":\"0\"},{\"required\":false,\"name\":\"Gear\",\"fieldType\":\"array\",\"editableIn\":[\"0\"],\"arrayOptions\":{\"itemDefinition\":{\"fieldType\":\"string\"}}},{\"required\":false,\"name\":\"Other\",\"fieldType\":\"string\",\"editableIn\":[\"0\",\"1\"],\"existsFrom\":\"0\"}]}},{\"required\":false,\"name\":\"Type\",\"fieldType\":\"string\",\"existsFrom\":\"0\",\"editableIn\":[\"0\"]},{\"required\":false,\"editableIn\":[\"0\"],\"existsFrom\":\"0\",\"name\":\"Pre Booking Required\",\"fieldType\":\"boolean\"}]",
+  "validationSchemas": {
+    "componentSchema": "{\"type\":\"object\",\"properties\":{\"complementary\":{\"title\":\"Complementary\",\"type\":\"boolean\",\"x-type\":\"boolean\"},\"requirements\":{\"title\":\"Requirements\",\"type\":\"object\",\"x-type\":\"object\",\"properties\":{\"minimumAge\":{\"title\":\"Minimum Age\",\"type\":\"integer\",\"x-type\":\"integer\"},\"maximumAge\":{\"title\":\"Maximum Age\",\"type\":\"integer\",\"x-type\":\"integer\"},\"minimumHeightm\":{\"title\":\"Minimum Height (m)\",\"type\":\"number\",\"x-type\":\"number\"},\"gear\":{\"title\":\"Gear\",\"type\":\"array\",\"x-type\":\"array\",\"items\":{\"type\":\"string\",\"x-type\":\"string\"}},\"other\":{\"title\":\"Other\",\"type\":\"string\",\"x-type\":\"string\"}},\"required\":[]},\"type\":{\"title\":\"Type\",\"type\":\"string\",\"x-type\":\"string\"},\"preBookingRequired\":{\"title\":\"Pre Booking Required\",\"type\":\"boolean\",\"x-type\":\"boolean\"}},\"required\":[]}",
+    "componentInstanceSchema": "{\"type\":\"object\",\"properties\":{\"requirements\":{\"title\":\"Requirements\",\"type\":\"object\",\"x-type\":\"object\",\"properties\":{\"minimumAge\":{\"title\":\"Minimum Age\",\"type\":\"integer\",\"x-type\":\"integer\"},\"maximumAge\":{\"title\":\"Maximum Age\",\"type\":\"integer\",\"x-type\":\"integer\"},\"minimumHeightm\":{\"title\":\"Minimum Height (m)\",\"type\":\"number\",\"x-type\":\"number\"},\"gear\":{\"title\":\"Gear\",\"type\":\"array\",\"x-type\":\"array\",\"items\":{\"type\":\"string\",\"x-type\":\"string\"}},\"other\":{\"title\":\"Other\",\"type\":\"string\",\"x-type\":\"string\"}},\"required\":[]}},\"required\":[]}",
+    "userComponentInstanceSchema": "{\"type\":\"object\",\"properties\":{},\"required\":[]}"
+  },
+  "typeId": 4
+},
+{
+  "_id": "template_d15cc4ab72034fb8a098d9a9ec791a7d",
+  "orgId": "swoop",
+  "typeId": 5,
+  "parentRevisionGroupId": "template_rg_b66aae9d3f4e4a07986281763e61504a",
+  "revisionGroupId": "template_rg_fee6691f1148434e950a8fae56ef1076",
+  "revision": 1,
+  "metadata": {
+    "version": 2,
+    "createdAt": {
+      "$date": "2026-01-08T13:09:01.875Z"
+    },
+    "lastModified": {
+      "$date": "2026-01-08T13:09:01.875Z"
+    },
+    "createdById": "104139847419208840640",
+    "modifiedById": "104139847419208840640"
+  },
+  "name": "fee",
+  "masterSchema": "[{\"required\":false,\"name\":\"Type\",\"fieldType\":\"enum\",\"existsFrom\":\"1\",\"editableIn\":[\"1\"],\"enumOptions\":{\"enumValues\":[\"OperatorDiscount\",\"SwoopDiscount\",\"SalespersonDiscount\",\"SwoopFee\",\"PartnerFee\",\"Extra\"]}},{\"required\":false,\"name\":\"Reason\",\"fieldType\":\"string\",\"existsFrom\":\"1\",\"editableIn\":[\"1\"]}]",
+  "validationSchemas": {
+    "componentSchema": "{\"type\":\"object\",\"properties\":{},\"required\":[]}",
+    "componentInstanceSchema": "{\"type\":\"object\",\"properties\":{\"type\":{\"title\":\"Type\",\"type\":\"string\",\"x-type\":\"enum\",\"enum\":[\"OperatorDiscount\",\"SwoopDiscount\",\"SalespersonDiscount\",\"SwoopFee\",\"PartnerFee\",\"Extra\"]},\"reason\":{\"title\":\"Reason\",\"type\":\"string\",\"x-type\":\"string\"}},\"required\":[]}",
+    "userComponentInstanceSchema": "{\"type\":\"object\",\"properties\":{},\"required\":[]}"
+  }
+}]
