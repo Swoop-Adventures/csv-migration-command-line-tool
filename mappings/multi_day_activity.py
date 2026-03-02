@@ -92,8 +92,6 @@ def map_multi_day_activity_component(row, template_ids, COMPONENT_ID_MAP, contex
         
         # Add the span (even if it has no valid components)
         package_spans.append({
-            "title": get_stripped(row, title_col) or "Span Title",
-            "description": get_stripped(row, desc_col),
             "items": package_span_items,
             "startDay": safe_int(span_day.split('-')[0]),
             "endDay": safe_int(span_day.split('-')[-1]),
