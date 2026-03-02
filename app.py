@@ -769,6 +769,9 @@ class CoreDataService:
 
         if component.get("destination") == "antarctic":
             component["destination"] = "antarctica"
+        
+        if component.get("destination") == "rest of chile/argentina":
+            component["destination"] = "unspecified"
 
         pregenerated_id = generate_component_id(component)
         url = ""
