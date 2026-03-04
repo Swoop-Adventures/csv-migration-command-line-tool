@@ -186,15 +186,15 @@ def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_
         "private": False,
         "difficulty": difficulty_levels[difficulty_index],
         "guided": False,
-        "guideGuestRatio": -1,
+        "guideGuestRatio": 0,
         "requirements": {
             "gear": [],
-            "minimumAge": -1,
-            "maximumAge": -1,
+            "minimumAge": 0,
+            "maximumAge": 0,
             "lowerWeightLimitKg": "",
-            "upperWeightLimitKg": -1,
-            "lowerHeightLimitM": -1,
-            "upperHeightLimitM": -1
+            "upperWeightLimitKg": 0,
+            "lowerHeightLimitM": 0,
+            "upperHeightLimitM": 0
         },
         "facilities": {
             "isWheelChairAccessible": False,
@@ -240,8 +240,9 @@ def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_
 
 
     tripId = get_stripped(row, "Trip ID") or ""
-    if tripId: 
-        tripId = "ANT-"+tripId
+    if tripId:
+        if not (tripId.startswith("ANT-") or tripId.startswith("PAT-")):
+            tripId = "ANT-"+tripId
 
 
     val = {

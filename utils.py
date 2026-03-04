@@ -49,7 +49,7 @@ def safe_float(val):
     except (ValueError, TypeError):
         return None
 
-def safe_int(val, default=-1):
+def safe_int(val, default=0):
     try:
         v = int(val)
         return v

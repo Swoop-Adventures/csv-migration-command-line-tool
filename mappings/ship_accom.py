@@ -105,7 +105,7 @@ def map_ship_accommodation_component(row, template_ids, COMPONENT_ID_MAP, contex
         
         "whatWeLike":get_stripped(row, "What we like about this hotel"),
         "thingsToNote":get_stripped(row, "We think its worth noting"),
-        "swoopSays":get_stripped(row, "Swoop Says"),
+        "swoopSays":[get_stripped(row, "Swoop Says")] if get_stripped(row, "Swoop Says") else [],
 
         "breakfastEndTime": "",
         "boardBasis":{

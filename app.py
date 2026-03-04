@@ -27,7 +27,7 @@ from mappings.ship_accom import map_ship_accommodation_component
 
 ACCESS_TOKEN = ""
 
-SKIP_AIRPORTS = True
+SKIP_AIRPORTS = False
 
 SHEET_PROCESS_ORDER = [
     # "Location",
