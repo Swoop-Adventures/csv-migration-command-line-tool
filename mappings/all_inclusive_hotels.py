@@ -113,8 +113,6 @@ def map_all_inclusive_hotels_component(row, template_ids, COMPONENT_ID_MAP, cont
         desc_val = get_stripped(row, desc_col) or get_stripped(row, desc_col.replace("Quote", "Web"))
 
         package_spans.append({
-            "title": title_val or "Span Title",
-            "description": desc_val,
             "items": package_span_items,
             "startDay": safe_int(span_day.split('-')[0]),
             "endDay": safe_int(span_day.split('-')[-1]),
@@ -154,8 +152,6 @@ def map_all_inclusive_hotels_component(row, template_ids, COMPONENT_ID_MAP, cont
 
         # Add the accommodation span
         package_spans.append({
-            "title": "Ground Accommodation",
-            "description": f"{accom_name} for the entire trip",
             "items": package_span_items,
             "startDay": 1,
             "endDay": last_day,

@@ -170,8 +170,6 @@ def map_excursion_component(row, template_ids, COMPONENT_ID_MAP, context=None, r
         "package": {
             "spans": [
                 {
-                    "title": "Itinerary",
-                    "description": get_stripped(row, "Description - Quote"),
                     "items": package_span_items,
                     "startDay": 1,
                     "endDay": 1,

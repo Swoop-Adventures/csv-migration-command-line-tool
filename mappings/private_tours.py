@@ -105,8 +105,6 @@ def map_private_tours_component(row, template_ids, COMPONENT_ID_MAP, context=Non
         
         # Add the span (even if it has no valid components)
         package_spans.append({
-            "title": get_stripped(row, title_col),
-            "description": get_stripped(row, desc_col),
             "items": package_span_items,
             "startDay": safe_int(span_day),
             "endDay": safe_int(span_day),
