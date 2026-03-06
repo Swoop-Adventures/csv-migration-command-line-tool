@@ -139,14 +139,6 @@ def map_private_tours_component(row, template_ids, COMPONENT_ID_MAP, context=Non
             "other":""
         },
         "additionalNotes":[""],
-        "facilities": {
-            "isWheelChairAccessible": False,
-            "isOkWhenPregnant": False,
-            "isOkWithBreathingMachines": False,
-            "hasDrinksIncluded": False,
-            "hasComplementaryGifts": False,
-            "hasNationalParkFee": False
-        },
         "inclusions": parse_html_list(get_stripped(row, "Inclusions"), "Inclusions"),
         "exclusions": parse_html_list(get_stripped(row, "Exclusions"), "Exclusions")
     }

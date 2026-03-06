@@ -107,7 +107,7 @@ def map_multi_day_activity_component(row, template_ids, COMPONENT_ID_MAP, contex
     
     level_1 = {
         "private": False,
-        "difficulty": "Other",
+        "difficulty": get_stripped(row, "Difficulty") or "Other",
         "guided": False,
         "guideGuestRatio": 0,
         "requirements": {
@@ -121,14 +121,6 @@ def map_multi_day_activity_component(row, template_ids, COMPONENT_ID_MAP, contex
             "other":""
         },
         "additionalNotes":[""],
-        "facilities": {
-            "isWheelChairAccessible": False,
-            "isOkWhenPregnant": False,
-            "isOkWithBreathingMachines": False,
-            "hasDrinksIncluded": False,
-            "hasComplementaryGifts": False,
-            "hasNationalParkFee": False
-        },
         "inclusions": inclusions,
         "exclusions": exclusions
     }

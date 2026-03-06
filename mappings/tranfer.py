@@ -62,8 +62,18 @@ def map_transfer_component(row, template_ids, COMPONENT_ID_MAP, context=None, ro
             "pickup": get_stripped(row, 'pickupNotes'),
             "schedule": get_stripped(row, 'Schedule Notes for Sales/CX')
         },
-        "departureTime": get_stripped(row, 'Time') or "00:00:00",
-        "arrivalTime": "00:00:00"
+        "departureTime": [t.strip() for t in get_stripped(row, 'Time').split(",")],
+        "boardBasis": {
+            #TODO
+            "none": "None" in [t.strip() for t in get_stripped(row, 'Included Meals - Meal Type').split(",")], 
+            "none": "None" in [t.strip() for t in get_stripped(row, 'Included Meals - Meal Type').split(",")], 
+            "none": "None" in [t.strip() for t in get_stripped(row, 'Included Meals - Meal Type').split(",")], 
+            "none": "None" in [t.strip() for t in get_stripped(row, 'Included Meals - Meal Type').split(",")], 
+            "none": "None" in [t.strip() for t in get_stripped(row, 'Included Meals - Meal Type').split(",")], 
+            "none": "None" in [t.strip() for t in get_stripped(row, 'Included Meals - Meal Type').split(",")], 
+
+        },
+        "mealDescription": get_stripped(row, 'Meal Description'),
     }
 
 
@@ -76,7 +86,7 @@ def map_transfer_component(row, template_ids, COMPONENT_ID_MAP, context=None, ro
     # print(f"Name: {get_stripped(row, "Code")}, {row.get("Code")}")
     # print(row)
     # name = f"{row.get( "name")} {row.get("partner")} {row.get("guidesDrivers")}"
-    # print(row)
+    # print(row) 
     # print(name)
     return {
         "orgId":"swoop",
@@ -111,3 +121,4 @@ def map_transfer_component(row, template_ids, COMPONENT_ID_MAP, context=None, ro
         "media": media,
         "componentFields": component_fields,
     }
+

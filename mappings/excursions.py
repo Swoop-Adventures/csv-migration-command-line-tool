@@ -126,14 +126,6 @@ def map_excursion_component(row, template_ids, COMPONENT_ID_MAP, context=None, r
             "other":""
         },
         "additionalNotes":[""],
-        "facilities": {
-            "isWheelChairAccessible": False,
-            "isOkWhenPregnant": False,
-            "isOkWithBreathingMachines": False,
-            "hasDrinksIncluded": False,
-            "hasComplementaryGifts": False,
-            "hasNationalParkFee": False
-        }
     }
 
 

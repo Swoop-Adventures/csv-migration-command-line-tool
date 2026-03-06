@@ -162,16 +162,10 @@ def map_all_inclusive_hotels_component(row, template_ids, COMPONENT_ID_MAP, cont
     # ===== Level 0 → Base schema (empty) =====
     level_0 = {}
 
-    # ===== Level 1 → Activity Details =====
-    difficulty_levels = ['Other', 'Easy', 'Medium', 'Hard', 'Advanced', 'Extreme']
-    difficulty_index = safe_int(get_stripped(row, "Difficulty"), 0)
-    # Ensure difficulty_index is within valid range
-    if difficulty_index < 0 or difficulty_index >= len(difficulty_levels):
-        difficulty_index = 0
-    
+    # ===== Level 1 → Activity Details =====    
     level_1 = {
         "private": False,
-        "difficulty": difficulty_levels[difficulty_index],
+        "difficulty": get_stripped(row, "Difficulty") or "Other",
         "guided": False,
         "guideGuestRatio": 0,
         "requirements": {
@@ -185,14 +179,6 @@ def map_all_inclusive_hotels_component(row, template_ids, COMPONENT_ID_MAP, cont
             "other":""
         },
         "additionalNotes":[""],
-        "facilities": {
-            "isWheelChairAccessible": False,
-            "isOkWhenPregnant": False,
-            "isOkWithBreathingMachines": False,
-            "hasDrinksIncluded": False,
-            "hasComplementaryGifts": False,
-            "hasNationalParkFee": False
-        },
         "inclusions": parse_html_list(get_stripped(row, "Inclusions"), "Inclusions"),
         "exclusions": parse_html_list(get_stripped(row, "Exclusions"), "Exclusions"),
     }

@@ -176,7 +176,6 @@ def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_
 
     inclusions_raw = re.split(r'[\n\r]*[•\-*•]\s*', get_stripped(row, "Inclusions"))
     exclusions_raw = re.split(r'[\n\r]*[•\-*•]\s*', get_stripped(row, "Exclusions"))
-    trip_summary = get_stripped(row, "Trip Summary") or ""
 
     # Strip whitespace and drop empty lines
     inclusions = [i.strip() for i in inclusions_raw if i.strip()]
@@ -196,17 +195,13 @@ def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_
             "lowerHeightLimitM": 0,
             "upperHeightLimitM": 0
         },
-        "facilities": {
-            "isWheelChairAccessible": False,
-            "isOkWhenPregnant": False,
-            "isOkWithBreathingMachines": False,
-            "hasDrinksIncluded": False,
-            "hasComplementaryGifts": False,
-            "hasNationalParkFee": False
-        },
+        "additionalNotes": [
+            line.strip()
+            for line in get_stripped(row, "Additional notes").split("\n")
+            if line.strip()
+        ] if get_stripped(row, "Additional notes") else [],
         "inclusions": inclusions,
         "exclusions": exclusions,
-        "tripSummary": trip_summary
     }
 
     activities = [a.strip() for a in get_stripped(row, "Activity").split("\n") if a.strip()]
@@ -229,7 +224,9 @@ def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_
         deref_activities.append(comp_id or "component_00000000000000000000000000000000")
 
     level_2 = {
-        "activities": deref_activities
+        "activities": deref_activities,
+        "singleSupplement":get_stripped(row, "Single supplement") or "",
+        "childPolicy": get_stripped(row, "Child policy") or "",
     }
 
     component_fields = [
