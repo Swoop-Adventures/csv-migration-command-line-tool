@@ -38,10 +38,6 @@ def map_all_inclusive_hotels_component(row, template_ids, COMPONENT_ID_MAP, cont
     # --- Dynamic Package Spans ---
     package_spans = []
     
-    # For Debug
-    if get_stripped(row, "Name") == "Explore Torres del Paine from a Luxury Lodge":
-        pass
-
     # Keep adding spans until we find an empty Day.n
     span_index = 1
     while True:

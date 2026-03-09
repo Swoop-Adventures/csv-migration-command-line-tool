@@ -7,7 +7,7 @@ def map_activity_component(row, template_ids, COMPONENT_ID_MAP, context=None, ro
     """
     Map activity component with improved ID lookups and missing reference logging
     """
-
+    
     # --- Regions ---
     regions = [map_region_name_to_id(get_stripped(row, "region"))]
 
@@ -65,7 +65,7 @@ def map_activity_component(row, template_ids, COMPONENT_ID_MAP, context=None, ro
 
     # ===== Level 1 → Activity Details =====
     level_1 = {
-        "type": get_stripped(row, "type"),
+        "type": get_stripped(row, "type") or "Miscellaneous",
         "difficulty": get_stripped(row, "difficulty") or "Other",
         "elevation": {
             "ascentm": safe_int(get_stripped(row, "elevationFieldsifApplicable.totalElevationGainmetres")) or -1,
@@ -73,10 +73,10 @@ def map_activity_component(row, template_ids, COMPONENT_ID_MAP, context=None, ro
         },
         "startLocation": start_location_id or "",
         "endLocation": end_location_id or "",
-        "minDurationHours": safe_float(get_stripped(row, "minDurationhours")),
-        "maxDurationHours": safe_float(get_stripped(row, "maxDurationhours")),
-        "distanceKm": safe_float(get_stripped(row, "distancekm")),
-
+        "minDurationHours": safe_float(get_stripped(row, "minDurationhours")) or 0,
+        "maxDurationHours": safe_float(get_stripped(row, "maxDurationhours")) or 0,
+        "distanceKm": safe_float(get_stripped(row, "distancekm")) or 0,
+        "sourcePage": get_stripped(row, "Source Page")
     }
 
     component_fields = [
@@ -84,7 +84,9 @@ def map_activity_component(row, template_ids, COMPONENT_ID_MAP, context=None, ro
         {"templateId": template_ids[0], "data": level_0},
     ]
 
-    return {
+
+
+    val = {
         "orgId":"swoop",
         "destination":(destination_override or get_stripped(row, "destination")).lower() or "patagonia",
         "state": "Draft",
@@ -116,3 +118,7 @@ def map_activity_component(row, template_ids, COMPONENT_ID_MAP, context=None, ro
         "media": media,
         "componentFields": component_fields,
     }
+
+
+
+    return val

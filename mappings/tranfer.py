@@ -62,7 +62,8 @@ def map_transfer_component(row, template_ids, COMPONENT_ID_MAP, context=None, ro
             "pickup": get_stripped(row, 'pickupNotes'),
             "schedule": get_stripped(row, 'Schedule Notes for Sales/CX')
         },
-        "departureTime": [t.strip() for t in get_stripped(row, 'Time').split(",")],
+        "departureTime": [t.strip() for t in get_stripped(row, 'Time').split(",") if t.strip()] \
+                        if get_stripped(row, 'Time') else [],
         "boardBasis": {
             "none": "None" in [t.strip() for t in get_stripped(row, 'Included Meals - Meal Type').split(",")], 
             "other": "Other" in [t.strip() for t in get_stripped(row, 'Included Meals - Meal Type').split(",")], 

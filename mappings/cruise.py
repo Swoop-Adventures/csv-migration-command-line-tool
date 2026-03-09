@@ -199,7 +199,7 @@ def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_
             line.strip()
             for line in get_stripped(row, "Additional notes").split("\n")
             if line.strip()
-        ] if get_stripped(row, "Additional notes") else [],
+        ] if get_stripped(row, "Additional notes") else [""],
         "inclusions": inclusions,
         "exclusions": exclusions,
     }
@@ -271,8 +271,5 @@ def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_
             # "endDate": "2025-08-10T00:00:00Z"
         },
     }
-
-    if get_stripped(row, "Name") == "Discover South Georgia, Antarctica and Falklands - 22 days reverse itinerary":
-        pass
 
     return val

@@ -30,21 +30,21 @@ ACCESS_TOKEN = ""
 SKIP_AIRPORTS = False
 
 SHEET_PROCESS_ORDER = [
-    # "Location",
-    # "Ground Accom",
-    # "Ship Accom",
-    # "ANT Ship Accom",
-    # "Journeys",
-    # "All Activities - For Upload",
-    # "ANT Activities",
-    # "All Transfers - For Upload",
-    # "ANT Transfers",
-    # "Excursions Package",
-    # "Private Tours Package",
-    # "All Inclusive Hotel Package",
-    # "Multi-day Activity Package",
-    # "PAT Cruise Packages ",
-    # "ANT Cruise Packages",
+    "Location",
+    "Ground Accom",
+    "Ship Accom",
+    "ANT Ship Accom",
+    "Journeys",
+    "All Activities - For Upload",
+    "ANT Activities",
+    "All Transfers - For Upload",
+    "ANT Transfers",
+    "Excursions Package",
+    "Private Tours Package",
+    "All Inclusive Hotel Package",
+    "Multi-day Activity Package",
+    "PAT Cruise Packages ",
+    "ANT Cruise Packages",
 ]
 
 log_lock = threading.Lock()
