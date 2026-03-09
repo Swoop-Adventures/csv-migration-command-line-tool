@@ -64,14 +64,11 @@ def map_transfer_component(row, template_ids, COMPONENT_ID_MAP, context=None, ro
         },
         "departureTime": [t.strip() for t in get_stripped(row, 'Time').split(",")],
         "boardBasis": {
-            #TODO
             "none": "None" in [t.strip() for t in get_stripped(row, 'Included Meals - Meal Type').split(",")], 
-            "none": "None" in [t.strip() for t in get_stripped(row, 'Included Meals - Meal Type').split(",")], 
-            "none": "None" in [t.strip() for t in get_stripped(row, 'Included Meals - Meal Type').split(",")], 
-            "none": "None" in [t.strip() for t in get_stripped(row, 'Included Meals - Meal Type').split(",")], 
-            "none": "None" in [t.strip() for t in get_stripped(row, 'Included Meals - Meal Type').split(",")], 
-            "none": "None" in [t.strip() for t in get_stripped(row, 'Included Meals - Meal Type').split(",")], 
-
+            "other": "Other" in [t.strip() for t in get_stripped(row, 'Included Meals - Meal Type').split(",")], 
+            "snacks": "Snacks" in [t.strip() for t in get_stripped(row, 'Included Meals - Meal Type').split(",")], 
+            "breakfast": "Breakfast" in [t.strip() for t in get_stripped(row, 'Included Meals - Meal Type').split(",")], 
+            "lunch": "Lunch" in [t.strip() for t in get_stripped(row, 'Included Meals - Meal Type').split(",")], 
         },
         "mealDescription": get_stripped(row, 'Meal Description'),
     }
