@@ -24,7 +24,7 @@ def get_stripped(row, field):
 #     """
 #     # Try dict-style access first
 #     val = row.get(field) if hasattr(row, "get") else None
-    
+
 #     # Fallback to Series-style access
 #     if val is None and hasattr(row, "__getitem__") and field in row:
 #         val = row[field]
@@ -103,7 +103,7 @@ def get_component_id(
 ) -> Optional[str]:
     """
     Get component ID from type and name, with logging for missing references.
-    
+
     Args:
         component_type: Type of component (e.g., "location", "activity")
         component_name: Name of the component to find
@@ -111,34 +111,34 @@ def get_component_id(
         aliases: Optional dictionary of name aliases/corrections
         context: Optional context info (row data, sheet name, etc.) for better logging
         required: Whether this reference is required (affects logging level)
-    
+
     Returns:
         Component ID if found, None if not found
     """
     if not component_name or not str(component_name).strip():
         return None
-    
+
     # Clean the name
     clean_name = component_name.strip()
-    
+
     # Try aliases first if provided
     if aliases and clean_name in aliases:
         original_name = clean_name
         clean_name = aliases[clean_name]
         print(f"🔄 Using alias: '{original_name}' → '{clean_name}'")
-    
+
     # Look up in component map
     lookup_key = (component_type, clean_name)
     component_id = component_id_map.get(lookup_key)
-    
+
     if component_id:
         return component_id
-    
+
     # Not found - log it
     if required:
         log_missing_reference(component_type, clean_name, "Component not found in cache", context, original_name=component_name if aliases else None)
         print(f"❌ WARNING: No {component_type} ID found for '{clean_name}'")
-    
+
     return None
 
 
@@ -150,10 +150,10 @@ def log_missing_reference(
     original_name: Optional[str] = None
 ):
     """Log a missing component reference for client review"""
-    
+
     # Create unique key for this missing reference
     key = f"{component_type}:{component_name}"
-    
+
     # Build the log entry
     log_entry = {
         "component_type": component_type,
@@ -164,7 +164,7 @@ def log_missing_reference(
         "occurrences": 1,
         "contexts": []
     }
-    
+
     # Add context information
     if context:
         context_info = {
@@ -175,7 +175,7 @@ def log_missing_reference(
             "additional_info": context.get("additional_info")
         }
         log_entry["contexts"].append(context_info)
-    
+
     # Update global missing references
     if key in MISSING_REFERENCES:
         MISSING_REFERENCES[key]["occurrences"] += 1
@@ -192,7 +192,7 @@ def save_missing_references_log():
     """
     if not MISSING_REFERENCES:
         return
-    
+
     try:
         # -----------------------------------------------------------------
         # 1. HUMAN-READABLE REPORT BY SHEET
@@ -208,7 +208,7 @@ def save_missing_references_log():
             "=" * 100,
             ""
         ]
-        
+
         # Group by sheet for easier reading
         by_sheet = {}
         for entry in MISSING_REFERENCES.values():
@@ -216,23 +216,23 @@ def save_missing_references_log():
                 sheet = context.get("sheet_name", "Unknown Sheet")
                 if sheet not in by_sheet:
                     by_sheet[sheet] = []
-                
+
                 row_num = context.get("row_index", "?")
                 if row_num is not None and str(row_num).isdigit():
                     row_num = int(row_num) + 1  # adjust for header + 0-based index
-                
+
                 # FIX 1: Handle None values safely
                 field = context.get("field") or context.get("additional_info") or "unknown field"
                 missing_name = entry["component_name"] or "Unknown"
                 comp_type = entry["component_type"] or "Unknown"
-                
+
                 by_sheet[sheet].append({
                     "row": row_num,
                     "field": str(field),  # Ensure it's a string
                     "missing": str(missing_name),  # Ensure it's a string
                     "type": str(comp_type)  # Ensure it's a string
                 })
-        
+
         # Write each sheet's issues
         for sheet_name, issues in by_sheet.items():
             report_lines.append(f"SHEET: {sheet_name}")
@@ -252,20 +252,20 @@ def save_missing_references_log():
             field_col_width  = max(max(len(str(issue["field"])) for issue in issues_sorted), 8) + 2
             miss_col_width   = max(max(len(str(issue["missing"])) for issue in issues_sorted), 16) + 2
             type_col_width   = max(max(len(str(issue["type"])) for issue in issues_sorted), 4) + 8
-            
+
             report_lines.append("-" * (row_col_width + field_col_width + miss_col_width + type_col_width + 9))
             report_lines.append(
                 f"{'Row':<{row_col_width}} | {'Row Name':<{field_col_width}} | {'Missing Component':<{miss_col_width}} | {'Type':<{type_col_width}}"
             )
             report_lines.append("-" * (row_col_width + field_col_width + miss_col_width + type_col_width + 9))
-            
+
             for issue in issues_sorted:
                 row_display = str(issue["row"]) if isinstance(issue["row"], int) else "?"
                 # FIX 4: Handle potential Unicode/special characters
                 missing_quoted = f'"{issue["missing"]}"'
                 field_clean = str(issue["field"])[:50]  # Truncate very long field names
                 type_clean = str(issue["type"])[:20]   # Truncate very long type names
-                
+
                 report_lines.append(
                     f'{row_display:<{row_col_width}} | {field_clean:<{field_col_width}} | {missing_quoted:<{miss_col_width}} | {type_clean:<{type_col_width}}'
                 )
@@ -275,7 +275,7 @@ def save_missing_references_log():
         # FIX 5: More robust file writing with error handling
         with open(readable_file, 'w', encoding='utf-8', errors='replace') as f:
             f.write('\n'.join(report_lines))
-        
+
         # -----------------------------------------------------------------
         # 2. UNIQUE MISSING REFERENCES BY TYPE
         # -----------------------------------------------------------------
@@ -313,7 +313,7 @@ def save_missing_references_log():
                 entries,
                 key=lambda e: (-e.get("occurrences", 0), str(e.get("component_name", "")).lower())
             )
-            
+
             # FIX 7: Add minimum width and handle empty component names
             name_width = max(max(len(str(e.get("component_name", ""))) for e in entries_sorted), 16) + 4
 
@@ -333,7 +333,7 @@ def save_missing_references_log():
         # FIX 8: More robust file writing with error handling
         with open(unique_file, 'w', encoding='utf-8', errors='replace') as f:
             f.write('\n'.join(unique_lines))
-        
+
         # -----------------------------------------------------------------
         # PRINT SUMMARY
         # -----------------------------------------------------------------
@@ -358,12 +358,12 @@ def get_missing_references_summary():
     """Get summary of current session's missing references"""
     if not MISSING_REFERENCES:
         return "No missing references in current session."
-    
+
     summary = {}
     for entry in MISSING_REFERENCES.values():
         comp_type = entry["component_type"]
         summary[comp_type] = summary.get(comp_type, 0) + 1
-    
+
     total = len(MISSING_REFERENCES)
     return f"Missing references in session: {total} total ({summary})"
 
@@ -372,7 +372,7 @@ def get_missing_references_summary():
 def get_location_id(location_name: str, component_id_map: Dict, context: Optional[Dict] = None) -> Optional[str]:
     """Convenience function specifically for location lookups"""
     from mappings.location import LOCATION_ALIASES  # Import your existing aliases
-    
+
     return get_component_id(
         component_type="location",
         component_name=location_name,
@@ -383,7 +383,7 @@ def get_location_id(location_name: str, component_id_map: Dict, context: Optiona
     )
 
 def get_journey_id(journey_name: str, component_id_map: Dict, context: Optional[Dict] = None) -> Optional[str]:
-    
+
     return get_component_id(
         component_type="journey",
         component_name=journey_name,
@@ -397,7 +397,7 @@ def get_journey_id(journey_name: str, component_id_map: Dict, context: Optional[
 def get_transfer_id(transfer_name: str, component_id_map: Dict, context: Optional[Dict] = None) -> Optional[str]:
     """Convenience function specifically for location lookups"""
     # from mappings.location import LOCATION_ALIASES  # Import your existing aliases
-    
+
     return get_component_id(
         component_type="transfer",
         component_name=transfer_name,
@@ -429,3 +429,23 @@ def get_accommodation_id(accom_name: str, component_id_map: Dict, context: Optio
         context=context,
         required=True
     )
+
+def get_external_id(id: str, default_region: str) -> str:
+    """Ensure external ID has a region prefix, defaulting if missing"""
+    if not id or not str(id).strip():
+        return ""
+
+    id_str = str(id).strip()
+
+    # Check if it already has a region prefix (e.g., "PAT-1")
+    if re.match(r"^(PAT|ANT)-\d+", id_str):
+        return id_str
+
+    # If we have long form default_region instead of ANT or PAT convert it to ANT or PAT
+    if default_region.upper() in ["ANTARCTICA", "ANT", "ANTARCTIC"]:
+        default_region = "ANT"
+    elif default_region.upper() in ["PATAGONIA", "PAT", "PATAGONIAN"]:
+        default_region = "PAT"
+
+    # prepend the default region
+    return f"{default_region}-{id_str}"

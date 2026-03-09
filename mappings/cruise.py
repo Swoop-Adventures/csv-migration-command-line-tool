@@ -1,5 +1,5 @@
 # activity_mapper.py
-from utils import get_component_id, get_stripped, safe_float, safe_int, get_location_id
+from utils import get_component_id, get_stripped, safe_float, safe_int, get_location_id, get_external_id
 from .location import map_region_name_to_id
 import pandas as pd
 
@@ -9,9 +9,9 @@ import re
 def normalize_day_string(s: str) -> str:
     if s.strip().upper() == "NULL":
         return ""
-    
+
     numbers = re.findall(r"\d+", s)
-    
+
     if not numbers:
         return ""
     elif len(numbers) == 1:
@@ -43,7 +43,7 @@ def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_
 
     # --- Dynamic Package Spans ---
     package_spans = []
-    
+
     # Keep adding spans until we find an empty Day.n
     span_index = 1
     while True:
@@ -58,22 +58,22 @@ def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_
             title_col = f"Day Title.{span_index - 1}"
             desc_col = f"Day Description.{span_index - 1}"
             comp_suffix = f".{span_index - 1}"
-        
+
         # Check if this day exists
         span_day = get_stripped(row, day_col)
         span_day = normalize_day_string(span_day)
         if not span_day:
             break  # No more days to process
-        
+
         # Process components for this span
         package_span_items = []
         comp_index = 1
-        
+
         while True:
             # Determine component column names
             comp_name_col = f"Component {comp_index}{comp_suffix}"
             comp_type_col = f"Component Type {comp_index}{comp_suffix}"
-            
+
             comp_name = get_stripped(row, comp_name_col)
             comp_type = get_stripped(row, comp_type_col)
             pkg_aliases = {
@@ -85,7 +85,7 @@ def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_
             # If no component name, stop processing components for this span
             if not comp_name:
                 break
-            
+
             # Get component ID
             if comp_type:  # Only proceed if we have a component type
                 comp_id = get_component_id(
@@ -100,7 +100,7 @@ def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_
                     },
                     required=True
                 )
-                
+
                 if True or comp_id:  # Only add if we got a valid ID
                     package_span_items.append({
                         "componentId": comp_id or "component_00000000000000000000000000000000",
@@ -108,9 +108,9 @@ def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_
                         # "startTime":"",
                         # "endTime":""
                     })
-            
+
             comp_index += 1
-        
+
         # Add the span (even if it has no valid components)
         package_spans.append({
             "items": package_span_items,
@@ -118,7 +118,7 @@ def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_
             "endDay": safe_int(span_day.split('-')[-1]),
             "meals": []
         })
-        
+
         span_index += 1
 
     # --- Add extra span for accommodation (Ground Accom) ---
@@ -164,15 +164,15 @@ def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_
     # ===== Level 0 → Base schema (empty) =====
 
     # ===== Level 1 → Package Details =====
-    
+
     # ===== Level 2 → Cruise Details =====
-    
+
     difficulty_levels = ['Other', 'Easy', 'Medium', 'Hard', 'Advanced', 'Extreme']
     difficulty_index = safe_int(get_stripped(row, "Difficulty"), 0)
     # Ensure difficulty_index is within valid range
     if difficulty_index < 0 or difficulty_index >= len(difficulty_levels):
         difficulty_index = 0
-    
+
 
     inclusions_raw = re.split(r'[\n\r]*[•\-*•]\s*', get_stripped(row, "Inclusions"))
     exclusions_raw = re.split(r'[\n\r]*[•\-*•]\s*', get_stripped(row, "Exclusions"))
@@ -238,9 +238,7 @@ def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_
 
     tripId = get_stripped(row, "Trip ID") or ""
     if tripId:
-        if not (tripId.startswith("ANT-") or tripId.startswith("PAT-")):
-            tripId = "ANT-"+tripId
-
+        tripId = get_external_id(tripId, destination_override)
 
     val = {
         "orgId":"swoop",
@@ -257,7 +255,7 @@ def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_
             "quote": get_stripped(row, "Cruise Description") or "",
             "final": get_stripped(row, "Cruise Description") or ""
         },
-        "partners": [destination_override[:3].upper()+"-"+get_stripped(row, "Partner ID")],
+        "partners": [get_external_id(get_stripped(row, "Partner ID"), destination_override)],
         "regions": regions,  # filter out None values
         "name": get_stripped(row, "Name") or "Untitled",
         "externalName": get_stripped(row, "Name") or "Untitled",

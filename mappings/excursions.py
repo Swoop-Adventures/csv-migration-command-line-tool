@@ -1,8 +1,8 @@
 # activity_mapper.py
-from utils import get_component_id, get_stripped, safe_float, safe_int, get_location_id
+from utils import get_component_id, get_stripped, safe_float, safe_int, get_location_id, get_external_id
 from .location import map_region_name_to_id
 import pandas as pd
-                            
+
 def map_excursion_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_index=-1, rooms_data=None, partner_map=None, destination_override=None):
     """
     Map activity component with improved ID lookups and missing reference logging
@@ -104,7 +104,7 @@ def map_excursion_component(row, template_ids, COMPONENT_ID_MAP, context=None, r
             # "endTime":""
         })
 
-    
+
 
     # ===== Level 0 → Base schema (empty) =====
     level_0 = {}
@@ -139,13 +139,13 @@ def map_excursion_component(row, template_ids, COMPONENT_ID_MAP, context=None, r
     # print(row)
     # print(f"name: {get_stripped(row, "name")}")
 
-    return {        
+    return {
         "orgId":"swoop",
         "destination":(destination_override or get_stripped(row, "Destination")).lower() or "patagonia",
         "state": "Draft",
         "tripId": "",
         "pricing": {"amount":0,"currency":"gbp"},
-        
+
         "templateId": template_ids[2],
         "isBookable": True,
         "description": {
@@ -153,7 +153,7 @@ def map_excursion_component(row, template_ids, COMPONENT_ID_MAP, context=None, r
             "quote": get_stripped(row, "Description - Quote") or "",
             "final": get_stripped(row, "Description - Quote") or ""
         },
-        "partners": ["PAT-" + id for id in get_stripped(row, "PartnerID").split("/")],
+        "partners": [get_external_id(id, "PAT") for id in get_stripped(row, "PartnerID").split("/")],
         "regions": [r for r in regions if r],  # filter out None values
         "name": get_stripped(row, "Code name") or "Untitled",
         "externalName": get_stripped(row, "name") or "Untitled",
