@@ -103,7 +103,7 @@ def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_
 
                 if True or comp_id:  # Only add if we got a valid ID
                     package_span_items.append({
-                        "componentId": comp_id or "component_00000000000000000000000000000000",
+                        "componentId": comp_id or "",
                         "allDay": True,
                         # "startTime":"",
                         # "endTime":""
@@ -138,7 +138,7 @@ def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_
             required=True
         )
         package_span_items.append({
-            "componentId": comp_id or "component_00000000000000000000000000000000",
+            "componentId": comp_id or "",
             "allDay": True,
             # "startTime":"",
             # "endTime":""
@@ -221,7 +221,7 @@ def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_
             required=False  # Don't fail entire record if one activity is missing
         )
 
-        deref_activities.append(comp_id or "component_00000000000000000000000000000000")
+        deref_activities.append(comp_id or "")
 
     level_2 = {
         "activities": deref_activities,

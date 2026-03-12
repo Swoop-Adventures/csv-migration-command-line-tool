@@ -96,7 +96,7 @@ def map_all_inclusive_hotels_component(row, template_ids, COMPONENT_ID_MAP, cont
 
                 if True or comp_id:  # Only add if we got a valid ID
                     package_span_items.append({
-                        "componentId": comp_id or "component_00000000000000000000000000000000",
+                        "componentId": comp_id or "",
                         "allDay": True,
                         # "startTime":"",
                         # "endTime":""
@@ -134,7 +134,7 @@ def map_all_inclusive_hotels_component(row, template_ids, COMPONENT_ID_MAP, cont
             required=True
         )
         package_span_items.append({
-            "componentId": comp_id or "component_00000000000000000000000000000000",
+            "componentId": comp_id or "",
             "allDay": True,
             # "startTime":"",
             # "endTime":""
