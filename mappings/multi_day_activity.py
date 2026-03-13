@@ -90,12 +90,21 @@ def map_multi_day_activity_component(row, template_ids, COMPONENT_ID_MAP, contex
 
             comp_index += 1
 
+
+        valid_meals = {"Breakfast", "Lunch", "Box Lunch", "Dinner", "Snacks"}
+        raw_meals = get_stripped(row, f"Meals{comp_suffix}").split("\n")
+        meals = [
+            m.strip()
+            for m in raw_meals
+            if m.strip() in valid_meals
+        ]
+
         # Add the span (even if it has no valid components)
         package_spans.append({
             "items": package_span_items,
             "startDay": safe_int(span_day.split('-')[0]),
             "endDay": safe_int(span_day.split('-')[-1]),
-            "meals": []
+            "meals": meals
         })
 
         span_index += 1

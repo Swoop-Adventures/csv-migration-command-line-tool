@@ -43,8 +43,8 @@ SHEET_PROCESS_ORDER = [
     "Private Tours Package",
     "All Inclusive Hotel Package",
     "Multi-day Activity Package",
-    "PAT Cruise Packages ",
-    "ANT Cruise Packages",
+    # "PAT Cruise Packages ",
+    # "ANT Cruise Packages",
 ]
 
 log_lock = threading.Lock()
